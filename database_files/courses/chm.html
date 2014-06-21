@@ -1,0 +1,731 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<HEAD>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<meta http=equiv="Content-Type" content="text.html;charset=utf-8" />
+<meta name="description" content="" />
+
+    <title>Arts & Science 2013-2014 Fall/Winter Session Timetable for: Chemistry [CHM courses - includes JSC310H1]</title>
+
+   <link rel="stylesheet" href="/web/20131028044022cs_/http://www.artsandscience.utoronto.ca/testdir/cal/c/c01.css"  type="text/css" media="all" />
+
+</HEAD>
+
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app1.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1420070399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/www.artsandscience.utoronto.ca\/ofr\/timetable\/winter\/chm.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 475;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "28";
+var displayMonth = "Oct";
+var displayYear = "2013";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20131028044022" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20121124064231/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Nov 2012"><strong>NOV</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 4:40:22 Oct 28, 2013">OCT</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       Nov
+                       
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20121124064231/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm.html" title="6:42:31 Nov 24, 2012" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 4:40:22 Oct 28, 2013">28</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20131127202559/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm.html" title="20:25:59 Nov 27, 2013" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20120820105309/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="20 Aug 2012"><strong>2012</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 4:40:22 Oct 28, 2013">2013</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2014
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20131028044022*/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>49 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">16 Jan 01 - 27 Nov 13</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:475px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:475px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="475"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=475_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:110001010101_2002:-1:010101010101_2003:-1:010001010101_2004:-1:010001110000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000010000_2008:-1:000110001100_2009:-1:101111001100_2010:-1:001010211110_2011:-1:000000111000_2012:-1:000000110010_2013:9:000000000110_2014:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="wrapper">
+   <div id="header"></div>
+   <div id="banner"></div> 
+   <div id="content">
+
+<center> <h2><font color="#608568">Chemistry [CHM courses - includes JSC310H1]</h2></CENTER></font>
+
+
+<p><hr>
+The following timetable information is the most current information available.  Courses and meeting sections added will be listed below. Courses and meeting sections cancelled will be indicated as such. 
+
+<hr><br>
+<p><b> For CHM138H1F:</b> Beginning September 9, P and T section additions or changes can be made only at the Chemistry Department. Notices will be posted next to Lash Miller Room 217. Alternating laboratories (A): PRACTICAL meeting section numbers that end in 1 will begin during the week of September 16; meeting section numbers that end in 2 will begin during the week of September 23. CHM138H1F P5401 alternates weeks with L5101 R7-9 (A). For your CHM138H1F laboratory classes, if you plan to take BIO120H1F lab on the same day in alternating weeks, select P sections in both courses that end in the DIFFERENT DIGITS (e.g., P0101 in BIO120H1F and P0102 in CHM138H1F). You CANNOT alternate a laboratory on the same day with PHY131H1F/PHY132H1F.</p>
+<p><b>For CHM138H1S:</b> Beginning January 6, P and T section additions or changes can be made only at the Chemistry Department. Notices will be posted next to Lash Miller Room 217. Alternating laboratories (A): PRACTICAL meeting section numbers that end in 1 will begin during the week of January 13; meeting section numbers that end in 2 will begin during the week of January 20. For your CHM138H1S laboratory classes, if you plan to take BIO130H1S on the same day in alternating weeks, select P sections in both courses that end in the DIFFERENT DIGITS (e.g. P0201 in CHM138H1S and P0202 in BIO130H1S).You CANNOT alternate a laboratory on the same day with PHY131H1S/PHY132H1S.</p>
+<p><b>For CHM139H1F:</b> Beginning September 9, P and T section additions or changes can be made only at the Chemistry Department. Notices will be posted next to Lash Miller Room 102. Alternating laboratories (A): PRACTICAL meeting section numbers that end in 1 will begin during the week of September 16; meeting section numbers that end in 2 will begin during the week of September 23. For your CHM139H1F laboratory classes, if you plan to take BIO120H1F lab on the same day in alternating weeks, select P sections in both courses that end in the DIFFERENT DIGITS (e.g., P0101 in BIO120H1F and P0102 in CHM139H1F). You CANNOT alternate a laboratory on the same day with PHY131H1F/PHY132H1F.</p>
+<p><b>For CHM139H1S:</b> Beginning January 6, P and T section additions or changes can be made only at the Chemistry Department. Notices will be posted next to Lash Miller Room 102. Alternating laboratories (A): PRACTICAL meeting section numbers that end in 1 will begin during the week of January 13; meeting section numbers that end in 2 will begin during the week of January 20. CHM139H1S P5401 alternates weeks with L5101 R7-9 (A). For your CHM139H1S laboratory classes, if you plan to take BIO130H1 S on the same day in alternating weeks, select P sections in both courses that end in the DIFFERENT DIGITS (e.g. P0101 in CHM139H1S and P0102 in BIO130H1S). You CANNOT alternate a laboratory on the same day with PHY131H1S/PHY132H1S.</p>
+<p><b>For CHM151Y1:</b> Beginning September 9, P section additions or changes can be made only at the Chemistry Department. The 1:00 to 5:30 p.m. time slot is reserved for CHM151Y1 activities every week of each semester to accommodate the two-hour biweekly Course Community meetings which will alternate weeks with lab classes. CHM151Y1 lab class time will be 2:00 to 5:30 p.m. You cannot alternate a 100-level BIO lab or PHY lab with the CHM151Y1 lab classes. Tutorials begin the week of September 16; room locations will be posted on the Portal web site.</p>
+<p><b>For CHM217H1: </b>All students: visit <a href="/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/www.chem.utoronto.ca/coursenotes/CHM217/">www.chem.utoronto.ca/coursenotes/CHM217/</a>. Lecture times are TR4 weekly and F3 biweekly. Labs begin the week of September 16. After August 13 request enrolment on-line at <a href="/web/20131028044022/http://www.chem.utoronto.ca/undergrad/holdinglist_intro.php">www.chem.utoronto.ca/undergrad/holdinglist_intro.php</a>. Beginning August 15, course changes can be made only by the instructor.
+<p><b>For CHM220H1: </b>Tutorials begin the week of September 16. After September 13, tutorial changes/additions can be made only at the Chemistry Department - check the Portal web site for instructions.</p>
+<p><b>For CHM238Y1: </b>Students who have successfully enrolled via <a href="/web/20131028044022/http://www.rosi.utoronto.ca/">ROSI </a> should, by September 2, follow instructions posted on <a href="/web/20131028044022/http://www.chem.utoronto.ca/coursenotes/CHM238/">www.chem.utoronto.ca/coursenotes/CHM238/</a>. After August 13 request enrolment on-line at <a href="/web/20131028044022/http://www.chem.utoronto.ca/undergrad/holdinglist_intro.php">www.chem.utoronto.ca/undergrad/holdinglist_intro.php</a>.  Beginning August 15 course changes can be made only by lab instructor. Biweekly labs begin: the week of September 9 for sections P0201, P0301 and resume in the second term the week of January 6; the week of September 16 for P0202, P0302 and resume in the second term during the week of January 13. </p>
+<p><b>For CHM247H1F: </b>Lectures with integrated tutorials will be held WR 6-9; W lecture will alternate with the evening lab. </p>
+<p><b>For CHM247H1S: </b>Laboratory (P) sections ending in 1 will begin during the week of January 13; P sections that end in 2 will begin during the week of January 20. Students may attend a tutorial at one of the following times: T5, W5, or F2. If enrolment is high, R3 tutorial will be added.</p>
+<p><b>CHM249H1: </b>After August 13, request enrolment on-line at <a href="/web/20131028044022/http://www.chem.utoronto.ca/undergrad/holdinglist_intro.php">www.chem.utoronto.ca/undergrad/holdinglist_intro.php</a>. Beginning August 15 course changes can be made only by the lab instructor.</p>
+<p><b>CHM317H1: </b>All students: visit <a href="/web/20131028044022/http://www.chem.utoronto.ca/coursenotes/CHM317/">www.chem.utoronto.ca/coursenotes/CHM317/</a>. Weekly labs begin January 6. After August 13, request enrolment on-line at <a href="/web/20131028044022/http://www.chem.utoronto.ca/undergrad/holdinglist_intro.php">www.chem.utoronto.ca/undergrad/holdinglist_intro.php</a>. Beginning August 15 course changes can be made only by the lab instructor.</p>
+<p><b>CHM327H1: </b>After August 13, request enrolment on-line at <a href="/web/20131028044022/http://www.chem.utoronto.ca/undergrad/holdinglist_intro.php">www.chem.utoronto.ca/undergrad/holdinglist_intro.php</a>. Beginning August 15 course changes can be made only by the instructor. If enrolment is high, P0201 (R9-1) will be added.</p>
+<p><b>CHM338H1: </b>Students who have successfully enrolled via <a href="/web/20131028044022/http://www.rosi.utoronto.ca/">ROSI </a> should, by September 2, follow instructions posted on <a href="/web/20131028044022/http://www.chem.utoronto.ca/coursenotes/CHM338F/">www.chem.utoronto.ca/coursenotes/CHM338F/</a>. After August 13, request enrolment on-line at <a href="/web/20131028044022/http://www.chem.utoronto.ca/undergrad/holdinglist_intro.php">www.chem.utoronto.ca/undergrad/holdinglist_intro.php</a>. Beginning August 13 course changes can be made only by lab instructor. Weekly labs begin the week September 9.</p>
+<p><b>CHM343H1: </b>After August 13, request enrolment on-line at <a href="/web/20131028044022/http://www.chem.utoronto.ca/undergrad/holdinglist_intro.php">www.chem.utoronto.ca/undergrad/holdinglist_intro.php</a>. Beginning August 15 course changes can be made only by lab instructor.</p>
+<p><b>CHM348H1: </b>After August 13, request enrolment on-line at <a href="/web/20131028044022/http://www.chem.utoronto.ca/undergrad/holdinglist_intro.php">www.chem.utoronto.ca/undergrad/holdinglist_intro.php</a>. Beginning August 15 course changes can be made only by lab instructor.</p>
+<p><b>CHM379H1: </b>After August 13, request enrolment on-line at <a href="/web/20131028044022/http://www.chem.utoronto.ca/undergrad/holdinglist_intro.php">www.chem.utoronto.ca/undergrad/holdinglist_intro.php</a>. Beginning August 15 course changes can be made only by the instructor. Laboratory classes begin during the week of January 6.</p>
+<p><b>CHM417H1: </b>Students will attend five laboratory sessions on Thursdays, October to November.</p>
+<p><b>CHM441H1: </b>Students will attend six laboratory sessions W9-1 during September to November.</p>
+<p><b>For 'E' indicator courses: </b>contact the Undergraduate Office (LM 151).</p>
+<hr><center>
+<b><a href="/web/20131028044022/http://www.artsci.utoronto.ca/current/course/timetable/1314_fw/codes-used-in-the-timetable-listings">Explanation on codes and Enrolment Indicators</a></b>
+</center>
+<p><center>
+<table border=1>
+<tr><TD ALIGN="CENTER" colspan="10"><font color=#608568><B>Chemistry [CHM courses - includes JSC310H1]</B><br></font></TD></tr>
+<tr>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Course</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>SC</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Title<br><i>(subtitle)</i></b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Meeting<br>Section</b></FONT></TD>
+<TD VALIGN="CENTER" ROWSPAN="2"><FONT COLOR=#608568><b>Wait<br>List</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Time</b></font></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Location</b></font></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Instructor</b></font></TD>
+<TD COLSPAN="2"><FONT COLOR=#608568><b>Enrolment</b></font></TD>
+</tr>
+<tr>
+<TD VALIGN="LEFT"><FONT COLOR=#608568><b>Ind</b></font></TD>
+<TD VALIGN="LEFT"><FONT COLOR=#608568><b>Controls</b></font></TD>
+</tr>
+<br>
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM101H1>CHM101H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>CHM Biol Org Mol</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF12</font></td><td align=LEFT><font size =-1>LM 161 </font></td><td align=LEFT><font size =-1>R. Batey</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm101h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>M4</font></td><td align=LEFT><font size =-1>LM 161 </font></td><td align=LEFT><font size =-1>R. Batey</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM138H1>CHM138H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Intro Org Chemistry I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MTR9</font></td><td align=LEFT><font size =-1>ES 1050 </font></td><td align=LEFT><font size =-1>Dicks/Winnik/Seferos</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=38><font size =-1><a href=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm138h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TRF12</font></td><td align=LEFT><font size =-1>MS 2158 </font></td><td align=LEFT><font size =-1>Dicks/Winnik/Seferos</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T7-9</font></td><td align=LEFT><font size =-1>LM 159 </font></td><td align=LEFT><font size =-1>Browning/Chin/Morra</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td align=LEFT><font size =-1>R7-9 (A)</font></td><td align=LEFT><font size =-1>LM 159 </font></td><td align=LEFT><font size =-1>Browning/Chin/Morra</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M2-5 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0102</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M2-5 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T2-5 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0202</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T2-5 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W2-5 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0302</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W2-5 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R2-5 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0402</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R2-5 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0502</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F2-5 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P5401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R6:30-9:30 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T1</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T2</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W2</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W3</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0501</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R1</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0601</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R2</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0701</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F11</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T6</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM138H1>CHM138H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Intro Org Chemistry I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF12</font></td><td align=LEFT><font size =-1>MS 2158 </font></td><td align=LEFT><font size =-1>Woolley/Song/Quinlan</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TRF9</font></td><td align=LEFT><font size =-1>MC 102 </font></td><td align=LEFT><font size =-1>Woolley/Song/Quinlan</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M2-5 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0102</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M2-5 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T2-5 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0202</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T2-5 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W2-5 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0302</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W2-5 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R2-5 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0402</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R2-5 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M2</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T1</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W2</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W3</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0501</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R2</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0601</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F11</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM139H1>CHM139H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Chem Physical Princ</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF12</font></td><td align=LEFT><font size =-1>MC 102 </font></td><td align=LEFT><font size =-1>Browning/Quinlan</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=36><font size =-1><a href=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm139h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TRF9</font></td><td align=LEFT><font size =-1>MC 102 </font></td><td align=LEFT><font size =-1>Browning/Quinlan</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T2-5 (A)</font></td><td align=LEFT><font size =-1>LM 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0202</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T2-5 (A)</font></td><td align=LEFT><font size =-1>LM 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W2-5 (A)</font></td><td align=LEFT><font size =-1>LM 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0302</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W2-5 (A)</font></td><td align=LEFT><font size =-1>LM 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R2-5 (A)</font></td><td align=LEFT><font size =-1>LM 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0402</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R2-5 (A)</font></td><td align=LEFT><font size =-1>LM 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0501</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F2-5 (A)</font></td><td align=LEFT><font size =-1>LM 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0502</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F2-5 (A)</font></td><td align=LEFT><font size =-1>LM 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T1</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W2</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W3</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R2</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0501</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F11</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM139H1>CHM139H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Chem Physical Princ</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MTR9</font></td><td align=LEFT><font size =-1>ES 1050 </font></td><td align=LEFT><font size =-1>Scholes/D'Eon</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TRF12</font></td><td align=LEFT><font size =-1>ES 1050 </font></td><td align=LEFT><font size =-1>Scholes/D'Eon</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T7-9</font></td><td align=LEFT><font size =-1>LM 159 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R7-9 (A)</font></td><td align=LEFT><font size =-1>LM 159 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M2-5 (A)</font></td><td align=LEFT><font size =-1>LM 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0102</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M2-5 (A)</font></td><td align=LEFT><font size =-1>LM 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T2-5 (A)</font></td><td align=LEFT><font size =-1>LM 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0202</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T2-5 (A)</font></td><td align=LEFT><font size =-1>LM 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W2-5 (A)</font></td><td align=LEFT><font size =-1>LM 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0302</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W2-5 (A)</font></td><td align=LEFT><font size =-1>LM 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R2-5 (A)</font></td><td align=LEFT><font size =-1>LM 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0402</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R2-5 (A)</font></td><td align=LEFT><font size =-1>LM 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P5401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R6:30-9:30 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T1</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T2</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W2</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W3</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0501</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R1</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0601</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R2</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0701</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F11</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T6</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM151Y1>CHM151Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Chemistry: Molec Sci</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF12</font></td><td align=LEFT><font size =-1>LM 159 </font></td><td align=LEFT><font size =-1>Taylor/Walker/Stephan</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=6><font size =-1><a href=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm151y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M1-5:30</font></td><td align=LEFT><font size =-1>LM 113 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0202</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T1-5:30</font></td><td align=LEFT><font size =-1>LM 113 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W1</font></td><td align=LEFT><font size =-1>SS 1069 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T10</font></td><td align=LEFT><font size =-1>MP 137 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F1</font></td><td align=LEFT><font size =-1>LM 161 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM210H1>CHM210H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Chem Enviro Change</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR2</font></td><td align=LEFT><font size =-1>LM 161 </font></td><td align=LEFT><font size =-1>J. D'Eon</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=3><font size =-1><a href=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm210h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F2</font></td><td align=LEFT><font size =-1>LM 158 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F3</font></td><td align=LEFT><font size =-1>LM 158 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM217H1>CHM217H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Intro Analytic Chem</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TR4</font></td><td align=LEFT><font size =-1>LM 162 </font></td><td align=LEFT><font size =-1>D. Stone</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=9><font size =-1><a href=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm217h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>F3</font></td><td align=LEFT><font size =-1>LM 162 </font></td><td align=LEFT><font size =-1>D. Stone</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M9-1</font></td><td align=LEFT><font size =-1>LM 6 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T9-1</font></td><td align=LEFT><font size =-1>LM 6 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W9-1</font></td><td align=LEFT><font size =-1>LM 6 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T3</font></td><td align=LEFT><font size =-1>LM 155 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0102</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T3</font></td><td align=LEFT><font size =-1>IN 204 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F1</font></td><td align=LEFT><font size =-1>LM 157 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0202</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F1</font></td><td align=LEFT><font size =-1>SS 1086 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM220H1>CHM220H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Phys Chem Life Sci</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWR5</font></td><td align=LEFT><font size =-1>MS 2158 </font></td><td align=LEFT><font size =-1>Walker/Kumacheva</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=4><font size =-1><a href=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm220h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M4</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W1</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R4</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM221H1>CHM221H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Phys Chem Molec Viewpoint</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW4</font></td><td align=LEFT><font size =-1>LM 162 </font></td><td align=LEFT><font size =-1>R. Kapral</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=3><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T2</font></td><td align=LEFT><font size =-1>LM 155 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F1</font></td><td align=LEFT><font size =-1>LM 155 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM225Y1>CHM225Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Intro Phys Chemistry</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW4</font></td><td align=LEFT><font size =-1>LM 162 </font></td><td align=LEFT><font size =-1>Schofield/Kapral</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=3><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>T2</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>F1</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM238Y1>CHM238Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Intro Inorg Chem</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>MW3</font></td><td align=LEFT><font size =-1>LM 162 </font></td><td align=LEFT><font size =-1>McIntosh/Browning/Song/Ozin</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=5><font size =-1><a href=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm238y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0201</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>T9-1</font></td><td align=LEFT><font size =-1>LM 211 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0202</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>T9-1</font></td><td align=LEFT><font size =-1>LM 211 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0301</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W9-1</font></td><td align=LEFT><font size =-1>LM 211 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0302</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W9-1</font></td><td align=LEFT><font size =-1>LM 211 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM247H1>CHM247H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Intro Organic Chem II</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-9</font></td><td align=LEFT><font size =-1>LM 159 </font></td><td align=LEFT><font size =-1>C. Kutas</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=12><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W6:30-10</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>C. Kutas</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R6-9</font></td><td align=LEFT><font size =-1>SS 2102 </font></td><td align=LEFT><font size =-1>C. Kutas</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM247H1>CHM247H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Intro Organic Chem II</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF1</font></td><td align=LEFT><font size =-1>ES 1050 </font></td><td align=LEFT><font size =-1>Nitz/Morra</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M4</font></td><td align=LEFT><font size =-1>ES 1050 </font></td><td align=LEFT><font size =-1>Nitz/Morra</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>TR4</font></td><td align=LEFT><font size =-1>MS 2158 </font></td><td align=LEFT><font size =-1>Nitz/Morra</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T8:30-12 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0202</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T8:30-12 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W8:30-12 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0302</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W8:30-12 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R8:30-12 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0402</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R8:30-12 (A)</font></td><td align=LEFT><font size =-1>LM 217 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM249H1>CHM249H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Organic Chemistry</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>M1</font></td><td align=LEFT><font size =-1>LM 158 </font></td><td align=LEFT><font size =-1>Yudin/Dicks</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=4><font size =-1><a href=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm249h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>TR3</font></td><td align=LEFT><font size =-1>LM 158 </font></td><td align=LEFT><font size =-1>Yudin/Dicks</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T8:30-1</font></td><td align=LEFT><font size =-1>LM 113 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F8:30-1</font></td><td align=LEFT><font size =-1>LM 113 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM299Y1>CHM299Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Rsch Opportunity Prg</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>I. Csizmadia</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=6><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>A. Dhirani</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0301</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R. Kluger</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0401</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>D. McIntosh</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0501</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>D. Stephan</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0601</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>M. Thompson</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM310H1>CHM310H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Envir Chemistry</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR4</font></td><td align=LEFT><font size =-1>LM 161 </font></td><td align=LEFT><font size =-1>J. Abbatt</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM317H1>CHM317H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Intro Instr Analysis</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>MW2</font></td><td align=LEFT><font size =-1>LM 158 </font></td><td align=LEFT><font size =-1>A. Wheeler</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=3><font size =-1><a href=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm317h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T9-1</font></td><td align=LEFT><font size =-1>LM 6 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W9-1</font></td><td align=LEFT><font size =-1>LM 6 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM325H1>CHM325H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Materials Chem</font></td><td align=LEFT><font size =-1>L2001</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R5-7</font></td><td align=LEFT><font size =-1>LM 158 </font></td><td align=LEFT><font size =-1>Kumacheva/Ozin</font></td>
+  <td><font size =-1>R</font></td><td valign=middle align=LEFT><font size =-1><a href="/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm325h1.html">See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R5-7</font></td><td align=LEFT><font size =-1>LM 158 </font></td><td align=LEFT><font size =-1>Ozin/Winnik</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM326H1>CHM326H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Intro Quan Mech Spec</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR3</font></td><td align=LEFT><font size =-1>LM 157 </font></td><td align=LEFT><font size =-1>R. Kapral</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM327H1>CHM327H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Phys Chem Lab</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W2</font></td><td align=LEFT><font size =-1>LM 123 </font></td><td align=LEFT><font size =-1>M. Goh</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm327h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>F9-1</font></td><td align=LEFT><font size =-1>LM 206 </font></td><td align=LEFT><font size =-1>M. Goh</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM328H1>CHM328H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Modern Physical Chem</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR3</font></td><td align=LEFT><font size =-1>LM 157 </font></td><td align=LEFT><font size =-1>A. Dhirani</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM338H1>CHM338H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Intermed Inorg Chem</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>MW3</font></td><td align=LEFT><font size =-1>LM 155 </font></td><td align=LEFT><font size =-1>D. Stephan</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=3><font size =-1><a href=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm338h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R8:45-1</font></td><td align=LEFT><font size =-1>LM 211 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F8:45-1</font></td><td align=LEFT><font size =-1>LM 211 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM342H1>CHM342H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Organic Synthesis</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW1</font></td><td align=LEFT><font size =-1>LM 158 </font></td><td align=LEFT><font size =-1>M. Taylor</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm342h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM343H1>CHM343H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Organic Laboratory</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>MW4</font></td><td align=LEFT><font size =-1>LM 158 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=3><font size =-1><a href=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm343h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M8:30-1</font></td><td align=LEFT><font size =-1>LM 113 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T8:30-1</font></td><td align=LEFT><font size =-1>LM 113 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM347H1>CHM347H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Org Chem Biol Compds</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWR4</font></td><td align=LEFT><font size =-1>LM 159 </font></td><td align=LEFT><font size =-1>J. Chin</font></td><td>&nbsp;</td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM348H1>CHM348H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Organic Reaction Mec</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TR2</font></td><td align=LEFT><font size =-1>LM 158 </font></td><td align=LEFT><font size =-1>R. Kluger</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=3><font size =-1><a href=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm348h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M8:30-1</font></td><td align=LEFT><font size =-1>LM 113 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T8:30-1</font></td><td align=LEFT><font size =-1>LM 113 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM379H1>CHM379H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Biomolec Chem</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TR2</font></td><td align=LEFT><font size =-1>LM 157 </font></td><td align=LEFT><font size =-1>Woolley/Zamble</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm379h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>F9-1</font></td><td align=LEFT><font size =-1>LM 6 </font></td><td align=LEFT><font size =-1>Woolley/Zamble</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM410H1>CHM410H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Analyt Environ Chem</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR4</font></td><td align=LEFT><font size =-1>LM 155 </font></td><td align=LEFT><font size =-1>J. D'Eon</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2001</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR4</font></td><td align=LEFT><font size =-1>LM 155 </font></td><td align=LEFT><font size =-1>J. D'Eon</font></td>
+  <td><font size =-1>R</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm410h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F9-12:30</font></td><td align=LEFT><font size =-1>LM 9 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F1:15-4:45</font></td><td align=LEFT><font size =-1>LM 9 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P2001</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F1:15-4:45</font></td><td align=LEFT><font size =-1>LM 9 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM414H1>CHM414H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Bio & Chem Sensors</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW3</font></td><td align=LEFT><font size =-1>LM 158 </font></td><td align=LEFT><font size =-1>M. Thompson</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM415H1>CHM415H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Atmospheric Chem</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR9</font></td><td align=LEFT><font size =-1>LM 123 </font></td><td align=LEFT><font size =-1>J. Abbatt</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM416H1>CHM416H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Separation Science</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR3</font></td><td align=LEFT><font size =-1>LM 155 </font></td><td align=LEFT><font size =-1>M. Thompson</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM417H1>CHM417H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Lab Instrumentation</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T1-3</font></td><td align=LEFT><font size =-1>LM 155 </font></td><td align=LEFT><font size =-1>A. Wheeler</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm417h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM423H1>CHM423H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Appl Quant Mech</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M4-6</font></td><td align=LEFT><font size =-1>LM 157 </font></td><td align=LEFT><font size =-1>P. Brumer</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM426H1>CHM426H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Polymer Chemistry</font></td><td align=LEFT><font size =-1>L2001</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T5-7</font></td><td align=LEFT><font size =-1>LM 158 </font></td><td align=LEFT><font size =-1>Winnik/Kumacheva</font></td>
+  <td><font size =-1>R</font></td><td valign=middle align=LEFT><font size ="-1"><a href="/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm426h1.html">See Details</a></font><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T5-7</font></td><td align=LEFT><font size =-1>LM 158 </font></td><td align=LEFT><font size =-1>Winnik/Kumacheva</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM427H1>CHM427H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Statist Mechanics</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R4-6</font></td><td align=LEFT><font size =-1>LM 155 </font></td><td align=LEFT><font size =-1>J. Schofield</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM432H1>CHM432H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Orgmet & Catalysis</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR11</font></td><td align=LEFT><font size =-1>LM 157 </font></td><td align=LEFT><font size =-1>D. Song</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM434H1>CHM434H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Adv Materials Chem</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R4-6</font></td><td align=LEFT><font size =-1>LM 161 </font></td><td align=LEFT><font size =-1>G. Ozin</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2001</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R4-6</font></td><td align=LEFT><font size =-1>LM 161 </font></td><td align=LEFT><font size =-1>G. Ozin</font></td>
+  <td><font size =-1>R</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm434h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM437H1>CHM437H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Bio Inorganic Chem</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR4</font></td><td align=LEFT><font size =-1>LM 157 </font></td><td align=LEFT><font size =-1>D. Zamble</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM440H1>CHM440H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Synth Phrmct Agents</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR3</font></td><td align=LEFT><font size =-1>LM 158 </font></td><td align=LEFT><font size =-1>N. Morra</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM441H1>CHM441H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Org Spectr Analysis</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR9</font></td><td align=LEFT><font size =-1>LM 158 </font></td><td align=LEFT><font size =-1>Browning/Morra</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W9-1</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Browning/Morra</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM443H1>CHM443H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Phys Organic Chem</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW4</font></td><td align=LEFT><font size =-1>LM 155 </font></td><td align=LEFT><font size =-1>A. Dicks</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM446H1>CHM446H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Org Mat Chem</font></td><td align=LEFT><font size =-1>L2001</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W5-7</font></td><td align=LEFT><font size =-1>LM 158 </font></td><td align=LEFT><font size =-1>D. Seferos</font></td>
+  <td><font size =-1>R</font></td><td valign=middle align=LEFT><font size =-1><a href="/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/chm_chm446h1.html">See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W5-7</font></td><td align=LEFT><font size =-1>LM 158 </font></td><td align=LEFT><font size =-1>D. Seferos</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM447H1>CHM447H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Bio-Organic Chem</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR10</font></td>
+<td align=LEFT><font size =-1><strong>LM 157<br />
+  (note; room change)
+</strong></font></td><td align=LEFT><font size =-1>G. Woolley</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM479H1>CHM479H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Biol Chem</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR11</font></td><td align=LEFT><font size =-1>LM 158 </font></td><td align=LEFT><font size =-1>M. Nitz</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_chm.htm#CHM499Y1>CHM499Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Intro Chem Research</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_jxx.htm#JSC301H1>JSC301H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Science Education</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW3</font></td><td align=LEFT><font size =-1>LM 155 </font></td><td align=LEFT><font size =-1>D. Stone</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+</table></center>
+<p>
+<hr>
+<center>
+<font size=-1>Return to: [ <a href="/web/20131028044022/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/sponsors.htm">Course Listings</a> |  <a href="/web/20131028044022/http://www.artsci.utoronto.ca/current/course/timetable">A & S 2013-2014 Fall/Winter Session Timetable: Contents</a>]</font>
+</center>
+<p><center>
+<TABLE BORDER=1 WIDTH=433 cellpadding=5>
+<tr>
+<td width="415" cellpadding="30"><i>Faculty of Arts and Science, University of Toronto</i><br>
+  Please send enquiries or comments to:
+  <A HREF="mailto:ask@artsci.utoronto.ca">ask@artsci.utoronto.ca</A>
+  <br />
+  Updated: September 4, 2013<br>On-line date: August 19, 2013 (including all changes since March 28, 2013 version)
+  
+  
+  
+</td></tr>
+</table>
+</div>
+</div id="footer">
+<p>
+<font size="-1">All contents copyright & copy  2013.  &nbsp;</b>University of Toronto. All rights reserved.</center>
+<p>
+</div>
+
+</div>
+</body>
+</html>
+</body></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 4:40:22 Oct 28, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:23:42 Jun 20, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

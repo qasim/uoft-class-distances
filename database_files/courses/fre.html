@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<HEAD>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<meta http=equiv="Content-Type" content="text.html;charset=utf-8" />
+<meta name="description" content="" />
+
+    <title>Arts & Science 2013-2014 Fall/Winter Session Timetable for: French  [FRE courses - includes FCS, FSL  and JFL478H1]</title>
+
+   <link rel="stylesheet" href="/web/20131013145036cs_/http://www.artsandscience.utoronto.ca/testdir/cal/c/c01.css"  type="text/css" media="all" />
+
+</HEAD>
+
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app17.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1420070399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/www.artsandscience.utoronto.ca\/ofr\/timetable\/winter\/fre.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 475;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "13";
+var displayMonth = "Oct";
+var displayYear = "2013";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20131013145036" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20130729064530/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="29 Jul 2013"><strong>JUL</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 14:50:36 Oct 13, 2013">OCT</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20131113193214/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="13 Nov 2013"><strong>NOV</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20130729064530/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre.html" title="6:45:30 Jul 29, 2013" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 14:50:36 Oct 13, 2013">13</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20131113193214/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre.html" title="19:32:14 Nov 13, 2013" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20120911164808/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="11 Sep 2012"><strong>2012</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 14:50:36 Oct 13, 2013">2013</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2014
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20131013145036*/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>116 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">26 Jan 00 - 13 Nov 13</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:475px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:475px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="475"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=475_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:101000000001_2001:-1:000101010101_2002:-1:010001010101_2003:-1:010100010101_2004:-1:010101010000_2005:-1:000100010000_2006:-1:000000000000_2007:-1:000000010000_2008:-1:000000efb000_2009:-1:011111111110_2010:-1:110111111100_2011:-1:000000112111_2012:-1:100000011010_2013:9:000001100110_2014:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="wrapper">
+   <div id="header"></div>
+   <div id="banner"></div> 
+   <div id="content">
+
+<center> <h2><font color="#608568">French  [FRE courses - includes FCS, FSL  and JFL478H1]</h2></CENTER></font>
+
+
+<p><hr>
+The following timetable information is the most current information available.  Courses and meeting sections added will be listed below. Courses and meeting sections cancelled will be indicated as such. 
+
+<hr><br>
+<p>Students may only register in the course(s) for which they have the stated prerequisites. </p>
+<p>The Department reserves the right to place students in the language course appropriate to their level of linguistic competence, based on the results of a placement test. Since 100, 200, 300 and 400-level FSL courses correspond to levels of competence in French, students may be recommended to take a course at a level higher than his/her year of study. The placements, available at <a href="/web/20131013145036/http://www.lang.utoronto.ca/placement/french/">www.lang.utoronto.ca/placement/french</a> is mandatory for all students who wish to register in an FRE or FSL course for the first time (except true beginners who have no knowledge of French). The placement test can be take only ONCE and the results of the first test will prevail in the event of several attempts. Ideally, the placement test should be taken in the preceding term of the course students intend to register in, (e.g. for a Fall term or Y course, students should take the placement test in the summer term, prior to their registration date on <a href="/web/20131013145036/http://www.rosi.utoronto.ca/">SWS </a> and before the beginning of classes). Students not having access to a computer capable of managing sound files should write to <a href="mailto:french.placement@utoronto.ca">french.placement@utoronto.ca</a> to arrange to take the test at the Department of French.</p>
+<p><b>For FRE240H1:</b> students must register in each of the following for a total of 4 hours per week: 1 two-hour lecture (L0101) and one two-hour tutorial (T0101, T0102, T0201, T0202). </p>
+
+<p><b>For FRE272H1: </b>students must register in each of the following for a total of 3 hours per week: 1 two-hour lecture (L0101) and one tutorial (T0101, T0201, T0301 or T0401). </p>
+<p><b>For FRE274H1: </b>students must register in each of the following for a total of 3 hours per week: 1 two-hour lecture (L5101) and one tutorial (T0101, T0201). </p>
+<p><b>For 'E' indicator courses:</b> Applicants must complete the Ballot for Admission and the Description of Project Form, available at <a href="/web/20131013145036/http://www.french.utoronto.ca/courses/145">www.french.utoronto.ca/courses/145</a> and return them, duly signed by their supervisor, to Linda Lamisong, room 226, Odette Hall. An electronic version of the application must be forwarded to <a href="mailto:french.undergraduate@utoronto.ca">french.undergraduate@utoronto.ca</a>. The deadlines are as follows: August 30, 2013 for 'F' and 'Y' courses; December 6, 2013 for 'S' courses; April 7, 2014 for the 2014 summer session.</p>
+<hr><center>
+<b><a href="/web/20131013145036/http://www.artsci.utoronto.ca/current/course/timetable/1314_fw/codes-used-in-the-timetable-listings">Explanation on codes and Enrolment Indicators</a></b>
+</center>
+<p><center>
+<table border=1>
+<tr><TD ALIGN="CENTER" colspan="10"><font color=#608568><B>French  [FRE courses - includes FCS, FSL  and JFL478H1]</B><br></font></TD></tr>
+<tr>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Course</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>SC</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Title<br><i>(subtitle)</i></b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Meeting<br>Section</b></FONT></TD>
+<TD VALIGN="CENTER" ROWSPAN="2"><FONT COLOR=#608568><b>Wait<br>List</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Time</b></font></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Location</b></font></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Instructor</b></font></TD>
+<TD COLSPAN="2"><FONT COLOR=#608568><b>Enrolment</b></font></TD>
+</tr>
+<tr>
+<TD VALIGN="LEFT"><FONT COLOR=#608568><b>Ind</b></font></TD>
+<TD VALIGN="LEFT"><FONT COLOR=#608568><b>Controls</b></font></TD>
+</tr>
+<br>
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fcs.htm#FCS195H1>FCS195H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Napoleon to Asterix</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>F10-12</font></td><td align=LEFT><font size =-1>AH 100 </font></td><td align=LEFT><font size =-1>F. Langevin</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fcs.htm#FCS290H1>FCS290H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>FCS Special Topics I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W10-12</font></td><td align=LEFT><font size =-1>IN 312 </font></td><td align=LEFT><font size =-1>K. Singh</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fcs.htm#FCS292H1>FCS292H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>FCS Special Topics I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R1-3</font></td><td align=LEFT><font size =-1>CR 403 </font></td><td align=LEFT><font size =-1>M. Visoi</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fcs.htm#FCS392H1>FCS392H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>FCS Special Topics II</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>F11-1</font></td><td align=LEFT><font size =-1>CR 403 </font></td><td align=LEFT><font size =-1>A. Tcheuyap</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE210H1>FRE210H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Intro Quebec Lit</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>F10-1</font></td><td align=LEFT><font size =-1>NF 119 </font></td><td align=LEFT><font size =-1>F. Langevin</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre_fre210h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE240H1>FRE240H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Intro Lit Analysis</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R2-4</font></td><td align=LEFT><font size =-1>AH 400 </font></td><td align=LEFT><font size =-1>C. Denoyelle</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=5><font size =-1><a href=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre_fre240h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R4-6</font></td><td align=LEFT><font size =-1>TF 202 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0102</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R4-6</font></td><td align=LEFT><font size =-1>TF 200 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F10-12</font></td><td align=LEFT><font size =-1>TF 202 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0202</font></td>
+  <td colspan="5"><div align="center"><font size ="-1" color="red">Cancel</font><font size =-1></font></div></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE241H1>FRE241H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Intro Res&Writing Lt</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M5-8</font></td><td align=LEFT><font size =-1>NF 113 </font></td><td align=LEFT><font size =-1>A. Motsch</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=3><font size =-1><a href=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre_fre241h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE250H1>FRE250H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Fr. Lit:Fm Beg to 21stC</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T2-5</font></td><td align=LEFT><font size =-1>CR 403 </font></td><td align=LEFT><font size =-1>C. Denoyelle</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre_fre250h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE272H1>FRE272H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Stru of Modern Fre</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M1-3</font></td><td align=LEFT><font size =-1>AH 400 </font></td><td align=LEFT><font size =-1>P. Bhatt</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=5><font size =-1><a href=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre_fre272h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W1</font></td><td align=LEFT><font size =-1>TF 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W2</font></td><td align=LEFT><font size =-1>TF 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R12</font></td><td align=LEFT><font size =-1>TF 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R1</font></td><td align=LEFT><font size =-1>TF 102 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE273H1>FRE273H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Hist of French Lang</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M1-4</font></td><td align=LEFT><font size =-1>AH 400 </font></td><td align=LEFT><font size =-1>D. Kullmann</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre_fre273h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE274H1>FRE274H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Intro Ling Analys Fr</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T5-7</font></td><td align=LEFT><font size =-1>CR 103 </font></td><td align=LEFT><font size =-1>A. Villeneuve</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=3><font size =-1><a href=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre_fre274h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R3</font></td><td align=LEFT><font size =-1>TF 200 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R4</font></td><td align=LEFT><font size =-1>TF 200 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE299Y1>FRE299Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Rsch Opportunity Prg</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>A. Motsch</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE304H1>FRE304H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Contemp Fr Women's Prose</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W2-4</font></td><td align=LEFT><font size =-1>NF 006 </font></td><td align=LEFT><font size =-1>F. Langevin</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE308H1>FRE308H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Reading, Writing & Pub</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T10-12</font></td><td align=LEFT><font size =-1>CR 103 </font></td><td align=LEFT><font size =-1>Y. Portebois</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE310H1>FRE310H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Text & Other Media</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W10-12</font></td><td align=LEFT><font size =-1>NF 004 </font></td><td align=LEFT><font size =-1>J. Leblanc</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE314H1>FRE314H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Que & Fr Can Lit</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W2-4</font></td><td align=LEFT><font size =-1>NF 007 </font></td><td align=LEFT><font size =-1>F. Langevin</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE318H1>FRE318H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Medieval Fr Lit</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R2-4</font></td><td align=LEFT><font size =-1>CR 103 </font></td><td align=LEFT><font size =-1>D. Kullmann</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE320H1>FRE320H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Classicism & Enlightenment</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>R2-4</font></td><td align=LEFT><font size =-1>VC 212 </font></td><td align=LEFT><font size =-1>A. Motsch</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE324H1>FRE324H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Fr.Lit: Revol & Industrial</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R10-12</font></td><td align=LEFT><font size =-1>NF 004 </font></td><td align=LEFT><font size =-1>P. Theriault</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE326H1>FRE326H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Contemporary Fr. Lit</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R10-12</font></td><td align=LEFT><font size =-1>NF 004 </font></td><td align=LEFT><font size =-1>P. Theriault</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE332H1>FRE332H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Francophone Lit</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T11-1</font></td><td align=LEFT><font size =-1>CR 403 </font></td><td align=LEFT><font size =-1>A. Tcheuyap</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE334H1>FRE334H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Francphone Cinema</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W11-1</font></td><td align=LEFT><font size =-1>NF 119 </font></td><td align=LEFT><font size =-1>A. Tcheuyap</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE344H1>FRE344H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Literary Theory</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M10-12</font></td><td align=LEFT><font size =-1>EM 108 </font></td><td align=LEFT><font size =-1>P. Theriault</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE345H1>FRE345H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Literary Genres</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R5-7</font></td><td align=LEFT><font size =-1>NF 004 </font></td><td align=LEFT><font size =-1>R. Le Huenen</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE376H1>FRE376H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Fre Phonol & Phonet</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W11-1</font></td><td align=LEFT><font size =-1>CR 403 </font></td><td align=LEFT><font size =-1>P. Bhatt</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE378H1>FRE378H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>French Syntax</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M10-12</font></td><td align=LEFT><font size =-1>CR 103 </font></td><td align=LEFT><font size =-1>P. Bessler</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE379H1>FRE379H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Sociolinguistics</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R10-12</font></td><td align=LEFT><font size =-1>CR 103 </font></td><td align=LEFT><font size =-1>A. Villeneuve</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE383H1>FRE383H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Quant Meth French</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M2-4</font></td>
+<td align=LEFT><font size =-1><strong>CR 405<br />
+  (note; room change)
+</strong></font></td><td align=LEFT><font size =-1>J. Steele</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE384H1>FRE384H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Teaching Fsl</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T12-2</font></td><td align=LEFT><font size =-1>CR 103 </font></td><td align=LEFT><font size =-1>D. Issa-Sayegh</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre_fre384h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE386H1>FRE386H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Fre Semantics</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R4-6</font></td><td align=LEFT><font size =-1>TF 102 </font></td><td align=LEFT><font size =-1>A. Brousseau</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE388H1>FRE388H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Bilingualism Acquisition</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R1-3</font></td><td align=LEFT><font size =-1>CR 406 </font></td><td align=LEFT><font size =-1>J. Steele</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE410H1>FRE410H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Adv Topics Quebec I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M12-2</font></td><td align=LEFT><font size =-1>VC 211 </font></td><td align=LEFT><font size =-1>J. Leblanc</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE441H1>FRE441H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Adv Top French Lit</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T6-8</font></td><td align=LEFT><font size =-1>NF 231 </font></td><td align=LEFT><font size =-1>A. Motsch</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE443H1>FRE443H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Adv Top Authors</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T6-8</font></td><td align=LEFT><font size =-1>NF 007 </font></td><td align=LEFT><font size =-1>R. Le Huenen</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE471H1>FRE471H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Medieval French Lang</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R2-4</font></td><td align=LEFT><font size =-1>AH 206 </font></td><td align=LEFT><font size =-1>D. Kullmann</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE483H1>FRE483H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Teach Fr in Context</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T10-12</font></td><td align=LEFT><font size =-1>CR 103 </font></td><td align=LEFT><font size =-1>D. Issa-Sayegh</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre_fre483h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE485H1>FRE485H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Young People's Lit</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T2-4</font></td><td align=LEFT><font size =-1>AH 204 </font></td><td align=LEFT><font size =-1>D. Issa-Sayegh</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre_fre485h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE487H1>FRE487H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Adv Bilingualism L2A</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M2-4</font></td><td align=LEFT><font size =-1>CR 107 </font></td><td align=LEFT><font size =-1>J. Steele</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE488H1>FRE488H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Adv Linguistics I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M10-12</font></td><td align=LEFT><font size =-1>TF 102 </font></td><td align=LEFT><font size =-1>A. Villeneuve</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE490Y1>FRE490Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Senior Essay</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE491H1>FRE491H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Independent Study</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=3><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE491H1>FRE491H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Independent Study</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE491H1>FRE491H1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Independent Study</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE492H1>FRE492H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Independent Study</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=3><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE492H1>FRE492H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Independent Study</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fre.htm#FRE492H1>FRE492H1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Independent Study</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fsl.htm#FSL100H1>FSL100H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>French for Beginners I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW9-11</font></td><td align=LEFT><font size =-1>SS 2110 </font></td><td align=LEFT><font size =-1>J. Copley</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=3><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW6-8</font></td><td align=LEFT><font size =-1>AH 107 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fsl.htm#FSL100H1>FSL100H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>French for Beginners I</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW6-8</font></td><td align=LEFT><font size =-1>AH 107 </font></td><td align=LEFT><font size =-1>I. Huberman</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fsl.htm#FSL102H1>FSL102H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Introd French</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T10-12</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>G. Benson</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=4><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R10-12</font></td><td align=LEFT><font size =-1>HI -CART </font></td><td align=LEFT><font size =-1>G. Benson</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW6-8</font></td><td align=LEFT><font size =-1>UC 144 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR6-8</font></td><td align=LEFT><font size =-1>CR 405 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fsl.htm#FSL121Y1>FSL121Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>French Lang I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW10-12</font></td><td align=LEFT><font size =-1>HI -CART </font></td><td align=LEFT><font size =-1>Cote/Singh</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=3><font size =-1><a href=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre_fsl121y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR10-12</font></td><td align=LEFT><font size =-1>TF 101 </font></td><td align=LEFT><font size =-1>Shapiro/Blanchard</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR6-8</font></td><td align=LEFT><font size =-1>CR 403 </font></td><td align=LEFT><font size =-1>Robinson/Rao</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fsl.htm#FSL221Y1>FSL221Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>French Lang II</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M11</font></td><td align=LEFT><font size =-1>TF 202 </font></td><td align=LEFT><font size =-1>S. Sacre</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=18><font size =-1><a href=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre_fsl221y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W11-1</font></td>
+<td align=LEFT><font size =-1><strong>TF 201 (fall)<br />
+  TF202 (spring)<br />
+   (note: room change)
+</strong></font></td><td align=LEFT><font size =-1>S. Sacre</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M2</font></td><td align=LEFT><font size =-1>UC 52 </font></td><td align=LEFT><font size =-1>Larcher/Carroll</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W2-4</font></td><td align=LEFT><font size =-1>UC 52 </font></td><td align=LEFT><font size =-1>Larcher/Carroll</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0301</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T9-11</font></td><td align=LEFT><font size =-1>NF 006 </font></td><td align=LEFT><font size =-1>Manuele/Brassard</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R9</font></td><td align=LEFT><font size =-1>NF 006 </font></td><td align=LEFT><font size =-1>Manuele/Brassard</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0401</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T11-1</font></td><td align=LEFT><font size =-1>TF 202 </font></td><td align=LEFT><font size =-1>Brock/Chevrette</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R11</font></td><td align=LEFT><font size =-1>TF 202 </font></td><td align=LEFT><font size =-1>Brock/Chevrette</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0501</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T4</font></td><td align=LEFT><font size =-1>UC 52 </font></td><td align=LEFT><font size =-1>Pascal/Bonnotte</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R4-6</font></td><td align=LEFT><font size =-1>UC 52 </font></td><td align=LEFT><font size =-1>Pascal/Bonnotte</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0601</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W11</font></td><td align=LEFT><font size =-1>CR 103 </font></td><td align=LEFT><font size =-1>Savard-Corbeil/Bourque</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>F11-1</font></td><td align=LEFT><font size =-1>CR 103 </font></td><td align=LEFT><font size =-1>Savard-Corbeil/Bourque</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0701</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W1-3</font></td><td align=LEFT><font size =-1>LA 248 </font></td><td align=LEFT><font size =-1>Semaan/Nouemsinjike</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>F1</font></td><td align=LEFT><font size =-1>LA 248 </font></td><td align=LEFT><font size =-1>Semaan/Nouemsinjike</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M6-8</font></td><td align=LEFT><font size =-1>CR 103 </font></td><td align=LEFT><font size =-1>S. Sacre</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W6</font></td><td align=LEFT><font size =-1>CR 103 </font></td><td align=LEFT><font size =-1>S. Sacre</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T5-7</font></td><td align=LEFT><font size =-1>UC 87 </font></td><td align=LEFT><font size =-1>Xuereb/Elliott</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R5</font></td><td align=LEFT><font size =-1>UC 87 </font></td><td align=LEFT><font size =-1>Xuereb/Elliott</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fsl.htm#FSL271H1>FSL271H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Fre Grammar Reason</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M5-8</font></td><td align=LEFT><font size =-1>CR 403 </font></td><td align=LEFT><font size =-1>Y. Portebois</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fsl.htm#FSL321Y1>FSL321Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Fre Lang III</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M10-12</font></td><td align=LEFT><font size =-1>UC 256 </font></td><td align=LEFT><font size =-1>F. Langevin</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=15><font size =-1><a href=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre_fsl321y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W10</font></td><td align=LEFT><font size =-1>UC 256 </font></td><td align=LEFT><font size =-1>F. Langevin</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M11</font></td><td align=LEFT><font size =-1>TF 200 </font></td><td align=LEFT><font size =-1>G. Paray-Clarke</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W11-1</font></td><td align=LEFT><font size =-1>TF 200 </font></td><td align=LEFT><font size =-1>G. Paray-Clarke</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0301</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T10-12</font></td><td align=LEFT><font size =-1>VC 206 </font></td><td align=LEFT><font size =-1>Motsch/Sacre</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R10</font></td><td align=LEFT><font size =-1>VC 206 </font></td><td align=LEFT><font size =-1>Motsch/Sacre</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0401</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T12-2</font></td><td align=LEFT><font size =-1>TF 200 </font></td><td align=LEFT><font size =-1>P. Bessler</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R12</font></td><td align=LEFT><font size =-1>TF 200 </font></td><td align=LEFT><font size =-1>P. Bessler</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0501</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T3-5</font></td>
+<td align=LEFT><font size =-1>TF 201 (Fall)<br />
+  TF 203 (Winter)
+</font></td><td align=LEFT><font size =-1>Theriault/Bessler</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R3</font></td><td align=LEFT><font size =-1>TF 201  (Fall)<br />
+TF 202 (Winter) </font></td><td align=LEFT><font size =-1>Theriault/Bessler</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0601</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M3-5</font></td><td align=LEFT><font size =-1>CR 103 </font></td><td align=LEFT><font size =-1>G. Paray-Clarke</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W3</font></td><td align=LEFT><font size =-1>CR 103 </font></td><td align=LEFT><font size =-1>G. Paray-Clarke</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T5-7</font></td><td align=LEFT><font size =-1>TF 201 </font></td><td align=LEFT><font size =-1>Inch/Begin-Marchand</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R5</font></td><td align=LEFT><font size =-1>TF 201 </font></td><td align=LEFT><font size =-1>Inch/Begin-Marchand</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R5-8</font></td><td align=LEFT><font size =-1>VC 206 </font></td><td align=LEFT><font size =-1>Saddul/Kalisa</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fsl.htm#FSL375Y1>FSL375Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Compar Stylistics</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M1-3</font></td><td align=LEFT><font size =-1>AH 107 </font></td><td align=LEFT><font size =-1>S. Sacre</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fsl.htm#FSL421Y1>FSL421Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Fre Lang IV</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M10</font></td><td align=LEFT><font size =-1>OI 2295 </font></td><td align=LEFT><font size =-1>M. Visoi</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=10><font size =-1><a href=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/fre_fsl421y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W10-12</font></td><td align=LEFT><font size =-1>OI 2295 </font></td><td align=LEFT><font size =-1>M. Visoi</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M2-4</font></td><td align=LEFT><font size =-1>TF 101 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W2</font></td><td align=LEFT><font size =-1>TF 101 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0301</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T10</font></td><td align=LEFT><font size =-1>UC 85 </font></td><td align=LEFT><font size =-1>Viselli/Spavin</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R10-12</font></td><td align=LEFT><font size =-1>UC 85 </font></td><td align=LEFT><font size =-1>Viselli/Spavin</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0401</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T4-6</font></td><td align=LEFT><font size =-1>CR 406 </font></td><td align=LEFT><font size =-1>Michelucci/Lefort-Favreau</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R4</font></td><td align=LEFT><font size =-1>CR 406 </font></td><td align=LEFT><font size =-1>Michelucci/Lefort-Favreau</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T5</font></td><td align=LEFT><font size =-1>AH 107 </font></td><td align=LEFT><font size =-1>Denoyelle/Letourneux</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R5-7</font></td><td align=LEFT><font size =-1>AH 107 </font></td><td align=LEFT><font size =-1>Denoyelle/Letourneux</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_fsl.htm#FSL442H1>FSL442H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Fr Lang V: Written FR</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T11-1</font></td><td align=LEFT><font size =-1>AH 204 </font></td><td align=LEFT><font size =-1>A. Tcheuyap</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R11</font></td><td align=LEFT><font size =-1>AH 204 </font></td><td align=LEFT><font size =-1>A. Tcheuyap</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_jxx.htm#JFL478H1>JFL478H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Issues in Fre & Ling II</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R10-12</font></td><td align=LEFT><font size =-1>AH 107 </font></td><td align=LEFT><font size =-1>A. Villeneuve</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_jxx.htm#JFL478H1>JFL478H1</a></font></td><td><font size =-1>S</font></td><td align=LEFT><font size =-1>Issues in Fre & Ling II</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+</table></center>
+<p>
+<hr>
+<center>
+<font size=-1>Return to: [ <a href="/web/20131013145036/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/sponsors.htm">Course Listings</a> |  <a href="/web/20131013145036/http://www.artsci.utoronto.ca/current/course/timetable">A & S 2013-2014 Fall/Winter Session Timetable: Contents</a>]</font>
+</center>
+<p><center>
+<TABLE BORDER=1 WIDTH=428 cellpadding=5>
+<tr><td width="82" align=center><a href="/web/20131013145036/http://www.artsci.utoronto.ca/current/undergraduate">
+<img src="/web/20131013145036im_/http://www.artsandscience.utoronto.ca/ofr/gifs/tiny_ofr.gif" alt=""></a></td>
+<td width="314" cellpadding="30"><i>Faculty of Arts and Science, University of Toronto</i><br>
+Please send enquiries or comments to:
+<A HREF="mailto:ask@artsci.utoronto.ca">ask@artsci.utoronto.ca</A>
+<br />
+Updated: October 1st, 2013<br>On-line date: August 19, 2013 (including all changes since March 28, 2013 version)
+
+
+
+</td></tr>
+</table>
+</div>
+</div id="footer">
+<p>
+<font size="-1">All contents copyright & copy  2013.  &nbsp;</b>University of Toronto. All rights reserved.</center>
+<p>
+</div>
+
+</div>
+</body>
+</html>
+</body></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 14:50:36 Oct 13, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:24:32 Jun 20, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

@@ -1,0 +1,700 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<HEAD>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<meta http=equiv="Content-Type" content="text.html;charset=utf-8" />
+<meta name="description" content="" />
+
+    <title>Arts & Science 2013-2014 Fall/Winter Session Timetable for: New College Courses [NEW courses - includes ELL, IFP, JHN323H1, JLN327H1, JNH350H1 and JQR360H1]</title>
+
+   <link rel="stylesheet" href="/web/20130912001634cs_/http://www.artsandscience.utoronto.ca/testdir/cal/c/c01.css"  type="text/css" media="all" />
+
+</HEAD>
+
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app1.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1420070399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/www.artsandscience.utoronto.ca\/ofr\/timetable\/winter\/new.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 475;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "12";
+var displayMonth = "Sep";
+var displayYear = "2013";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20130912001634" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20130710051830/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="10 Jul 2013"><strong>JUL</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 0:16:34 Sep 12, 2013">SEP</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       Oct
+                       
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20130812012543/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new.html" title="1:25:43 Aug 12, 2013" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 0:16:34 Sep 12, 2013">12</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+                       
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20120824063249/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Aug 2012"><strong>2012</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 0:16:34 Sep 12, 2013">2013</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2014
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20130912001634*/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>106 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">25 Jan 00 - 12 Sep 13</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:475px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:475px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="475"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=475_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:101001000101_2001:-1:000101010000_2002:-1:010001000101_2003:-1:000101010101_2004:-1:010101011000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000fe9101_2009:-1:000001111111_2010:-1:000000100001_2011:-1:010011111000_2012:-1:000001111010_2013:8:100110111000_2014:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="wrapper">
+   <div id="header"></div>
+   <div id="banner"></div> 
+   <div id="content">
+
+<center> <h2><font color="#608568">New College Courses [NEW courses - includes ELL, IFP, JHN323H1, JLN327H1, JNH350H1 and JQR360H1]</h2></CENTER></font>
+
+
+<p><hr>
+The following timetable information is the most current information available.  Courses and meeting sections added will be listed below. Courses and meeting sections cancelled will be indicated as such. 
+
+<hr><br>
+<p><b>For ELL010H1: </b> the course will be offered August 21 to 30, consult the English Language Learning website for details on the course information and schedule of classes, <a href="/web/20130912001634/http://www.artsci.utoronto.ca/current/advising/ell">www.artsci.utoronto.ca/current/advising/ell</a>.</p><hr>
+<p><b>For IFP: consult the International Foundation Program website for informtion, <a href="/web/20130912001634/http://www.ifp.utoronto.ca/">www.ifp.utoronto.ca/</a><hrr>
+<p><b>For NEW 'PE' and 'E' indicator courses: </b> see the Program Secretary, Room 133, 300 Huron Street, Monday to Friday, 9:00 a.m. to 1:00 p.m. and 2:00 to 4:30 p.m. </p>
+<hr><center>
+<b><a href="/web/20130912001634/http://www.artsci.utoronto.ca/current/course/timetable/1314_fw/codes-used-in-the-timetable-listings">Explanation on codes and Enrolment Indicators</a></b>
+</center>
+<p><center>
+<table border=1>
+<tr><TD ALIGN="CENTER" colspan="10"><font color=#608568><B>New College Courses [NEW courses - includes ELL, IFP, JHN323H1, JLN327H1, JNH350H1 and JQR360H1]</B><br></font></TD></tr>
+<tr>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Course</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>SC</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Title<br><i>(subtitle)</i></b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Meeting<br>Section</b></FONT></TD>
+<TD VALIGN="CENTER" ROWSPAN="2"><FONT COLOR=#608568><b>Wait<br>List</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Time</b></font></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Location</b></font></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Instructor</b></font></TD>
+<TD COLSPAN="2"><FONT COLOR=#608568><b>Enrolment</b></font></TD>
+</tr>
+<tr>
+<TD VALIGN="LEFT"><FONT COLOR=#608568><b>Ind</b></font></TD>
+<TD VALIGN="LEFT"><FONT COLOR=#608568><b>Controls</b></font></TD>
+</tr>
+<br>
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_ell.htm#ELL010H1>ELL010H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Intensive Academic English</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MTWRF10-1</font></td><td align=LEFT><font size =-1>SS 2135 </font></td><td align=LEFT><font size =-1>L. Freedman</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_ell010h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_ifp.htm#IFP010Y1>IFP010Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Academic Skills Development</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>MT10-1</font></td><td align=LEFT><font size =-1>WE 54 E</font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=9><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_ifp010y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0102</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>MT10-1</font></td><td align=LEFT><font size =-1>WE 54 G</font></td><td align=LEFT><font size =-1>A. Samlalsingh</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0103</font></td>
+  <td colspan="5"><div align="center"><font size ="-1" color="red">Cancel</font></div></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td>
+  <td colspan="5"><div align="center"><font size ="-1" color="red">Cancel</font></div></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0301</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TW10-1</font></td><td align=LEFT><font size =-1>WE 54 F</font></td><td align=LEFT><font size =-1>E. Servinis</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0401</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>WR10-1</font></td><td align=LEFT><font size =-1>WE 54 E</font></td><td align=LEFT><font size =-1>S. Brown</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0501</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>WF10-1</font></td><td align=LEFT><font size =-1>WE 54 A</font></td><td align=LEFT><font size =-1>A. Samlalsingh</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0601</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>RF10-1</font></td><td align=LEFT><font size =-1>WE 54 F</font></td><td align=LEFT><font size =-1>E. Servinis</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0602</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>RF10-1</font></td><td align=LEFT><font size =-1>WE 54 D</font></td><td align=LEFT><font size =-1>Z. Toth</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_ifp.htm#IFP011H1>IFP011H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Academic Skills Development</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td>
+<td align=LEFT><font size =-1><strong>MW10-1<br />
+   (note: time change)
+</strong></font></td>
+<td align=LEFT><font size="-1"><strong>M WE 76<br />
+  W BA 2179<br />
+  (note: room change)
+</strong></font></td><td align=LEFT><font size =-1>P. Dixon</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_ifp011h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_ifp.htm#IFP011Y1>IFP011Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Academic Skills Development</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TR10-1</font></td><td align=LEFT><font size =-1>WE 54 C</font></td><td align=LEFT><font size =-1>D. Ericson</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_ifp011y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>WF10-1</font></td><td align=LEFT><font size =-1>WE 54 B</font></td><td align=LEFT><font size =-1>D. Ericson</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_ifp.htm#IFP012H1>IFP012H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Written English Discourse</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1><strong>TR10-1<br />
+  (note: time change)
+</strong></font></td>
+<td align=LEFT><font size="-1"><strong>WE 54A<br />
+   (note: room change)</strong> </font></td><td align=LEFT><font size =-1>P. Dixon</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_ifp012h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_ifp.htm#IFP012Y1>IFP012Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Written English Discourse</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TR10-1</font></td><td align=LEFT><font size =-1>WE 54 B</font></td><td align=LEFT><font size =-1>K. Anderson</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_ifp012y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>WF10-1</font></td><td align=LEFT><font size =-1>WE 74 </font></td><td align=LEFT><font size =-1>K. Anderson</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_ifp.htm#IFP013H1>IFP013H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>University Skills</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TR2-4</font></td><td align=LEFT><font size =-1>WE 54 F</font></td><td align=LEFT><font size =-1>K. Anderson</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_ifp013h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_ifp.htm#IFP013Y1>IFP013Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>University Skills</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1><strong>T2-4<br />
+  (note: time change)
+</strong></font></td><td align=LEFT><font size =-1>WE 54 D</font></td><td align=LEFT><font size =-1>P. Dixon</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=4><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_ifp013y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0102</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1><strong>R2-4<br />
+  (note: time change)
+  </strong></font></td>
+  <td align=LEFT><font size =-1><strong>WE 54 D<br />
+    (note: room change)
+  </strong></font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0102</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_ifp.htm#IFP014Y1>IFP014Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Engineering Foundations</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>M12-2</font></td><td align=LEFT><font size =-1>SS 1088 </font></td><td align=LEFT><font size =-1>S. Cohen</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_ifp014y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_ifp.htm#IFP020Y1>IFP020Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Written English Discourse</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>MT10-1</font></td><td align=LEFT><font size =-1>WE 69 </font></td>
+<td align=LEFT><font size="-1">M. Ruicci</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=11><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_ifp020y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0102</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>M10-1</font></td><td align=LEFT><font size =-1>UC 175 </font></td>
+<td align=LEFT><font size="-1">T.Seburn</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T10-1</font></td><td align=LEFT><font size =-1>AB 114 </font></td>
+<td align=LEFT><font size="-1">T. Seburn</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>MW10-1</font></td>
+  <td align=LEFT><font size =-1><strong>WE 54D<br />
+    (note: room added)
+  </strong></font></td>
+<td align=LEFT><font size="-1">J. Warden-Abrahams</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0301</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TW10-1</font></td><td align=LEFT><font size =-1>WE 51 C</font></td><td align=LEFT><font size =-1>T. Manning</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0401</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>WR10-1</font></td><td align=LEFT><font size =-1>WE 54 G</font></td>
+<td align=LEFT><font size="-1">M.Ruicci</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0501</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>WF10-1</font></td><td align=LEFT><font size =-1>WE 69 </font></td>
+<td align=LEFT><font size="-1">C. Harwood</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0601</font></td>
+  <td colspan="5"><div align="center"><font size ="-1" color="red">Cancel</font></div></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0602</font></td><td><font size =-1>N</font></td>
+  <td align=LEFT><font size =-1>R10-1</font></td>
+  <td align=LEFT><font size="-1"> <strong>OI 2281<br />
+  (note: room added)</strong></font></td>
+<td align=LEFT><font size="-1">J. Warden-Abrahams</font></td><td><font size =-1>E</font></td></tr>
+
+<tr>
+  <td align=LEFT>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td ALIGN='LEFT'>&nbsp;</td>
+  <td align=LEFT>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td><font size ="-1">F10-1</font></td>
+  <td><font size="-1"><strong>MP 118<br />
+    (note: room added)
+  </strong></font></td>
+  <td><font size="-1">J. Warden-Abrahams</font></td>
+  <td><font size ="-1">E</font></td>
+</tr>
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0603</font></td>
+  <td colspan="5"><div align="center"><font size ="-1" color="red">Cancel</font></div></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_ifp.htm#IFP030Y1>IFP030Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>University Skills</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>M10-1</font></td><td align=LEFT><font size =-1>WE 54 A</font></td>
+<td align=LEFT><font size="-1">C. Wotton</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=9><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_ifp030y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0102</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>M10-1</font></td><td align=LEFT><font size =-1>WE 54 B</font></td><td align=LEFT><font size =-1>R. Mazeika</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td>
+  <td colspan="5"><div align="center"><font size ="-1" color="red">Cancel</font></div></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0202</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>T10-1</font></td><td align=LEFT><font size =-1>WE 51 A</font></td><td align=LEFT><font size =-1>R. Mazeika</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0301</font></td>
+  <td colspan="5"><div align="center"><font size ="-1" color="red">Cancel</font></div></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0401</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>R10-1</font></td><td align=LEFT><font size =-1>WE 69 </font></td><td align=LEFT><font size =-1>C. Wotton</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0402</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>R10-1</font></td>
+  <td align=LEFT><font size =-1>LA 214 (Fall)<br />
+    LM 123 (Winter)
+  </font></td>
+  <td align=LEFT><font size="-1">R. Mazeika</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0501</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>F10-1</font></td><td align=LEFT><font size =-1>WE 54 C</font></td><td align=LEFT><font size =-1>C. Wotton</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0502</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>F10-1</font></td><td align=LEFT><font size =-1>WE 75 </font></td>
+<td align=LEFT><font size="-1">R. Mazeika</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_ifp.htm#IFP040H1>IFP040H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Critical Thinking in Eco</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>M3-5</font></td><td align=LEFT><font size =-1>WI 1017 </font></td><td align=LEFT><font size =-1>L. Shorser</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_ifp040h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W7</font></td><td align=LEFT><font size =-1>WI 1017 </font></td><td align=LEFT><font size =-1>L. Shorser</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_ifp.htm#IFP050H1>IFP050H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Intro Study of Math</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>M3-5</font></td>
+  <td align=LEFT><font size="-1"><strong>IN 204<br />
+    (note: room added)</strong> </font></td><td align=LEFT><font size =-1>S. Cohen</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_ifp050h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W7</font></td>
+  <td align=LEFT><font size="-1"><strong>IN 204<br />
+    (note: room added)
+  </strong></font></td><td align=LEFT><font size =-1>S. Cohen</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_ifp.htm#IFP060H1>IFP060H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Critically Thinking Psy</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>M3-5</font></td><td align=LEFT><font size =-1>WE 51 B</font></td><td align=LEFT><font size =-1>M. Viglas</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_ifp060h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W7</font></td><td align=LEFT><font size =-1>WE 51 B</font></td><td align=LEFT><font size =-1>M. Viglas</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_ifp.htm#IFP070H1>IFP070H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Problem Solving in Sci</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>M3-5</font></td><td align=LEFT><font size =-1>WE 54 E</font></td><td align=LEFT><font size =-1>C. Wong</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_ifp070h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W4</font></td><td align=LEFT><font size =-1>WE 54 E</font></td><td align=LEFT><font size =-1>C. Wong</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_ifp.htm#IFP100Y1>IFP100Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Themes in World History</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TR9</font></td>
+  <td align=LEFT><font size =-1>WI 1016 (Fall)<br />
+  MP 103 (Winter)</font></td><td align=LEFT><font size =-1>A. Guerson De Oliveira</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=13><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_ifp100y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F2-3:30</font></td><td align=LEFT><font size =-1>WE 51 A</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0102</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F2-3:30</font></td><td align=LEFT><font size =-1>WE 51 B</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0103</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F2-3:30</font></td><td align=LEFT><font size =-1>WE 51 C</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F3:30-5</font></td><td align=LEFT><font size =-1>WE 51 A</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0202</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F3:30-5</font></td><td align=LEFT><font size =-1>WE 51 B</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0203</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F3:30-5</font></td><td align=LEFT><font size =-1>WE 51 C</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R4-5:30</font></td><td align=LEFT><font size =-1>WE 54 E</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0302</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R4-5:30</font></td><td align=LEFT><font size =-1>WE 54 C</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0303</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R4-5:30</font></td><td align=LEFT><font size =-1>WE 54 D</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5102</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5103</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_ifp.htm#IFP101Y1>IFP101Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Themes in World History</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_jxx.htm#JHN323H1>JHN323H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Carib Indigeneity</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R10-12</font></td><td align=LEFT><font size =-1>WI 524 </font></td><td align=LEFT><font size =-1>M. Newton</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_jxx.htm#JLN327H1>JLN327H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Hispanic Caribbean</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>F11-1</font></td><td align=LEFT><font size =-1>WI 523 </font></td><td align=LEFT><font size =-1>B. Landsee</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_jln327h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_jxx.htm#JLN327H1>JLN327H1</a></font></td><td><font size =-1>S</font></td><td align=LEFT><font size =-1>Hispanic Caribbean</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_jxx.htm#JNH350H1>JNH350H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>AIDS Chall & Success</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>M3-6</font></td><td align=LEFT><font size =-1>WI 1017 </font></td><td align=LEFT><font size =-1>S. Doyle-Wood</font></td><td><font size =-1>PE</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_jnh350h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_jxx.htm#JQR360H1>JQR360H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Canadian Census</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R5-8</font></td><td align=LEFT><font size =-1>WI 1016 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_jqr360h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW101Y1>NEW101Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Food Matters</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W1-3</font></td><td align=LEFT><font size =-1>WE 54 E</font></td><td align=LEFT><font size =-1>L. Stahlbrand</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>F1-4</font></td><td align=LEFT><font size =-1>WI 1016 </font></td><td align=LEFT><font size =-1>L. Stahlbrand</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW102Y1>NEW102Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Travelling Words</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>R1-3</font></td><td align=LEFT><font size =-1>WI 2008 </font></td><td align=LEFT><font size =-1>J. Taylor</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>F1-4</font></td><td align=LEFT><font size =-1>WI 1016 </font></td><td align=LEFT><font size =-1>J. Taylor</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW103Y1>NEW103Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Digital Technology</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>T1-3</font></td><td align=LEFT><font size =-1>WE 54 G</font></td><td align=LEFT><font size =-1>M. Price</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>F1-4</font></td><td align=LEFT><font size =-1>WI 1016 </font></td><td align=LEFT><font size =-1>M. Price</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW104Y1>NEW104Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Culture & Community</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W1-3</font></td><td align=LEFT><font size =-1>WE 54 D</font></td><td align=LEFT><font size =-1>C. Turner</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>F1-4</font></td><td align=LEFT><font size =-1>WI 1016 </font></td><td align=LEFT><font size =-1>C. Turner</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW150Y1>NEW150Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Intr African Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T10-12</font></td><td align=LEFT><font size =-1>WI 1017 </font></td><td align=LEFT><font size =-1>M. Levin</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=4><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new150y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T12</font></td><td align=LEFT><font size =-1>WE 51 B</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T1</font></td><td align=LEFT><font size =-1>WE 51 B</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T2</font></td><td align=LEFT><font size =-1>WE 51 B</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW214Y1>NEW214Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Soc Engaged Buddhism</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W10-12</font></td><td align=LEFT><font size =-1>UC 163 </font></td><td align=LEFT><font size =-1>H. Shiu</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW222H1>NEW222H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Caribbean Comp Lit</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T6-8</font></td><td align=LEFT><font size =-1>WI 524 </font></td><td align=LEFT><font size =-1>R. Victoriano-Martinez</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW224Y1>NEW224Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Caribbean Thought I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M2-4</font></td><td align=LEFT><font size =-1>WI 523 </font></td><td align=LEFT><font size =-1>A. Itwaru</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T1</font></td><td align=LEFT><font size =-1>WI 523 </font></td><td align=LEFT><font size =-1>A. Itwaru</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW232Y1>NEW232Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Buddhist Psychology</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W4-7</font></td><td align=LEFT><font size =-1>SS 2102 </font></td><td align=LEFT><font size =-1>A. Toneatto</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW240Y1>NEW240Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Intro Equity Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R3-5</font></td><td align=LEFT><font size =-1>SS 2117 </font></td><td align=LEFT><font size =-1>Larkin/Doyle-Wood</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2001</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>R3-5</font></td><td align=LEFT><font size =-1>SS 2117 </font></td><td align=LEFT><font size =-1>Larkin/Doyle-Wood</font></td>
+  <td><font size="-1">R</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new240y1_L2001.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R2</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T2001</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R5</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW241Y1>NEW241Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Intro Disability Stu</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T1-3</font></td><td align=LEFT><font size =-1>OI 2212 </font></td><td align=LEFT><font size =-1>McGuire/Tba</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=3><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T12</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T3</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW250Y1>NEW250Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Africa: 21st Century</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R10-12</font></td><td align=LEFT><font size =-1>WI 1017 </font></td><td align=LEFT><font size =-1>M. Levin</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW270H1>NEW270H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Community Engagement</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W2-4</font></td><td align=LEFT><font size =-1>WI 1017 </font></td><td align=LEFT><font size =-1>S. Doyle-Wood</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=3><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W4</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W5</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW280Y1>NEW280Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Introductory Swahili</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR4-6</font></td><td align=LEFT><font size =-1>WI 524 </font></td><td align=LEFT><font size =-1>O. Almasi</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW302Y1>NEW302Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Jung Analytical Psych</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R6-9</font></td><td align=LEFT><font size =-1>WI 2008 </font></td><td align=LEFT><font size =-1>T. Pilgrim</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW304Y1>NEW304Y1</a></font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>Dilemmas</font></td><td align=LEFT><font size =-1>L5101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW306H1>NEW306H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Tagore Paradigms</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-9</font></td><td align=LEFT><font size =-1>WE 54 F</font></td><td align=LEFT><font size =-1>K. O'Connell</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW320H1>NEW320H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Hist Geog of Carib</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T12-2</font></td><td align=LEFT><font size =-1>WI 524 </font></td><td align=LEFT><font size =-1>B. Mandelblatt</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW321H1>NEW321H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Caribbean Arts</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W12-2</font></td><td align=LEFT><font size =-1>WI 524 </font></td><td align=LEFT><font size =-1>G. Beltran</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW322H1>NEW322H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Contem African Novel</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M2-4</font></td><td align=LEFT><font size =-1>WE 52 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW324H1>NEW324H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Contemporary Caribbean</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T11-1</font></td><td align=LEFT><font size =-1>WI 523 </font></td><td align=LEFT><font size =-1>A. Trotz</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW325H1>NEW325H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Carib Women Thinkers</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W4-6</font></td><td align=LEFT><font size =-1>SS 1069 </font></td><td align=LEFT><font size =-1>R. Espinet</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW328H1>NEW328H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Caribbean Indenture</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-8</font></td><td align=LEFT><font size =-1>WI 523 </font></td><td align=LEFT><font size =-1>N. Mohabir</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW331H1>NEW331H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Buddhism Meditation</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>F10-1</font></td><td align=LEFT><font size =-1>UC 161 </font></td><td align=LEFT><font size =-1>J. Vervaeke</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new331h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW332H1>NEW332H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Buddhism and Therapy</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R10-1</font></td><td align=LEFT><font size =-1>WI 523 </font></td><td align=LEFT><font size =-1>A. Bodnar</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new332h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW333H1>NEW333H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Buddhism & Cog Sci</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>F10-1</font></td><td align=LEFT><font size =-1>UC 161 </font></td><td align=LEFT><font size =-1>J. Vervaeke</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new333h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW334H1>NEW334H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Buddhist Wisdom</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T1-4</font></td><td align=LEFT><font size =-1>RW 229 </font></td><td align=LEFT><font size =-1>M. Ferrari</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new334h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW336H1>NEW336H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Special Topics BPMH</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R3-6</font></td><td align=LEFT><font size =-1>UC 152 </font></td><td align=LEFT><font size =-1>H. Shiu</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new336h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW339H1>NEW339H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Yogacara Buddhism</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W1-4</font></td><td align=LEFT><font size =-1>UC 144 </font></td><td align=LEFT><font size =-1>H. Shiu</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new339h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW341H1>NEW341H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Theorizing Equity</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T11-1</font></td><td align=LEFT><font size =-1>GB 120 </font></td><td align=LEFT><font size =-1>P. Durish</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new341h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW342H1>NEW342H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Theory Praxis Food</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M6-8</font></td><td align=LEFT><font size =-1>WI 524 </font></td><td align=LEFT><font size =-1>L. Baker</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new342h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW345H1>NEW345H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Equity Activism Educ</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W3-5</font></td><td align=LEFT><font size =-1>WI 523 </font></td><td align=LEFT><font size =-1>T. Goldstein</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new345h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW346H1>NEW346H1</a></font></td><td><font size =-1>S</font></td><td align=LEFT><font size =-1>Community Develop</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new346h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W5-7</font></td><td align=LEFT><font size =-1>WI 523 </font></td><td align=LEFT><font size =-1>S. Carpenter</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW347H1>NEW347H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Critical Race Study</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T5:30-8:30</font></td><td align=LEFT><font size =-1>OI 2295 </font></td><td align=LEFT><font size =-1>G. Dei</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new347h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW349H1>NEW349H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Disability Represent</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R4-6</font></td><td align=LEFT><font size =-1>WI 523 </font></td><td align=LEFT><font size =-1>E. Chandler</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new349h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW351Y1>NEW351Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>African Sys Thought</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W10-12</font></td><td align=LEFT><font size =-1>WE 52 </font></td><td align=LEFT><font size =-1>A. Wasike</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW352H1>NEW352H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>International Org</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W12-2</font></td><td align=LEFT><font size =-1>WI 523 </font></td><td align=LEFT><font size =-1>M. Lo</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new352h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW353H1>NEW353H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Internat Relat Afr</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M12-2</font></td><td align=LEFT><font size =-1>WI 523 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW359H1>NEW359H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Humanitarianism</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>R2-4</font></td><td align=LEFT><font size =-1>WI 523 </font></td><td align=LEFT><font size =-1>F. Wiafe-Amoako</font></td><td><font size =-1>PE</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new359h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW380Y1>NEW380Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Intermediate Swahili</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR6-8</font></td><td align=LEFT><font size =-1>WE 52 </font></td><td align=LEFT><font size =-1>O. Almasi</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW390Y1>NEW390Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Independent Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW391H1>NEW391H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Independent Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW391H1>NEW391H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Independent Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW421H1>NEW421H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Haitian Revolution</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W3-5</font></td><td align=LEFT><font size =-1>WE 54 F</font></td><td align=LEFT><font size =-1>B. Mandelblatt</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW424Y1>NEW424Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>The Capitalist Press</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W1-4</font></td><td align=LEFT><font size =-1>WI 2008 </font></td><td align=LEFT><font size =-1>A. Itwaru</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new424y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW427H1>NEW427H1</a></font></td><td><font size =-1>F</font></td><td align=LEFT><font size =-1>Topics Hisp Carib</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW427H1>NEW427H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Topics Hisp Carib</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T10-12</font></td><td align=LEFT><font size =-1>WI 2008 </font></td><td align=LEFT><font size =-1>B. Garcia-Dominguez</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW428H1>NEW428H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Caribbean Migrations</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R12-2</font></td><td align=LEFT><font size =-1>WE 51 B</font></td><td align=LEFT><font size =-1>J. Toney</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW432H1>NEW432H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Adv Spe Topics BP&MH</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W1-4</font></td><td align=LEFT><font size =-1>Koffler House</font></td><td align=LEFT><font size =-1>J. Vervaeke</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new432h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW433H1>NEW433H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Adv Spe Topics BP&MH</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R3-6</font></td><td align=LEFT><font size =-1>UC A101 </font></td><td align=LEFT><font size =-1>H. Shiu</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new433h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW438H1>NEW438H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Buddhist Research</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M2-5</font></td>
+<td align=LEFT><font size="-1">UC 175</font></td><td align=LEFT><font size =-1>A. Toneatto</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new438h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW442H1>NEW442H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Food Systems Resist</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W9-12</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>J. Sumner</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW444H1>NEW444H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Social Change Non-V</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-8</font></td><td align=LEFT><font size =-1>WI 2008 </font></td><td align=LEFT><font size =-1>S. Doyle-Wood</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new444h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW446H1>NEW446H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Comm Develop Soc Chg</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>T5:30-8:30</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>J. Quarter</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW449H1>NEW449H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Contemp Theory Disab</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M1-3</font></td><td align=LEFT><font size =-1>WI 2008 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new449h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW450Y1>NEW450Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Adv Top African Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W2-4</font></td><td align=LEFT><font size =-1>WE 54 G</font></td><td align=LEFT><font size =-1>D. Eyoh</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new450y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW452H1>NEW452H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Negotiating Peace</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>R12-2</font></td><td align=LEFT><font size =-1>WE 51 A</font></td><td align=LEFT><font size =-1>F. Wiafe-Amoako</font></td><td><font size =-1>PE</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new452h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW453Y1>NEW453Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Lang & Ed</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M2-4</font></td><td align=LEFT><font size =-1>WE 54 G</font></td><td align=LEFT><font size =-1>A. Wasike</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/new_new453y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW471H1>NEW471H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Interdis Spec Topics</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R10-1</font></td><td align=LEFT><font size =-1>WI 2008 </font></td><td align=LEFT><font size =-1>D. Knott</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW490Y1>NEW490Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Independent Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW491H1>NEW491H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Independent Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW491H1>NEW491H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Independent Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW495Y1>NEW495Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Indep Service Learn</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W6-8</font></td><td align=LEFT><font size =-1>WE 54 G</font></td><td align=LEFT><font size =-1>L. Manicom</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW496H1>NEW496H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Indep Service Learn</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>M4-6</font></td><td align=LEFT><font size =-1>WE 54 G</font></td><td align=LEFT><font size =-1>L. Manicom</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_new.htm#NEW496H1>NEW496H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Indep Service Learn</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>M4-6</font></td><td align=LEFT><font size =-1>WE 54 G</font></td><td align=LEFT><font size =-1>L. Manicom</font></td><td><font size =-1>E</font></td></tr>
+
+</table></center>
+<p>
+<hr>
+<center>
+<font size=-1>Return to: [ <a href="/web/20130912001634/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/sponsors.htm">Course Listings</a> |  <a href="/web/20130912001634/http://www.artsci.utoronto.ca/current/course/timetable">A & S 2013-2014 Fall/Winter Session Timetable: Contents</a>]</font>
+</center>
+<p><center>
+<TABLE BORDER=1 WIDTH=439 cellpadding=5>
+<tr>
+<td width="421" cellpadding="30"><i>Faculty of Arts and Science, University of Toronto</i><br>
+  Please send enquiries or comments to:
+  <A HREF="mailto:ask@artsci.utoronto.ca">ask@artsci.utoronto.ca</A>
+  <br />
+  Updated: September9, 2013<br>On-line date: August 19, 2013 (including all changes since March 28, 2013 version)
+  
+  
+  
+</td></tr>
+</table>
+</div>
+</div id="footer">
+<p>
+<font size="-1">All contents copyright & copy  2013.  &nbsp;</b>University of Toronto. All rights reserved.</center>
+<p>
+</div>
+
+</div>
+</body>
+</html>
+</body></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 0:16:34 Sep 12, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:25:14 Jun 20, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
