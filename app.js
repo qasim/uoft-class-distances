@@ -50,6 +50,9 @@ var io = require('socket.io').listen(server);
 var courseList = [];
 var courseInfo = {};
 
+var fallData = [];
+var springData = [];
+
 //When a client connects
 io.sockets.on('connection', function(socket) {
 
@@ -59,9 +62,10 @@ io.sockets.on('connection', function(socket) {
     courseList = courseList.split(",");
     courseInfo = [];
 
-    modifiedCourseList = []
+
+    modifiedCourseList = [];
     for(var i = 0; i < courseList.length; i++) {
-      courseInfo[courseList[i]] = undefined;
+      courseInfo[courseList[i]] = [];
       modifiedCourseList[i] = "'" + courseList[i] + "'";
     }
 
@@ -72,31 +76,105 @@ io.sockets.on('connection', function(socket) {
     //Start data retrieval
     db.all("SELECT * FROM data WHERE name IN " + sqlList, function(err, rows) {
       for(var i = 0; i < rows.length; i++) {
-        courseInfo[rows[i].name] = rows[i];
+        courseInfo[rows[i].name].push(rows[i]);
       }
       for(var i = 0; i < courseList.length; i++) {
         courseData = courseInfo[courseList[i]];
-        if(courseData != undefined) {
-          var days = courseData.time.match(/[MTWRFS]/g);
-          for(var x = 0; x < days.length; x++) {
-            days[x] = tools.dayConversion[days[x]];
-          }
-          var times = courseData.time.match(/[0-9]+/g);
-          var startTime, endTime;
-          if(times.length == 1) {
-            startTime = times[0] * 1;
-            endTime = times[0] * 1 + 1;
-          } else {
-            startTime = times[0] * 1;
-            endTime = times[1] * 1;
-          }
+        for(var j = 0; j < courseData.length; j++) {
+          if(courseData[j] != undefined) {
+            var days = courseData[j].time.match(/[MTWRFS]/g);
+            /*for(var x = 0; x < days.length; x++) {
+              days[x] = tools.dayConversion[days[x]];
+            }*/
+            var times = courseData[j].time.match(/([0-9]+)[:]?[0-9]*/g);
+            var startTime, endTime;
+            if(times.length == 1) {
+              if(times[0].match(':')) {
+                timeSplit = times[0].split(':');
+                startTime = timeSplit[0] * 1 + (timeSplit[1] / 60);
+                endTime = startTime * 1 + 1;
+              } else {
+                startTime = times[0] * 1;
+                endTime = times[0] * 1 + 1;
+              }
+            } else {
+              if(times[0].match(':')) {
+                timeSplit = times[0].split(':');
+                startTime = timeSplit[0] * 1 + (timeSplit[1] / 60);
+              } else {
+                startTime = times[0] * 1;
+              }
+              if(times[1].match(':')) {
+                timeSplit = times[1].split(':');
+                endTime = timeSplit[0] * 1 + (timeSplit[1] / 60);
+              } else {
+                endTime = times[1] * 1;
+              }
+            }
 
-          if(startTime <= 7) {
-            startTime += 12;
-            endTime += 12;
-          }
+            if(startTime <= 7) {
+              startTime += 12;
+              endTime += 12;
+            }
 
-          console.log(days, startTime, endTime);
+            var dates = [];
+            for(var x = 0; x < days.length; x++) {
+              var startHour = startTime;
+              var startMinute = 0;
+              var strStartTime = startTime + "";
+              if(strStartTime.indexOf(".") > -1) {
+                strStartTime = strStartTime.split(".");
+                startHour = parseInt(strStartTime[0]);
+                startMinute = parseInt(("0." + strStartTime[1]) * 60);
+              }
+              var endHour = endTime;
+              var endMinute = 0;
+              var strEndTime = endTime + "";
+              if(strEndTime.indexOf(".") > -1) {
+                strEndTime = strEndTime.split(".");
+                endHour = parseInt(strEndTime[0]);
+                endMinute = parseInt(("0." + strEndTime[1]) * 60);
+              }
+              var startDate = new Date(2014, 5, tools.dayToDate[days[x]], startHour, startMinute, 0, 0);
+              var endDate = new Date(2014, 5, tools.dayToDate[days[x]], endHour, endMinute, 0, 0);
+              dates.push([startDate, endDate]);
+            }
+
+            var termCode = courseData[j].course_code.substr(8, 1);
+
+            if(termCode == "Y" || termCode == "F") {
+              //Fall term
+              for(var p = 0; p < dates.length; p++) {
+                fallData.push({
+                  info: courseData[j],
+                  'date': dates[p]
+                });
+              }
+            }
+
+            if(termCode == "Y" || termCode == "S") {
+              //Spring term
+              for(var p = 0; p < dates.length; p++) {
+                springData.push({
+                  info: courseData[j],
+                  'date': dates[p]
+                });
+              }
+            }
+
+          }
+        }
+      }
+      /*fallData.sort(function(a, b) {
+        if(a)
+      });*/
+      for(var x = 0; x < fallData.length; x++) {
+        for(var y = 0; y < fallData.length; y++) {
+          if(fallData[x].date[1].getTime() == fallData[y].date[0].getTime() && x != y) {
+            console.log(fallData[x].date);
+            console.log(fallData[y].date);
+            console.log("----------------------------------------------------");
+          }
         }
       }
     });
