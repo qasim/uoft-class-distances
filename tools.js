@@ -14,5 +14,12 @@ module.exports = {
 		'R': 19,
 		'F': 20,
 		'S': 21
-	}
+	},
+	dateSort: function(a, b) {
+    if(a.date[0].getTime() < b.date[0].getTime())
+      return -1;
+    if(a.date[0].getTime() > b.date[0].getTime())
+      return 1;
+    return 0;
+  }
 }

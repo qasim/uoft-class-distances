@@ -53,6 +53,8 @@ var courseInfo = {};
 var fallData = [];
 var springData = [];
 
+var adjacentClasses = {};
+
 //When a client connects
 io.sockets.on('connection', function(socket) {
 
@@ -61,6 +63,12 @@ io.sockets.on('connection', function(socket) {
     courseList = data.courseList;
     courseList = courseList.split(",");
     courseInfo = [];
+    fallData = [];
+    springData = [];
+    adjacentClasses = {
+      fall: [],
+      spring: []
+    };
 
 
     modifiedCourseList = [];
@@ -117,6 +125,10 @@ io.sockets.on('connection', function(socket) {
               endTime += 12;
             }
 
+            if(endTime <= 7) {
+              endTime += 12;
+            }
+
             var dates = [];
             for(var x = 0; x < days.length; x++) {
               var startHour = startTime;
@@ -165,18 +177,32 @@ io.sockets.on('connection', function(socket) {
           }
         }
       }
-      /*fallData.sort(function(a, b) {
-        if(a)
-      });*/
+
+      fallData.sort(tools.dateSort);
+
       for(var x = 0; x < fallData.length; x++) {
         for(var y = 0; y < fallData.length; y++) {
           if(fallData[x].date[1].getTime() == fallData[y].date[0].getTime() && x != y) {
-            console.log(fallData[x].date);
-            console.log(fallData[y].date);
-            console.log("----------------------------------------------------");
+            adjacentClasses.fall.push([fallData[x], fallData[y]]);
           }
         }
       }
+
+      springData.sort(tools.dateSort);
+
+      console.log(JSON.stringify(springData));
+      console.log(' ');
+
+      for(var x = 0; x < springData.length; x++) {
+        for(var y = 0; y < springData.length; y++) {
+          if(springData[x].date[1].getTime() == springData[y].date[0].getTime() && x != y) {
+            adjacentClasses.spring.push([springData[x], springData[y]]);
+          }
+        }
+      }
+
+      socket.emit('adjacent classes', JSON.stringify(adjacentClasses));
+
     });
 
 
