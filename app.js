@@ -75,7 +75,20 @@ io.sockets.on('connection', function(socket) {
         courseInfo[rows[i].name] = rows[i];
       }
       for(var i = 0; i < courseList.length; i++) {
-        console.log(courseInfo[courseList[i]]);
+        courseData = courseInfo[courseList[i]];
+        if(courseData != undefined) {
+          var days = courseData.time.match(/[MTWRFS]/g);
+          var times = courseData.time.match(/[0-9]+/g);
+          var startTime, endTime;
+          if(times.length == 1) {
+            startTime = times[0] * 1;
+            endTime = times[0] * 1 + 1;
+          } else {
+            startTime = times[0] * 1;
+            endTime = times[1] * 1;
+          }
+          console.log(days, startTime, endTime);
+        }
       }
     });
 
