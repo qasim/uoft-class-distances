@@ -78,6 +78,9 @@ io.sockets.on('connection', function(socket) {
         courseData = courseInfo[courseList[i]];
         if(courseData != undefined) {
           var days = courseData.time.match(/[MTWRFS]/g);
+          for(var x = 0; x < days.length; x++) {
+            days[x] = tools.dayConversion[days[x]];
+          }
           var times = courseData.time.match(/[0-9]+/g);
           var startTime, endTime;
           if(times.length == 1) {
