@@ -87,6 +87,12 @@ io.sockets.on('connection', function(socket) {
             startTime = times[0] * 1;
             endTime = times[1] * 1;
           }
+
+          if(startTime <= 7) {
+            startTime += 12;
+            endTime += 12;
+          }
+
           console.log(days, startTime, endTime);
         }
       }
