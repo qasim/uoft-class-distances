@@ -1,0 +1,627 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<HEAD>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<meta http=equiv="Content-Type" content="text.html;charset=utf-8" />
+<meta name="description" content="" />
+
+    <title>Arts & Science 2013-2014 Fall/Winter Session Timetable for: Political Science [POL courses - includes JHP304Y1, 451Y1, JPA308H1, 331Y1, 411H1, JPD439Y1, JPF455Y1, JPP343H1 and JPU315H1]</title>
+
+   <link rel="stylesheet" href="/web/20130906185444cs_/http://www.artsandscience.utoronto.ca/testdir/cal/c/c01.css"  type="text/css" media="all" />
+
+</HEAD>
+
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app18.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1420070399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/www.artsandscience.utoronto.ca\/ofr\/timetable\/winter\/pol.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 475;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "6";
+var displayMonth = "Sep";
+var displayYear = "2013";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20130906185444" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20130708170436/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="8 Jul 2013"><strong>JUL</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 18:54:44 Sep 6, 2013">SEP</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20131009130431/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="9 Oct 2013"><strong>OCT</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20130806193150/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol.html" title="19:31:50 Aug 6, 2013" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 18:54:44 Sep 6, 2013">6</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20131009130431/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol.html" title="13:04:31 Oct 9, 2013" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20120812055918/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="12 Aug 2012"><strong>2012</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 18:54:44 Sep 6, 2013">2013</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2014
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20130906185444*/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>123 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">25 Jan 00 - 9 Oct 13</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:475px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:475px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="475"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=475_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:100000000000_2001:-1:110101010000_2002:-1:010001010101_2003:-1:010101010100_2004:-1:010101120110_2005:-1:000002010000_2006:-1:000000000000_2007:-1:000000010000_2008:-1:000000dfa101_2009:-1:001010211111_2010:-1:110000211101_2011:-1:110001111111_2012:-1:111101111010_2013:8:000000111100_2014:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="wrapper">
+   <div id="header"></div>
+   <div id="banner"></div> 
+   <div id="content">
+
+<center> <h2><font color="#608568">Political Science [POL courses - includes JHP304Y1, 451Y1, JPA308H1, 331Y1, 411H1, JPD439Y1, JPF455Y1, JPP343H1 and JPU315H1]</h2></CENTER></font>
+
+
+<p><hr>
+The following timetable information is the most current information available.  Courses and meeting sections added will be listed below. Courses and meeting sections cancelled will be indicated as such. 
+
+<hr><br>
+<p><b>Prerequisites and Exclusions: </b><br>
+All POL 100-series courses are mutually exclusive. Students who have previously completed a POL 100-series course with a grade of at least 50% will be removed from POL101Y1 at any time they are discovered. 
+<ul><li>Prerequisites and exclusions are enforced for all political science courses. </li>
+<li>Prerequisites are not checked at the time of enrolment so do not assume that being able to register in a course means that you satisfy the prerequisites.  However prerequisites will be checked by the Department regularly and students enrolled in courses for which they do not have the published prerequisites may have their registration in those courses cancelled at any time.   </li>
+<li>Please consult the Faculty of Arts and Science Calendar or Departments website for details on prerequisites.   </li>
+<li>Students using a course from another institution as a prerequisite must submit a transcript to the Undergraduate Assistant, Sidney Smith Hall 3032 or <a href="mailto:undergrad.polsci@utoronto.ca">undergrad.polsci@utoronto.ca</a> before enrolling in the course. Failure to do so will result in removal from the course.   </li>
+<li>Requests for prerequisite waivers will only be considered by the instructor for students in extenuating circumstances. To request a prerequisite waiver, complete a waiver form available at <a href="/web/20130906185444/http://politics.utoronto.ca/undergraduate/forms/">politics.utoronto.ca/undergraduate/forms/</a>. The waiver form must be approved by the instructor and filed with the Undergraduate Assistant. </li></ul></p>
+
+<p><b>Tutorials: </b>In courses where applicable, tutorials will be arranged after classes commence. </p>
+<p><b>4th year POL Majors and Specialists enrolment in POL 400-level courses:  </b>
+<ul><li>Registration in POL 400-level and Joint POL 400-level courses will be based on initial preferences. </li>
+<li>Further details on listing preferences will be posted at the end of May/early June on the Departments website at <a href="/web/20130906185444/http://politics.utoronto.ca/undergraduate/">politics.utoronto.ca/undergraduate/</a> and the Faculty of Arts and Sciences website at <a href="/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol.html">www.artsandscience.utoronto.ca/ofr/timetable/winter/pol.html</a>.</li>
+<li>Students who are eligible to list their preferences will also be informed via e-mail.  </li>
+<li>POL majors are strongly advised to request POL493H1 or POL494H1 as their first choice in their initial preferences. </li>
+<li>There are limited spaces for majors in all other POL 400-level courses.</li>
+<li>Students who have completed the required number of POL 400-level courses needed for their POL program may not necessarily be assigned a space. Specialists need 1.0 FCEs;  Majors need 0.5 FCEs.</li>
+<li>Nearly all POL 400-level courses are offered as joint undergraduate-graduate seminars with class sizes ranging from 15-25.</li></ul></p>
+
+<p><b>POL 400-level Waiting Lists: </b>Students who are more than #3 on the waitlist is unlikely to be able to enroll in the course and may want to secure a space in another course.</p>
+<p><b>For POL 495Y/496H/497H - Independent Studies, 'E' indicator courses: </b>Instructions and application forms are available on the Departments website <a href="/web/20130906185444/http://politics.utoronto.ca/undergraduate/forms/">politics.utoronto.ca/undergraduate/forms/</a>.</p>
+<p><b>For all other 'E' indicator courses: </b>Contact the Student and Alumni/Advancement Coordinator, Elizabeth Jagdeo at <a href="mailto:e.jagdeo@utoronto.ca">e.jagdeo@utoronto.ca</a> for details. </p>
+<p><b>Latest timetable/course description updates:  </b><a href="/web/20130906185444/http://politics.utoronto.ca/undergraduate/">politics.utoronto.ca/undergraduate/</a>.</p>
+<hr><center>
+<b><a href="/web/20130906185444/http://www.artsci.utoronto.ca/current/course/timetable/1314_fw/codes-used-in-the-timetable-listings">Explanation on codes and Enrolment Indicators</a></b>
+</center>
+<p><center>
+<table border=1>
+<tr><TD ALIGN="CENTER" colspan="10"><font color=#608568><B>Political Science [POL courses - includes JHP304Y1, 451Y1, JPA308H1, 331Y1, 411H1, JPD439Y1, JPF455Y1, JPP343H1 and JPU315H1]</B><br></font></TD></tr>
+<tr>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Course</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>SC</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Title<br><i>(subtitle)</i></b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Meeting<br>Section</b></FONT></TD>
+<TD VALIGN="CENTER" ROWSPAN="2"><FONT COLOR=#608568><b>Wait<br>List</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Time</b></font></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Location</b></font></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Instructor</b></font></TD>
+<TD COLSPAN="2"><FONT COLOR=#608568><b>Enrolment</b></font></TD>
+</tr>
+<tr>
+<TD VALIGN="LEFT"><FONT COLOR=#608568><b>Ind</b></font></TD>
+<TD VALIGN="LEFT"><FONT COLOR=#608568><b>Controls</b></font></TD>
+</tr>
+<br>
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_jxx.htm#JHP304Y1>JHP304Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Ukraine: Pol, Eco & Soc</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR10</font></td><td align=LEFT><font size =-1>UC 161 </font></td><td align=LEFT><font size =-1>P. Magocsi</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_jhp304y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_jxx.htm#JHP451Y1>JHP451Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>People from Nowhere</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W3-5</font></td><td align=LEFT><font size =-1>UC 248 </font></td><td align=LEFT><font size =-1>P. Magocsi</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_jhp451y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_jxx.htm#JPA331Y1>JPA331Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Chinese Politics</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T12-2</font></td><td align=LEFT><font size =-1>SS 1085 </font></td><td align=LEFT><font size =-1>L. Ong</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_jpa331y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_jxx.htm#JPA411H1>JPA411H1</a></font></td><td><font size =-1>F</font></td><td align=LEFT><font size =-1>Global Taiwan</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_jpa411h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_jxx.htm#JPA411H1>JPA411H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Global Taiwan</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M2-4</font></td><td align=LEFT><font size =-1>LA 340 </font></td><td align=LEFT><font size =-1>J. Wong</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_jxx.htm#JPD439Y1>JPD439Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Post-Mod & Cont Thght</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M10-12</font></td><td align=LEFT><font size =-1>NF 205 </font></td><td align=LEFT><font size =-1>D. Cook</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_jpd439y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_jxx.htm#JPF455Y1>JPF455Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Cities</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R9:30-11:30</font></td><td align=LEFT><font size =-1>AR 203</font></td><td align=LEFT><font size =-1>P. McCarney</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_jpf455y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_jxx.htm#JPP343H1>JPP343H1</a></font></td><td><font size =-1>F</font></td><td align=LEFT><font size =-1>Women in W Pol Thght</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_jpp343h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_jxx.htm#JPU315H1>JPU315H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Sexual Diver Politic</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-8</font></td><td align=LEFT><font size =-1>UC 163 </font></td><td align=LEFT><font size =-1>J. Marsiaj</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_jpu315h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL101Y1>POL101Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Democracy War Peace</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M12-2</font></td><td align=LEFT><font size =-1>CH  </font></td><td align=LEFT><font size =-1>Kopstein/Wong</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL200Y1>POL200Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Political Theory</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R2-4</font></td><td align=LEFT><font size =-1>BT 101 </font></td><td align=LEFT><font size =-1>C. Orwin</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-8</font></td><td align=LEFT><font size =-1>AH 100 </font></td><td align=LEFT><font size =-1>R. Kingston</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL201Y1>POL201Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Politics of Development</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T2-4</font></td><td align=LEFT><font size =-1>NF 003 </font></td><td align=LEFT><font size =-1>C. Jung</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL203Y1>POL203Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>US Govt & Politics</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R6-8</font></td><td align=LEFT><font size =-1>AH 100 </font></td><td align=LEFT><font size =-1>R. Hurl</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL207Y1>POL207Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Politics in Europe</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W10-12</font></td><td align=LEFT><font size =-1>AH 100 </font></td><td align=LEFT><font size =-1>R. Hansen</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL208Y1>POL208Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Introduction to I.R.</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W10-12</font></td><td align=LEFT><font size =-1>MS 2158 </font></td><td align=LEFT><font size =-1>L. Gilady</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R6-8</font></td><td align=LEFT><font size =-1>PB B150 </font></td><td align=LEFT><font size =-1>A. Jurgensen</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL214Y1>POL214Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Canadian Politics</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M10-12</font></td><td align=LEFT><font size =-1>AH 100 </font></td><td align=LEFT><font size =-1>N. Wiseman</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol214y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL215Y1>POL215Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Pol & Transf of Asia-Pacific</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R10-12</font></td><td align=LEFT><font size =-1>SS 1069 </font></td><td align=LEFT><font size =-1>J. Bertrand</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL224Y1>POL224Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Can in Comp Perspective</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T6-8</font></td><td align=LEFT><font size =-1>AH 100 </font></td><td align=LEFT><font size =-1>R. Haddow</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol224y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL242Y1>POL242Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Research Methods (SPE)</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W12-2</font></td><td align=LEFT><font size =-1>FE 36 </font></td><td align=LEFT><font size =-1>J. Fletcher</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=12><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol242y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R12-2</font></td><td align=LEFT><font size =-1>FE 36 </font></td><td align=LEFT><font size =-1>J. Fletcher</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M2</font></td><td align=LEFT><font size =-1>FE 36 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M3</font></td><td align=LEFT><font size =-1>FE 36 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T2</font></td><td align=LEFT><font size =-1>FE 36 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T3</font></td><td align=LEFT><font size =-1>FE 36 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0501</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W10</font></td><td align=LEFT><font size =-1>FE 36 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0601</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W11</font></td><td align=LEFT><font size =-1>FE 36 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0701</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R2</font></td><td align=LEFT><font size =-1>FE 36 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0801</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R3</font></td><td align=LEFT><font size =-1>FE 36 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0901</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R10</font></td><td align=LEFT><font size =-1>FE 36 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T1001</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R11</font></td><td align=LEFT><font size =-1>FE 36 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL301Y1>POL301Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Govt & Pol in Africa</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W10-12</font></td><td align=LEFT><font size =-1>UC 161 </font></td><td align=LEFT><font size =-1>Prichard/Handley</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol301y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL305Y1>POL305Y1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Pol & Soc Latin Amer</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW6-8</font></td><td align=LEFT><font size =-1>SS 1085 </font></td><td align=LEFT><font size =-1>D. Kingsbury</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol305y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL305Y1>POL305Y1</a></font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>Pol & Soc Latin Amer</font></td><td align=LEFT><font size =-1>L5101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL312Y1>POL312Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Canadian For Policy</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T10-12</font></td><td align=LEFT><font size =-1>GI --- </font></td><td align=LEFT><font size =-1>J. Kirton</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol312y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL314H1>POL314H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Pub Opinion & Voting</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-8</font></td><td align=LEFT><font size =-1>UC 179 </font></td><td align=LEFT><font size =-1>N. Nevitte</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol314h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL316Y1>POL316Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Canadian Federalism</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R4-6</font></td><td align=LEFT><font size =-1>UC 163 </font></td><td align=LEFT><font size =-1>M. Stein</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol316y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL320Y1>POL320Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Modern Pol Thought</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R10-12</font></td><td align=LEFT><font size =-1>AH 100 </font></td><td align=LEFT><font size =-1>S. Chambers</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol320y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL322H1>POL322H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Quantitative Reason</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M12-2</font></td><td align=LEFT><font size =-1>UC 140 </font></td><td align=LEFT><font size =-1>K. Ariga</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=4><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol322h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M6-8</font></td><td align=LEFT><font size =-1>UC 140 </font></td><td align=LEFT><font size =-1>K. Ariga</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL322H1>POL322H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Quantitative Reason</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W12-2</font></td><td align=LEFT><font size =-1>UC 140 </font></td><td align=LEFT><font size =-1>K. Ariga</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-8</font></td><td align=LEFT><font size =-1>UC 140 </font></td><td align=LEFT><font size =-1>K. Ariga</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL323Y1>POL323Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Might & Right Amg Nt</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W10-12</font></td><td align=LEFT><font size =-1>UC 87 </font></td><td align=LEFT><font size =-1>S. Jaffe</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol323y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL324H1>POL324H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>European Politics</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T6-8</font></td><td align=LEFT><font size =-1>UC 163 </font></td><td align=LEFT><font size =-1>J. Kopstein</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol324h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL326Y1>POL326Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>U.S. Foreign Policy</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T6-8</font></td><td align=LEFT><font size =-1>UC 161 </font></td><td align=LEFT><font size =-1>A. Jurgensen</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol326y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL328Y1>POL328Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Pol & Govt in S Asia</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T2-4</font></td><td align=LEFT><font size =-1>SS 1085 </font></td><td align=LEFT><font size =-1>K. Murali</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol328y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL330Y1>POL330Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Politics & Morality</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M2-5</font></td>
+  <td align=LEFT><font size =-1>OI 5280 (Fall)<br />
+    OI 2212 (Winter)
+  </font></td><td align=LEFT><font size =-1>M. Williams</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol330y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL337Y1>POL337Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Canadian Constitution</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M6-8</font></td><td align=LEFT><font size =-1>BA 1130 </font></td><td align=LEFT><font size =-1>V. Radmilovic</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol337y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL340Y1>POL340Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>International Law</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-8</font></td><td align=LEFT><font size =-1>MP 102 </font></td><td align=LEFT><font size =-1>G. Kennedy</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol340y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL343Y1>POL343Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Pol Global Governance</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M12-2</font></td><td align=LEFT><font size =-1>SS 1087 </font></td><td align=LEFT><font size =-1>V. Achvarina</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol343y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL344H1>POL344H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Social Movements</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M10-12</font></td><td align=LEFT><font size =-1>UC 163 </font></td><td align=LEFT><font size =-1>S. Bashevkin</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol344h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL345Y1>POL345Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Becoming Israel</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W2-5</font></td><td align=LEFT><font size =-1>UC 179 </font></td><td align=LEFT><font size =-1>E. Adler</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol345y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL349H1>POL349H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Globaliz'n & Urban Pol</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R12-2</font></td><td align=LEFT><font size =-1>UC 163 </font></td><td align=LEFT><font size =-1>Stren/Enright</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol349h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL354H1>POL354H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Pol & Society in Russia</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R2-4</font></td><td align=LEFT><font size =-1>UC 163 </font></td><td align=LEFT><font size =-1>D. Schwartz</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol354h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL355Y1>POL355Y1</a></font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>Classical Pol Thought</font></td><td align=LEFT><font size =-1>L5101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol355y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL356Y1>POL356Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Cdn Pol Parties</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T4-6</font></td><td align=LEFT><font size =-1>SS 1085 </font></td><td align=LEFT><font size =-1>N. Wiseman</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol356y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL359Y1>POL359Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Enlarging Europe</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T6-8</font></td><td align=LEFT><font size =-1>UC 140 </font></td><td align=LEFT><font size =-1>R. Austin</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol359y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL371H1>POL371H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>PolEcon Institutions</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M6-8</font></td><td align=LEFT><font size =-1>UC 179 </font></td><td align=LEFT><font size =-1>H. Bathelt</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol371h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL373H1>POL373H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Emotions in Pol Theo</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W12-2</font></td><td align=LEFT><font size =-1>UC 161 </font></td><td align=LEFT><font size =-1>R. Kingston</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol373h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL373Y1>POL373Y1</a></font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>Emotions in Pol Theo</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol373y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL381H1>POL381H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Topics in Pol Theory</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R12-2</font></td><td align=LEFT><font size =-1>UC 163 </font></td><td align=LEFT><font size =-1>M. Kalie</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol381h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL395H1>POL395H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Research Participation</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL396H1>POL396H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Research Participation</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL397Y1>POL397Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Research Participation</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL400H1>POL400H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Sovereignty</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M12-3</font></td><td align=LEFT><font size =-1>AH 302 </font></td><td align=LEFT><font size =-1>D. Lee</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol400h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL402H1>POL402H1</a></font></td><td><font size =-1>F</font></td><td align=LEFT><font size =-1>Socratic School</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol402h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL406H1>POL406H1</a></font></td><td><font size =-1>S</font></td><td align=LEFT><font size =-1>Politics of Federalism</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol406h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL408H1>POL408H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Innovation & Govern.</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T4-6</font></td><td align=LEFT><font size =-1>UC 148 </font></td><td align=LEFT><font size =-1>H. Bathelt</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol408h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL410H1>POL410H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Topics in Comp Pol III</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M12-2</font></td><td align=LEFT><font size =-1>UC 148 </font></td><td align=LEFT><font size =-1>P. Triadafilopoulos</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol410h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL411H1>POL411H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>IPE of Finance</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W4-6</font></td><td align=LEFT><font size =-1>LA 214 </font></td>
+<td align=LEFT><font size =-1>C. Norrlof</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol411h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL412H1>POL412H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Human Rights</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T2-4</font></td><td align=LEFT><font size =-1>UC 248 </font></td><td align=LEFT><font size =-1>W. Wong</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol412h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL413H1>POL413H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Global Env. Politics</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T12-2</font></td><td align=LEFT><font size =-1>LA 214 </font></td><td align=LEFT><font size =-1>M. Hoffmann</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol413h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL414H1>POL414H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Pol of Ind. Ukraine</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T2-4</font></td><td align=LEFT><font size =-1>UC 248 </font></td><td align=LEFT><font size =-1>O. Havrylyshyn</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol414h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL417Y1>POL417Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Third Wrld Inter Pol</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T6-8</font></td><td align=LEFT><font size =-1>LA 214 </font></td><td align=LEFT><font size =-1>A. Gnamo</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol417y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL419H1>POL419H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Data Analysis</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>F10-12</font></td><td align=LEFT><font size =-1>FE 36 </font></td><td align=LEFT><font size =-1>K. Ariga</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol419h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL421H1>POL421H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Maimonides & Mod Int</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T2-4</font></td>
+<td align=LEFT><font size =-1><strong>UC 326<br />
+  (note: room change)
+</strong></font></td><td align=LEFT><font size =-1>K. Green</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol421h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL424H1>POL424H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Indigenous Politics</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R12-2</font></td><td align=LEFT><font size =-1>LA 340 </font></td><td align=LEFT><font size =-1>R. Kuokkanen</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol424h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL429H1>POL429H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Democracy & Ethnic</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M12-2</font></td><td align=LEFT><font size =-1>TC 24 </font></td><td align=LEFT><font size =-1>J. Bertrand</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol429h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL430Y1>POL430Y1</a></font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>J/Non-J Pol Thought</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol430y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T5-8:30</font></td><td align=LEFT><font size =-1>TF 200 </font></td><td align=LEFT><font size =-1>C. Orwin</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL434H1>POL434H1</a></font></td><td><font size =-1>S</font></td><td align=LEFT><font size =-1>Enlightenmnt & Critics</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol434h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL437H1>POL437H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Pol in Russia</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W12-2</font></td><td align=LEFT><font size =-1>TC 24 </font></td><td align=LEFT><font size =-1>P. Solomon</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol437h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL438H1>POL438H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Topic in Comp Pol I</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M6-8</font></td><td align=LEFT><font size =-1>LA 214 </font></td><td align=LEFT><font size =-1>F. Beltran</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol438h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL438H1>POL438H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Topic in Comp Pol I</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M6-8</font></td><td align=LEFT><font size =-1>LA 214 </font></td><td align=LEFT><font size =-1>F. Beltran</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL439H1>POL439H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Cdn Welfare State</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R12-2</font></td><td align=LEFT><font size =-1>TC 24 </font></td><td align=LEFT><font size =-1>R. Haddow</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol439h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL442H1>POL442H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Topics in Latin America</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W2-4</font></td><td align=LEFT><font size =-1>LA 213 </font></td><td align=LEFT><font size =-1>A. Bejarano</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol442h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL443H1>POL443H1</a></font></td><td><font size =-1>F</font></td><td align=LEFT><font size =-1>Topic in Comp Pol II</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol443h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL443H1>POL443H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Topic in Comp Pol II</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M4-6</font></td><td align=LEFT><font size =-1>TC 24 </font></td><td align=LEFT><font size =-1>S. Mukherjee</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL445H1>POL445H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Politics of Growth</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R2-4</font></td><td align=LEFT><font size =-1>TC 24 </font></td><td align=LEFT><font size =-1>K. Murali</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol445h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL446H1>POL446H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>20th Cent Pol Thought</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T10-12</font></td><td align=LEFT><font size =-1>LA 213 </font></td><td align=LEFT><font size =-1>M. Kohn</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol446h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL447H1>POL447H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Pol Economy of Dev</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R2-4</font></td><td align=LEFT><font size =-1>LA 213 </font></td><td align=LEFT><font size =-1>D. Eyoh</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol447h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL449H1>POL449H1</a></font></td><td><font size =-1>F</font></td><td align=LEFT><font size =-1>Qualitative Methods</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol449h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL450H1>POL450H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Women & Politics</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T12-2</font></td><td align=LEFT><font size =-1>UC 148 </font></td><td align=LEFT><font size =-1>S. Bashevkin</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol450h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL451H1>POL451H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Pol & Soc Movements</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T4-6</font></td><td align=LEFT><font size =-1>LA 214 </font></td><td align=LEFT><font size =-1>D. Fu</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol451h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL454H1>POL454H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Innovat & Knowledge</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W2-4</font></td><td align=LEFT><font size =-1>UC 65 </font></td><td align=LEFT><font size =-1>D. Wolfe</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol454h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL456Y1>POL456Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>G8, G20, Global Gov</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R10-12</font></td><td align=LEFT><font size =-1>TC 24 </font></td><td align=LEFT><font size =-1>J. Kirton</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol456y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL460H1>POL460H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Modern Pol Theory</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R2-4</font></td><td align=LEFT><font size =-1>LA 213 </font></td><td align=LEFT><font size =-1>S. Chambers</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol460h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL461H1>POL461H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Std Civic Republicanism</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>F10-12</font></td><td align=LEFT><font size =-1>TC 24 </font></td><td align=LEFT><font size =-1>R. Beiner</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol461h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL466H1>POL466H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Topics in I.R. III</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W12-2</font></td><td align=LEFT><font size =-1>TC 22 </font></td><td align=LEFT><font size =-1>A. Ahmad</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol466h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL470Y1>POL470Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Issues in Foreign Pol</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W2-4</font></td><td align=LEFT><font size =-1>NF 205 </font></td><td align=LEFT><font size =-1>D. Wright</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol470y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL473H1>POL473H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Adv Cdn Env Pol</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M6-8</font></td><td align=LEFT><font size =-1>UC 148 </font></td><td align=LEFT><font size =-1>A. Olive</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol473h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL474H1>POL474H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Pol & Policy Analys</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T12-2</font></td><td align=LEFT><font size =-1>UC 148 </font></td><td align=LEFT><font size =-1>J. Craft</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol474h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL477H1>POL477H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Adv Topics in IPE</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>S. Clarkson</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL479H1>POL479H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Tops Middle East Pol</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R5-7</font></td><td align=LEFT><font size =-1>LA 214 </font></td><td align=LEFT><font size =-1>P. Kingston</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol479h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL480H1>POL480H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Pluralism, Justice,Eqlty</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R10-1</font></td><td align=LEFT><font size =-1>LA 214 </font></td><td align=LEFT><font size =-1>M. Williams</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol480h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL482H1>POL482H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Politics of Disease</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M10-12</font></td><td align=LEFT><font size =-1>LA 214 </font></td><td align=LEFT><font size =-1>A. Handley</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol482h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL484H1>POL484H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Topic Pol Thought I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M4-6</font></td><td align=LEFT><font size =-1>UC 248 </font></td><td align=LEFT><font size =-1>R. Balot</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol484h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL485H1>POL485H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Topic Pol Thought II</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T12-2</font></td><td align=LEFT><font size =-1>TC 22 </font></td><td align=LEFT><font size =-1>D. Avnon</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol485h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL485H1>POL485H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Topic Pol Thought II</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T12-2</font></td><td align=LEFT><font size =-1>UC 67 </font></td><td align=LEFT><font size =-1>R. Kingston</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL486H1>POL486H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Topics Inter Pol I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T10-12</font></td><td align=LEFT><font size =-1>UC 148 </font></td><td align=LEFT><font size =-1>R. Matthews</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol486h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL486Y1>POL486Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Topics Inter Pol I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R2-4</font></td><td align=LEFT><font size =-1>UC 65 </font></td><td align=LEFT><font size =-1>L. Gilady</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol486y1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL487H1>POL487H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Topics Inter Pol II</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M1:30-4</font></td><td align=LEFT><font size =-1>UC 248 </font></td><td align=LEFT><font size =-1>S. Clarkson</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol487h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL490H1>POL490H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Topics in Can Pol I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T4-6</font></td><td align=LEFT><font size =-1>SS 2101 </font></td><td align=LEFT><font size =-1>P. Russell</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=3><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol490h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL490H1>POL490H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Topics in Can Pol I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T10-12</font></td><td align=LEFT><font size =-1>UC 248 </font></td><td align=LEFT><font size =-1>E. Tolley</font></td><td><font size =-1>P</font></td></tr>
+
+<tr>
+  <td align=LEFT><font size ="-1"><a href="/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL490H1">POL490H1</a></font></td>
+  <td><font size ="-1">S</font></td>
+  <td ALIGN='LEFT'><font size ="-1">Topics in Can Pol I</font></td>
+  <td align=LEFT><font size ="-1"><strong>L5101<br />
+    (note: section added)
+  </strong></font></td>
+  <td><font size ="-1">Y</font></td>
+  <td align=LEFT><font size="-1">T6-8</font></td>
+  <td align=LEFT><font size="-1">TC24</font></td>
+  <td align=LEFT><font size="-1">C. Cochrane</font></td>
+  <td><font size ="-1">P</font></td>
+  </tr>
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL491H1>POL491H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Topics in Can Pol II</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W10-12</font></td><td align=LEFT><font size =-1>UC 248 </font></td><td align=LEFT><font size =-1>R. Schertzer</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol491h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL492H1>POL492H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Topic in Comp Pol IV</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W2-4</font></td><td align=LEFT><font size =-1>TC 24 </font></td><td align=LEFT><font size =-1>E. Schatz</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol492h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL492H1>POL492H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Topic in Comp Pol IV</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T2-4</font></td><td align=LEFT><font size =-1>UC 65 </font></td><td align=LEFT><font size =-1>T. Enright</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL493H1>POL493H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Topics in Politics I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W4-6</font></td><td align=LEFT><font size =-1>SK 548 </font></td><td align=LEFT><font size =-1>W. Wong</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol493h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL494H1>POL494H1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Topics in Politics II</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-7:30</font></td><td align=LEFT><font size =-1>CR 403 </font></td><td align=LEFT><font size =-1>A. Careless</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/pol_pol494h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL495Y1>POL495Y1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Independent Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=3><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL495Y1>POL495Y1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Independent Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL495Y1>POL495Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Independent Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL496H1>POL496H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Independent Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=3><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL496H1>POL496H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Independent Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL496H1>POL496H1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Independent Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL497H1>POL497H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Independent Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=3><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL497H1>POL497H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Independent Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL497H1>POL497H1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Independent Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_pol.htm#POL499Y1>POL499Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Thesis and Seminar</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W10-12</font></td><td align=LEFT><font size =-1>AH 302 </font></td><td align=LEFT><font size =-1>L. Leduc</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+</table></center>
+<p>
+<hr>
+<center>
+<font size=-1>Return to: [ <a href="/web/20130906185444/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/sponsors.htm">Course Listings</a> |  <a href="/web/20130906185444/http://www.artsci.utoronto.ca/current/course/timetable">A & S 2013-2014 Fall/Winter Session Timetable: Contents</a>]</font>
+</center>
+<p><center>
+<TABLE BORDER=1 WIDTH=441 cellpadding=5>
+<tr>
+<td width="423" cellpadding="30"><i>Faculty of Arts and Science, University of Toronto</i><br>
+  Please send enquiries or comments to:
+  <A HREF="mailto:ask@artsci.utoronto.ca">ask@artsci.utoronto.ca</A><br />
+Updated: September 4, 2013<br>On-line date: August 19, 2013 (including all changes since March 28, 2013 version)
+  
+  
+  
+</td></tr>
+</table>
+</div>
+</div id="footer">
+<p>
+<font size="-1">All contents copyright & copy  2013.  &nbsp;</b>University of Toronto. All rights reserved.</center>
+<p>
+</div>
+
+</div>
+</body>
+</html>
+</body></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 18:54:44 Sep 6, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:25:37 Jun 20, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

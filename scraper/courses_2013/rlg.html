@@ -1,0 +1,590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<HEAD>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<meta http=equiv="Content-Type" content="text.html;charset=utf-8" />
+<meta name="description" content="" />
+
+    <title>Arts & Science 2013-2014 Fall/Winter Session Timetable for: Religion [RLG courses - includes MHB]</title>
+
+   <link rel="stylesheet" href="/web/20130920193409cs_/http://www.artsandscience.utoronto.ca/testdir/cal/c/c01.css"  type="text/css" media="all" />
+
+</HEAD>
+
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app10.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1420070399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/www.artsandscience.utoronto.ca\/ofr\/timetable\/winter\/rlg.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 475;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "20";
+var displayMonth = "Sep";
+var displayYear = "2013";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.artsandscience.utoronto.ca/ofr/timetable/winter/rlg.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20130920193409" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20130820080330/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/rlg.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="20 Aug 2013"><strong>AUG</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 19:34:09 Sep 20, 2013">SEP</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20131022163843/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/rlg.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="22 Oct 2013"><strong>OCT</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20130820080330/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/rlg.html" title="8:03:30 Aug 20, 2013" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 19:34:09 Sep 20, 2013">20</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20131022163843/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/rlg.html" title="16:38:43 Oct 22, 2013" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20120824192052/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/rlg.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Aug 2012"><strong>2012</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 19:34:09 Sep 20, 2013">2013</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2014
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20130920193409*/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/rlg.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>123 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">12 Mar 00 - 22 Oct 13</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:475px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:475px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="475"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=475_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:001001000101_2001:-1:010001010101_2002:-1:000101010101_2003:-1:010101010101_2004:-1:010101010000_2005:-1:000001010000_2006:-1:000000000000_2007:-1:000000110000_2008:-1:000000efa101_2009:-1:001111111111_2010:-1:101101111111_2011:-1:100001111001_2012:-1:000001011110_2013:8:000000111100_2014:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="wrapper">
+   <div id="header"></div>
+   <div id="banner"></div> 
+   <div id="content">
+
+<center> <h2><font color="#608568">Religion [RLG courses - includes MHB]</h2></CENTER></font>
+
+
+<p><hr>
+The following timetable information is the most current information available.  Courses and meeting sections added will be listed below. Courses and meeting sections cancelled will be indicated as such. 
+
+<hr><br>
+<p><b>Prerequisites: </b>Students without proper prerequisites may be removed from the course. Please see the Arts & Science calendar for prerequisite requirements. </p>
+<p><b>For RLG100Y1 and 280Y1: </b>Tutorials are included in the lecture time, for L0101 Friday 12:00 to 1:00 p.m. and for L5101 Thursday  5:00 to 6:00 p.m. Students will be informed about their tutorial groups during the first two weeks of class. There will be no tutorials during these two weeks.
+<p><b>For 'E' indicator courses:</b> please see information on how to enroll in this type of course in the undergraduate section of the Religion website at <a href="/web/20130920193409/http://www.religion.utoronto.ca/programs/undergraduate/">www.religion.utoronto.ca/programs/undergraduate/</a>.</p>
+<hr><center>
+<b><a href="/web/20130920193409/http://www.artsci.utoronto.ca/current/course/timetable/1314_fw/codes-used-in-the-timetable-listings">Explanation on codes and Enrolment Indicators</a></b>
+</center>
+<p><center>
+<table border=1>
+<tr><TD ALIGN="CENTER" colspan="10"><font color=#608568><B>Religion [RLG courses - includes MHB]</B><br></font></TD></tr>
+<tr>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Course</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>SC</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Title<br><i>(subtitle)</i></b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Meeting<br>Section</b></FONT></TD>
+<TD VALIGN="CENTER" ROWSPAN="2"><FONT COLOR=#608568><b>Wait<br>List</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Time</b></font></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Location</b></font></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Instructor</b></font></TD>
+<TD COLSPAN="2"><FONT COLOR=#608568><b>Enrolment</b></font></TD>
+</tr>
+<tr>
+<TD VALIGN="LEFT"><FONT COLOR=#608568><b>Ind</b></font></TD>
+<TD VALIGN="LEFT"><FONT COLOR=#608568><b>Controls</b></font></TD>
+</tr>
+<br>
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_mhb.htm#MHB155H1>MHB155H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Elem Modern Hebrew I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW2-4</font></td><td align=LEFT><font size =-1>SS 2120 </font></td><td align=LEFT><font size =-1>Y. Nizri</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_mhb.htm#MHB156H1>MHB156H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Elem Modern Hebrew II</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW2-4</font></td><td align=LEFT><font size =-1>SS 2120 </font></td><td align=LEFT><font size =-1>Y. Nizri</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_mhb.htm#MHB255H1>MHB255H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Inter Modern Hebrew I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR11-1</font></td><td align=LEFT><font size =-1>SS 2120 </font></td><td align=LEFT><font size =-1>Y. Nizri</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_mhb.htm#MHB256H1>MHB256H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Inter Modern Hebrew II</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR11-1</font></td><td align=LEFT><font size =-1>SS 2120 </font></td><td align=LEFT><font size =-1>Y. Nizri</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_mhb.htm#MHB355H1>MHB355H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Adv Mod Hebrew I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR2-4</font></td><td align=LEFT><font size =-1>JH 214 </font></td><td align=LEFT><font size =-1>Y. Nizri</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_mhb.htm#MHB356H1>MHB356H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Adv Mod Hebrew II</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR2-4</font></td><td align=LEFT><font size =-1>JH 214 </font></td><td align=LEFT><font size =-1>Y. Nizri</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG100Y1>RLG100Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>World Religions</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW9</font></td><td align=LEFT><font size =-1>BT 101 </font></td><td align=LEFT><font size =-1>A. Dhand</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=4><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+<td align=LEFT><font size =-1>F12 (t)</font></td><td align=LEFT>&nbsp;</td><td align=LEFT><font size =-1>A. Dhand</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td>
+  <td align="left"><font size ="-1">R6-8</font></td>
+  <td align="left"><font size ="-1">BR 200 </font></td>
+  <td align=LEFT><font size =-1>D. Perley</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td align=LEFT><font size ="-1">R5 (t)</font></td><td align=LEFT><font size =-1>&nbsp; </font></td><td align=LEFT><font size =-1>D. Perley</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG200H1>RLG200H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Study of Religion</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R4-6</font></td><td align=LEFT><font size =-1>SS 2118 </font></td><td align=LEFT><font size =-1>M. King</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG203Y1>RLG203Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Christian Rel Trad</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M6-8</font></td>
+<td align=LEFT><p><font size="-1">UC 179 (Fall); MP 137 (Winter) <strong>(note: room change)</strong></font></p></td><td align=LEFT><font size =-1>Fisher/Vearncombe</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG204Y1>RLG204Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Islamic Rel Trad</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W1-3</font></td>
+  <td align=LEFT><font size =-1><strong>MP 137<br />
+    (note: room change)
+  </strong></font></td><td align=LEFT><font size =-1>L. Silvers</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG205Y1>RLG205Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Hindu Rel Trad</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M12-2</font></td><td align=LEFT><font size =-1>SS 1086 </font></td><td align=LEFT><font size =-1>I. Richards</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG209H1>RLG209H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Religious Belief</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W3-5</font></td><td align=LEFT><font size =-1>SS 1072 </font></td><td align=LEFT><font size =-1>S. Goldberg</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG211Y1>RLG211Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Intro Psych of Rel</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M10-12</font></td><td align=LEFT><font size =-1>SS 1085 </font></td><td align=LEFT><font size =-1>D. Perley</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG213H1>RLG213H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Reading Sacred Texts</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R6-8</font></td><td align=LEFT><font size =-1>SS 2106 </font></td><td align=LEFT><font size =-1>N. La Coste</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG215H1>RLG215H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Pilgrimage Idea</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W10-12</font></td><td align=LEFT><font size =-1>AB 107 </font></td><td align=LEFT><font size =-1>S. Coleman</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG227H1>RLG227H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Animals and Religion</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W6-8</font></td><td align=LEFT><font size =-1>SS 2105 </font></td><td align=LEFT><font size =-1>T. York</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG228H1>RLG228H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Rel Ethics: Envirnmt</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-8</font></td><td align=LEFT><font size =-1>SS 1084 </font></td><td align=LEFT><font size =-1>S. Appolloni</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG232H1>RLG232H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Religion & Film</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R6-9</font></td><td align=LEFT><font size =-1>LM 162 </font></td><td align=LEFT><font size =-1>M. Dasios</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG235H1>RLG235H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Gender and Sexuality</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>R10-12</font></td><td align=LEFT><font size =-1>SS 2108 </font></td><td align=LEFT><font size =-1>B. De Bruijn</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG239H1>RLG239H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Special Topics</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R2-4</font></td><td align=LEFT><font size =-1>UC 177 </font></td><td align=LEFT><font size =-1>E. Septimus</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=4><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG239H1>RLG239H1</a></font></td><td><font size =-1>S</font></td><td align=LEFT><font size =-1>Special Topics</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T5-7</font></td><td align=LEFT><font size =-1>UC 256 </font></td><td align=LEFT><font size =-1>Brahmbhatt/Steinschneider</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG241Y1>RLG241Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Early Christn Writng</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W5-7</font></td><td align=LEFT><font size =-1>WI 1016 </font></td><td align=LEFT><font size =-1>J. Kloppenborg</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG248H1>RLG248H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Martyrs Mystics</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R1-4</font></td><td align=LEFT><font size =-1>AH 107 </font></td><td align=LEFT><font size =-1>L. Hayes</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG280Y1>RLG280Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Compar World Rels</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW9</font></td><td align=LEFT><font size =-1>BT 101 </font></td><td align=LEFT><font size =-1>A. Dhand</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=4><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td align="left"><font size ="-1">F12 (t)</font></td>
+  <td align="left">&nbsp;</td>
+  <td align=LEFT><font size =-1>A. Dhand</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td>
+  <td align="left"><font size ="-1">R6-8</font></td>
+  <td align="left"><font size ="-1">BR 200 </font></td>
+  <td align=LEFT><font size =-1>D. Perley</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td align="left"><font size ="-1">R5 (t)</font></td>
+  <td align="left"><font size ="-1">&nbsp; </font></td>
+  <td align=LEFT><font size =-1>D. Perley</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG299Y1>RLG299Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Rsch Opportunity Prg</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>C. Emmrich</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>S. Virani</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG301H1>RLG301H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Freud on Religion</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>F12-2</font></td><td align=LEFT><font size =-1>SS 1084 </font></td><td align=LEFT><font size =-1>N. Dion</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG305H1>RLG305H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Material Religion</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T10-12</font></td><td align=LEFT><font size =-1>UC 140 </font></td><td align=LEFT><font size =-1>S. Coleman</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG309Y1>RLG309Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Rel & Human Rights</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M5-7</font></td>
+  <td align=LEFT><font size =-1>SS 1085 (Fall)<br />
+    SS 2127 (Winter)
+  </font></td><td align=LEFT><font size =-1>E. Pontoriero</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG310Y1>RLG310Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Modern Atheism</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M3-5</font></td><td align=LEFT><font size =-1>SS 1088 </font></td><td align=LEFT><font size =-1>J. Dicenso</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG311H1>RLG311H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Gender in Asian Trad</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>F10-12</font></td><td align=LEFT><font size =-1>SS 1084 </font></td><td align=LEFT><font size =-1>S. Raman</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG315H1>RLG315H1</a></font></td><td><font size =-1>F</font></td><td align=LEFT><font size =-1>Rites of Passage</font></td><td align=LEFT><font size =-1>L5101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG322H1>RLG322H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Early Gospels</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M6-8</font></td><td align=LEFT><font size =-1>WI 524 </font></td><td align=LEFT><font size =-1>C. Callon</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG324H1>RLG324H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Paul of Tarsus</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T11-1</font></td><td align=LEFT><font size =-1>UC 257 </font></td><td align=LEFT><font size =-1>J. Marshall</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG326H1>RLG326H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Roots of Xianity</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R11-1</font></td><td align=LEFT><font size =-1>AH 206 </font></td><td align=LEFT><font size =-1>J. Newman</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG333H1>RLG333H1</a></font></td><td><font size =-1>F</font></td><td align=LEFT><font size =-1>Christnty & Conflict</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG337H1>RLG337H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Witchcraft & Magic</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R1-4</font></td>
+  <td align=LEFT><font size =-1>HI CART </font></td><td align=LEFT><font size =-1>L. Hayes</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG342Y1>RLG342Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Judaism in Modrn Age</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T10-12</font></td><td align=LEFT><font size =-1>UC 330 </font></td><td align=LEFT><font size =-1>K. Green</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG343H1>RLG343H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Kabbala</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T2-4</font></td><td align=LEFT><font size =-1>UC 326 </font></td><td align=LEFT><font size =-1>K. Green</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG344H1>RLG344H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Antisemitism</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T3-5</font></td><td align=LEFT><font size =-1>SS 1072 </font></td><td align=LEFT><font size =-1>S. Goldberg</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG350H1>RLG350H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Muhammad's Life</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R6-8</font></td><td align=LEFT><font size =-1>SS 2106 </font></td><td align=LEFT><font size =-1>W. Saleh</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG352H1>RLG352H1</a></font></td><td><font size =-1>S</font></td><td align=LEFT><font size =-1>Post-Colonial Islam</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG359H1>RLG359H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Inter Sanskrit I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td>
+  <td align=LEFT><font size =-1><strong>T4-6</strong></font></td><td align=LEFT><font size =-1>SS 2114 </font></td><td align=LEFT><font size =-1>E. Mills</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr>
+  <td align=LEFT>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td ALIGN='LEFT'>&nbsp;</td>
+  <td align=LEFT>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td align=LEFT><font size="-1"><strong>F10-12<br />
+    (note: time change)
+  </strong></font></td>
+  <td align=LEFT><font size="-1"><strong>SS 2115<br />
+    (note: room change)
+  </strong></font></td>
+  <td align=LEFT><font size ="-1">E. Mills</font></td>
+  <td>&nbsp;</td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG360H1>RLG360H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Inter Sanskrit II</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR4-6</font></td><td align=LEFT><font size =-1>SS 2114 </font></td><td align=LEFT><font size =-1>E. Mills</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG362H1>RLG362H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Rama of Ayodhya</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W12-2</font></td><td align=LEFT><font size =-1>NF 004 </font></td><td align=LEFT><font size =-1>A. Dhand</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG363H1>RLG363H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Bhakti Hinduism</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>M2-4</font></td><td align=LEFT><font size =-1>SS 2108 </font></td><td align=LEFT><font size =-1>S. Raman</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG366H1>RLG366H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Hindu Philosophy</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>F2-4</font></td><td align=LEFT><font size =-1>SS 1070 </font></td><td align=LEFT><font size =-1>S. Raman</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG372H1>RLG372H1</a></font></td><td><font size =-1>S</font></td><td align=LEFT><font size =-1>Tibetan Buddhism</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG375H1>RLG375H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Buddhist Thought</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>R2-4</font></td><td align=LEFT><font size =-1>SS 1086 </font></td><td align=LEFT><font size =-1>R. Pang</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG378H1>RLG378H1</a></font></td><td><font size =-1>F</font></td><td align=LEFT><font size =-1>Himalayan Buddhism</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG379H1>RLG379H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Central Asian Buddhism</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T11-1</font></td><td align=LEFT><font size =-1>SS 2105 </font></td><td align=LEFT><font size =-1>A. Goodman</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG382H1>RLG382H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Taking of Human Life</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W1-3</font></td><td align=LEFT><font size =-1>BF 315 </font></td><td align=LEFT><font size =-1>D. Novak</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG388H1>RLG388H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Special Topics I</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T5-7</font></td><td align=LEFT><font size =-1>SS 1078 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG388H1>RLG388H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Special Topics I</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T5-7</font></td><td align=LEFT><font size =-1>SS 1078 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG389H1>RLG389H1</a></font></td><td><font size =-1>F</font></td><td align=LEFT><font size =-1>Special Topics II</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG389H1>RLG389H1</a></font></td><td><font size =-1>S</font></td><td align=LEFT><font size =-1>Special Topics II</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG400Y1>RLG400Y1</a></font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>Independent Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG401H1>RLG401H1</a></font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>Independent Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG402H1>RLG402H1</a></font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>Independent Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG404H1>RLG404H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Capstone Research</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M12-2</font></td><td align=LEFT><font size =-1>SS 2128 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>R</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/rlg_rlg404h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG406H1>RLG406H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Construct Religion</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T10-12</font></td><td align=LEFT><font size =-1>JH 214 </font></td><td align=LEFT><font size =-1>S. Coleman</font></td><td><font size =-1>R</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/rlg_rlg406h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG410Y1>RLG410Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Advance Topics Rlg</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG411H1>RLG411H1</a></font></td><td><font size =-1>F</font></td><td align=LEFT><font size =-1>Advance Topics Rlg</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG411H1>RLG411H1</a></font></td><td><font size =-1>S</font></td><td align=LEFT><font size =-1>Advance Topics Rlg</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG412H1>RLG412H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Advance Topics Rlg</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG418H1>RLG418H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Phil Study Religion</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>R12-2</font></td><td align=LEFT><font size =-1>JH 317 </font></td><td align=LEFT><font size =-1>S. Goldberg</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG420H1>RLG420H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Rlg&Phil in Enlightm</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W3-5</font></td><td align=LEFT><font size =-1>JH 317 </font></td><td align=LEFT><font size =-1>J. Dicenso</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG425H1>RLG425H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Hermeneutics & Rel</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W3-5</font></td><td align=LEFT><font size =-1>JH 317 </font></td><td align=LEFT><font size =-1>J. Dicenso</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG426H1>RLG426H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>RPS Service Learning</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>R10-12</font></td><td align=LEFT><font size =-1>JH 317 </font></td><td align=LEFT><font size =-1>A. Fisher</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG428H1>RLG428H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Religion and Economy</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>M3-5</font></td><td align=LEFT><font size =-1>JH 317 </font></td><td align=LEFT><font size =-1>A. Mittermaier</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG430H1>RLG430H1</a></font></td><td><font size =-1>S</font></td><td align=LEFT><font size =-1>Adv Top in Judaism</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG431H1>RLG431H1</a></font></td><td><font size =-1>F</font></td><td align=LEFT><font size =-1>Advanced Topics in Judaism</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG432Y1>RLG432Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>NatLaw Judaism&Christianity</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>T1-3</font></td>
+<td align=LEFT><font size =-1><strong>SS 2115 (fall)<br />
+  SS 621 (spring)<br />
+  (note: room change)
+</strong></font></td><td align=LEFT><font size =-1>D. Novak</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG433H1>RLG433H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Maimonides&Mod Interp</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>T2-4</font></td><td align=LEFT><font size =-1>UC 326 </font></td><td align=LEFT><font size =-1>K. Green</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG441H1>RLG441H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Words & Worship</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W10-12</font></td><td align=LEFT><font size =-1>JH 214 </font></td><td align=LEFT><font size =-1>S. Coleman</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG449H1>RLG449H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Synoptic Problem</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W9-12</font></td><td align=LEFT><font size =-1>TC 24 </font></td><td align=LEFT><font size =-1>J. Kloppenborg</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG455H1>RLG455H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Heresy in Early Xy</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>T1-3</font></td><td align=LEFT><font size =-1>UC 257 </font></td><td align=LEFT><font size =-1>J. Marshall</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG458H1>RLG458H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Topics in Islam</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M12-2</font></td><td align=LEFT><font size =-1>SS 2129 </font></td><td align=LEFT><font size =-1>L. Silvers</font></td><td><font size =-1>RP</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/rlg_rlg458h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG460H1>RLG460H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Ramayana in Literature</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>W12-2</font></td><td align=LEFT><font size =-1>NF 009 </font></td><td align=LEFT><font size =-1>A. Dhand</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG465H1>RLG465H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Buddhist Texts Readings</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>M10-12</font></td><td align=LEFT><font size =-1>JH 317 </font></td><td align=LEFT><font size =-1>C. Emmrich</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG469Y1>RLG469Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Readings Tibet Bud</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TR4-6</font></td><td align=LEFT><font size =-1>JH 214 </font></td><td align=LEFT><font size =-1>K. Sherab</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG470H1>RLG470H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Buddhist Tantra</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td>
+<td align=LEFT><font size="-1"><strong>W2-4<br />
+   (note: time change)
+</strong></font></td><td align=LEFT><font size =-1>JH 319</font></td><td align=LEFT><font size =-1>A. Goodman</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG473H1>RLG473H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Vedanta</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>M10-12</font></td><td align=LEFT><font size =-1>JH 317 </font></td><td align=LEFT><font size =-1>S. Raman</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG474H1>RLG474H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Sanskrit Readings 1</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>M3-4:30</font></td><td align=LEFT><font size =-1>JH 214 </font></td><td align=LEFT><font size =-1>A. Rao</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=3><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R10-11:30</font></td><td align=LEFT><font size =-1>JH 214 </font></td><td align=LEFT><font size =-1>A. Rao</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG474H1>RLG474H1</a></font></td><td><font size =-1>S</font></td><td align=LEFT><font size =-1>Sanskrit Readings 1</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG490Y1>RLG490Y1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Individual Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=5><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG490Y1>RLG490Y1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Individual Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG490Y1>RLG490Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Individual Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG491H1>RLG491H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Individual Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG492H1>RLG492H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Individual Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG492H1>RLG492H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Individual Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG493H1>RLG493H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Individual Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG493H1>RLG493H1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Individual Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG494Y1>RLG494Y1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Individual Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_rlg.htm#RLG494Y1>RLG494Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Individual Studies</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+</table></center>
+<p>
+<hr>
+<center>
+<font size=-1>Return to: [ <a href="/web/20130920193409/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/sponsors.htm">Course Listings</a> |  <a href="/web/20130920193409/http://www.artsci.utoronto.ca/current/course/timetable">A & S 2013-2014 Fall/Winter Session Timetable: Contents</a>]</font>
+</center>
+<p><center>
+<TABLE BORDER=1 WIDTH=400 cellpadding=5>
+<tr>
+<td cellpadding="30"><i>Faculty of Arts and Science, University of Toronto</i><br>
+  Please send enquiries or comments to:
+  <A HREF="mailto:ask@artsci.utoronto.ca">ask@artsci.utoronto.ca</A>
+  <br>
+  Updated: September 17, 2013<br />
+  On-line date: August 19, 2013 (including all changes since March 28, 2013 version)
+  
+  
+  
+</td></tr>
+</table>
+</div>
+</div id="footer">
+<p>
+<font size="-1">All contents copyright & copy  2013.  &nbsp;</b>University of Toronto. All rights reserved.</center>
+<p>
+</div>
+
+</div>
+</body>
+</html>
+</body></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 19:34:09 Sep 20, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:25:50 Jun 20, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

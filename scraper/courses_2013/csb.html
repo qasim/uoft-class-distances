@@ -1,0 +1,687 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<HEAD>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<meta http=equiv="Content-Type" content="text.html;charset=utf-8" />
+<meta name="description" content="" />
+
+    <title>Arts & Science 2012-2013 Fall/Winter Session Timetable for: Cell and Systems Biology [CSB courses - includes BIO120H1, 220H1, 251H1, EHJ352H1, ENV234H1, 334H1 and JMB170Y1]</title>
+
+   <link rel="stylesheet" href="/web/20130104232832cs_/http://www.artsandscience.utoronto.ca/testdir/cal/c/c01.css"  type="text/css" media="all" />
+
+</HEAD>
+
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app0.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1420070399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/www.artsandscience.utoronto.ca\/ofr\/timetable\/winter\/csb.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 475;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "4";
+var displayMonth = "Jan";
+var displayYear = "2013";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csb.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20130104232832" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20120827093308/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csb.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="27 Aug 2012"><strong>AUG</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 23:28:32 Jan 4, 2013">JAN</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       Feb
+                       
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20121205045006/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csb.html" title="4:50:06 Dec 5, 2012" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 23:28:32 Jan 4, 2013">4</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+                       
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20110918001049/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csb.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="18 Sep 2011"><strong>2011</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 23:28:32 Jan 4, 2013">2013</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2014
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20130104232832*/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csb.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>86 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">11 Aug 07 - 4 Jan 13</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:475px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:475px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="475"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=475_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000010000_2008:-1:000000ffb101_2009:-1:001011111100_2010:-1:111001111111_2011:-1:000000111000_2012:-1:100000110001_2013:0:100000000000_2014:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="wrapper">
+   <div id="header"></div>
+   <div id="banner"></div> 
+   <div id="content">
+
+<center> <h2><font color="#608568">Cell and Systems Biology [CSB courses - includes BIO130H1, 230H1, 255H1, 260H1, 270H1 and 271H1]</h2></CENTER></font>
+
+
+<p><hr>
+The following timetable information is the most current information available since the publication of the 2012-2013 Registration Handbook. Courses and meeting sections added will be listed below. Courses and meeting sections cancelled will be indicated as such. 
+
+<hr><br>
+<p><b>For BIO130H1: </b>Practicals (laboratories) meet in alternate weeks (A): practical meeting section numbers that end with 1 start the week of January 14; practical meeting section numbers that end with 2 start the week of January 21. Laboratory enrolment can be done on the <a href="/web/20130104232832/https://www.rosi.utoronto.ca/main.html">SWS</a> until the evening of Thursday, January 3. Late lab enrolment or lab changes must be done in the BIO130H1/230H1/BIO255H1 Office (ES 3053) starting Monday, January 7 until January 11.</p>
+<p><b>For BIO230H1:</b> Practicals (laboratories) meet in alternate weeks (A):PRACTICAL meeting section numbers that end with 1 start the week of September 17; PRACTICAL meeting section numbers that end with 2 start the week of September 24. Check portal for more information. Laboratory enrolment can be done on the <a href="/web/20130104232832/https://www.rosi.utoronto.ca/main.html">SWS</a> until the evening of Thursday, September 6. Late lab enrolment or lab changes must be done in the BIO130H1/230H1/BIO255H1 Office (ES 3053) starting September 10 until September 14. For your BIO230H1 laboratory classes, if you plan to take any other course laboratory on the same day in alternating weeks, check the start dates.</p>
+<p><b>For BIO255H1:</b> Practicals (laboratories) meet every week and start Friday, September 14. Check portal for more information. Laboratory enrolment can be done on the <a href="/web/20130104232832/https://www.rosi.utoronto.ca/main.html">SWS</a> until the evening of Thursday, September 6. Late lab enrolment or lab changes must be done in the BIO130H1/230H1/BIO255H1 Office (ES 3053) starting September 10 until September 13. Check portal and <a href="/web/20130104232832/http://www.csb.utoronto.ca/undergraduate/courses/200">http://www.csb.utoronto.ca/undergraduate/courses/200</a> for more information.</p>
+<p><b>For BIO260H1: </b>Tutorial enrolment can be done on the <a href="/web/20130104232832/https://www.rosi.utoronto.ca/main.html">SWS</a> until the evening of Sunday, January 6. Late tutorial enrolment or tutorial changes must be done in the BIO260H1 Office (RW 424E) after this date.</p>
+<p><b>For BIO270H1: </b>Laboratory enrolment can be done on the <a href="/web/20130104232832/https://www.rosi.utoronto.ca/main.html">SWS</a> until the evening of Sunday, September 9. Late lab enrolment or lab changes must be done in the BIO270H1/271H1 Office (RW 424E) after this date.</p>
+<p><b>For BIO271H1: </b>Laboratory enrolment can be done on the <a href="/web/20130104232832/https://www.rosi.utoronto.ca/main.html">SWS</a> until the evening of Sunday, January 6. Late lab enrolment or lab changes must be done in the BIO270H1/271H1 Office (RW 424E) after this date.</p><hr>
+<p><b>For CSB325H1: </b>Students must register for one of the tutorial sessions which meet every third week. </p>
+<p><b>For CSB349H1: </b>enrolment in a tutorial section is done on the <a href="/web/20130104232832/https://www.rosi.utoronto.ca/main.html">SWS</a> until Thursday, September 6. Late tutorial enrolment or changes must be done in the CSB349H1 Office (ES 3053). </p>
+<p><b>For CSB352H1: </b>The lecture for all students is on Thursdays at 4:00 and will be approximately 30 minutes in length. The lectures will be recorded so that students in the Friday lab who may not be able to attend the Thursday lecture; can watch the lecture before their lab on Blackboard. All students will be doing the same labs for the same length of time on Thursdays and Fridays in spite of the discrepancy in the number of hours listed. </p>
+<p><b>For CSB397Y0:</b> For students going on a 3rd-year exchange program through CIE and are interested in doing a research course while abroad, contact the CSB Undergraduate Office (416-978-8879).</p>
+<p><b>For CSB445H1, 474H1, 483H1 and 491H1: </b>students must submit an application form to the CSB Undergraduate Office (RW 424) by Friday, June 22.  Forms are available at <a href="/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/www.csb.utoronto.ca/undergraduate/forms">www.csb.utoronto.ca/undergraduate/forms</a>.</p>
+<p><b>For CSB497H1 F, 498Y1 and 499Y1:</b> students must submit a completed CSB 497H1/498Y1/499Y1 contract to the Undergraduate Office (RW 424) by Wednesday, September 19, before being registered.  Contracts are available at <a href="/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/www.csb.utoronto.ca/undergraduate/forms">www.csb.utoronto.ca/undergraduate/forms</a>.</p>
+<p><b>For CSB497H1 S: </b>students must submit a completed CSB497H1 contract to the Undergraduate Office (RW 424) by Wednesday, January 16, before being registered.  Contracts are available at <a href="/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/www.csb.utoronto.ca/undergraduate/forms">www.csb.utoronto.ca/undergraduate/forms</a>.</p>
+<p><b>For PE indicator courses: </b>after the priority period has ended, obtain approval in the Cell and Systems Biology Undergraduate Office (RW 424). Forms are available at  <a href="/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/www.csb.utoronto.ca/undergraduate/forms">www.csb.utoronto.ca/undergraduate/forms</a>. </p>
+<p><b>Departmental Hours: </b>Monday to Friday, 9:00 a.m. to 1:00 p.m. and 2:00 to 5:00 p.m.
+</p>
+<hr><center>
+<b><a href="/web/20130104232832/http://www.artsci.utoronto.ca/current/course/timetable/1213_fw/codes-used-in-the-timetable-listings">Explanation on codes and Enrolment Indicators</a></b>
+</center>
+<p><center>
+<table border=1>
+<tr>
+  <TD ALIGN="CENTER" colspan="10"><font color=#608568><B>Cell and Systems Biology [CSB courses - includes BIO130H1, 230H1, 255H1, 260H1, 270H1 and 271H1]</B><br></font></TD></tr>
+<tr>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Course</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>SC</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Title<br><i>(subtitle)</i></b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Meeting<br>Section</b></FONT></TD>
+<TD VALIGN="CENTER" ROWSPAN="2"><FONT COLOR=#608568><b>Wait<br>List</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Time</b></font></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Location</b></font></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Instructor</b></font></TD>
+<TD COLSPAN="2"><FONT COLOR=#608568><b>Enrolment</b></font></TD>
+</tr>
+<tr>
+<TD VALIGN="LEFT"><FONT COLOR=#608568><b>Ind</b></font></TD>
+<TD VALIGN="LEFT"><FONT COLOR=#608568><b>Controls</b></font></TD>
+</tr>
+<br>
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_bio.htm#BIO130H1>BIO130H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Molecular & Cell Bio</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M10</font></td><td align=LEFT><font size =-1>CH  </font></td><td align=LEFT><font size =-1>Coleman/Mitchell</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R10-12</font></td><td align=LEFT><font size =-1>CH  </font></td><td align=LEFT><font size =-1>Coleman/Mitchell</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2001</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R6-9</font></td><td align=LEFT><font size =-1>MS 2158 </font></td><td align=LEFT><font size =-1>Tba</font></td>
+  <td><font size ="-1">R</font></td>
+  <td valign="middle" align="left"><font size ="-1"><a href="/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csb_bio130h1_L2001.html">See Details</a></font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R6-9</font></td><td align=LEFT><font size =-1>MS 2158 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0101</font></td><td>&nbsp;</td>
+  <td align=LEFT><font size =-1>M1-4 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0102</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M1-4 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T1-4 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0202</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T1-4 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W1-4 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0302</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W1-4 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R1-4 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0402</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R1-4 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0501</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F11-2 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0502</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F11-2 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P5101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M6-9 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P5102</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M6-9 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P5201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T5-8 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P5202</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T5-8 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_bio.htm#BIO230H1>BIO230H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Genes to Organisms</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T12-2</font></td><td align=LEFT><font size =-1>CH  </font></td><td align=LEFT><font size =-1>Desveaux/Harris</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=19><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R1</font></td><td align=LEFT><font size =-1>CH  </font></td><td align=LEFT><font size =-1>Desveaux/Harris</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T6-9</font></td><td align=LEFT><font size =-1>ES 1050 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T9-12 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0102</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T9-12 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T2-5 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0202</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T2-5 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W9-12 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0302</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W9-12 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W2-5 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0402</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W2-5 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0501</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R9-12 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0502</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R9-12 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0601</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R2-5 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0602</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R2-5 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P5101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W6-9 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P5102</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W6-9 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P5201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R6-9 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P5202</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R6-9 (A)</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_bio.htm#BIO255H1>BIO255H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Advanced Cell & Mol</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T12-2</font></td><td align=LEFT><font size =-1>CH  </font></td><td align=LEFT><font size =-1>Desveaux/Harris</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=5><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R1</font></td><td align=LEFT><font size =-1>CH  </font></td><td align=LEFT><font size =-1>Desveaux/Harris</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>F11-2</font></td><td align=LEFT><font size =-1>ES 1032 </font></td><td align=LEFT><font size =-1>Desveaux/Harris</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T6-9</font></td><td align=LEFT><font size =-1>ES 1050 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>F11-2</font></td><td align=LEFT><font size =-1>ES 1032 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_bio.htm#BIO260H1>BIO260H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Genetics</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR3-5</font></td><td align=LEFT><font size =-1>MC 102 </font></td><td align=LEFT><font size =-1>Tba/Peisajovich</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=9><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W11</font></td><td align=LEFT><font size =-1>RW 142 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W12</font></td><td align=LEFT><font size =-1>SS 1084 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0202</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W12</font></td><td align=LEFT><font size =-1>SS 1086 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W1</font></td><td align=LEFT><font size =-1>SS 1088 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0302</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W1</font></td><td align=LEFT><font size =-1>RW 143 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W2</font></td><td align=LEFT><font size =-1>RW 229 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0501</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W3</font></td><td align=LEFT><font size =-1>RW 143 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W5</font></td><td align=LEFT><font size =-1>RW 229 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_bio.htm#BIO270H1>BIO270H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Animal Physiology I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W3-5</font></td><td align=LEFT><font size =-1>CH  </font></td><td align=LEFT><font size =-1>C. Garside</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=6><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M1-4</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T9-12</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T2-5</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R9-12</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0501</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F9-12</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_bio.htm#BIO271H1>BIO271H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Animal Physiology II</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W3-5</font></td><td align=LEFT><font size =-1>CH  </font></td><td align=LEFT><font size =-1>Woodin/Garside</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=6><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M1-4</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T9-12</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T2-5</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R9-12</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0501</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F9-12</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB200Y1>CSB200Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Topics in Molec Bio</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR10</font></td><td align=LEFT><font size =-1>SS 2111 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R11</font></td><td align=LEFT><font size =-1>SS 2111 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB299Y1>CSB299Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Rsch Opportunity Prg</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>M. Abouhaidar</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=4><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>D. Desveaux</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0301</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>M. Woodin</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0401</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>N. Provart</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB325H1>CSB325H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Endocrine Physiology</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T11-1</font></td><td align=LEFT><font size =-1>MP 202 </font></td><td align=LEFT><font size =-1>D. Lovejoy</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=4><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W12-3</font></td><td align=LEFT><font size =-1>RW 229 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R4-7</font></td><td align=LEFT><font size =-1>SS 2111 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W5-8</font></td><td align=LEFT><font size =-1>SS 2111 </font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB327H1>CSB327H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Matrix Dynamic Patho</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M2</font></td><td align=LEFT><font size =-1>LM 159 </font></td><td align=LEFT><font size =-1>M. Ringuette</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W2-4</font></td><td align=LEFT><font size =-1>LM 159 </font></td><td align=LEFT><font size =-1>M. Ringuette</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB328H1>CSB328H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Developmental Bio</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M3</font></td>
+<td align=LEFT><strong><font size =-1>BA 1190<br />
+  (note: room change)
+</font></strong></td><td align=LEFT><font size =-1>Godt/Bruce</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=9><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W1</font></td><td align=LEFT><strong><font size ="-1">BA 1190<br />
+(note: room change) </font></strong></td><td align=LEFT><font size =-1>Godt/Bruce</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T3-5</font></td><td align=LEFT>&nbsp;</td><td align=LEFT><font size =-1>Godt/Bruce</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>Y</font></td>
+  <td align="left"><font size ="-1">M3</font></td>
+  <td align="left"><strong><font size ="-1">BA 1190<br />
+    (note: room change) </font></strong></td>
+  <td align=LEFT><font size =-1>Godt/Bruce</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td align="left"><font size ="-1">W1</font></td>
+  <td align="left"><strong><font size ="-1">BA 1190<br />
+    (note: room change) </font></strong></td>
+  <td align=LEFT><font size =-1>Godt/Bruce</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5-7</font></td><td align=LEFT>&nbsp;</td><td align=LEFT><font size =-1>Godt/Bruce</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0301</font></td><td><font size =-1>Y</font></td>
+  <td align="left"><font size ="-1">M3</font></td>
+  <td align="left"><strong><font size ="-1">BA 1190<br />
+    (note: room change) </font></strong></td>
+  <td align=LEFT><font size =-1>Godt/Bruce</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td>
+  <td align="left"><font size ="-1">W1</font></td>
+  <td align="left"><strong><font size ="-1">BA 1190<br />
+    (note: room change) </font></strong></td>
+  <td align=LEFT><font size =-1>Godt/Bruce</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W5-7</font></td><td align=LEFT>&nbsp;</td><td align=LEFT><font size =-1>Godt/Bruce</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB330H1>CSB330H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Tech Mol & Cell Bio</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M9:30-11:30</font></td><td align=LEFT><font size =-1>RW 142 </font></td><td align=LEFT><font size =-1>Goring/Mitchell</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W9:30-12:30</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Goring/Mitchell</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB331H1>CSB331H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Adv Cell Biol I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M2</font></td>
+<td align=LEFT><font size =-1><strong>LM 159<br />
+  (note: room change)
+</strong></font></td><td align=LEFT><font size =-1>M. Ringuette</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W2-4</font></td><td align=LEFT><font size ="-1"><strong>LM 159<br />
+(note: room change) </strong></font></td><td align=LEFT><font size =-1>M. Ringuette</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB332H1>CSB332H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Synapse Neurobiology</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW11</font></td><td align=LEFT><font size =-1>ES 1050 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB340H1>CSB340H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Plant Development</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR1</font></td><td align=LEFT><font size =-1>ES B142 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB343H1>CSB343H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Animal Energetics</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>F10-12</font></td><td align=LEFT><font size =-1>RW 117 </font></td><td align=LEFT><font size =-1>R. Stephenson</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB345H1>CSB345H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Intro Sleep Biology</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R1-3</font></td><td align=LEFT><font size =-1>RW 117 </font></td><td align=LEFT><font size =-1>R. Stephenson</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB346H1>CSB346H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Respiration Neurobiology</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T4-6</font></td><td align=LEFT><font size =-1>MS 2158 </font></td><td align=LEFT><font size =-1>J. Peever</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R5</font></td><td align=LEFT><font size =-1>MS 2158 </font></td><td align=LEFT><font size =-1>J. Peever</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB347H1>CSB347H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Comp Cell Physiology</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR11</font></td><td align=LEFT><font size =-1>BA 1160 </font></td><td align=LEFT><font size =-1>Garside/Tba</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB349H1>CSB349H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Eukaryotic Gene Express</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M1</font></td><td align=LEFT><font size =-1>ES 1050 </font></td><td align=LEFT><font size =-1>Tba/Moses</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=10><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W9-11</font></td><td align=LEFT><font size =-1>ES 1050 </font></td><td align=LEFT><font size =-1>Tba/Moses</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T10-12</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T2-4</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T4-6</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W2-4</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0501</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W4-6</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0601</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R10-12</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0701</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R2-4</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0801</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R4-6</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB350H1>CSB350H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Molecular Plant Lab</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M10-12</font></td><td align=LEFT><font size =-1>ES B142 </font></td><td align=LEFT><font size =-1>Christendat/Nambara</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R9-12</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Christendat/Nambara</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB351Y1>CSB351Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Introduct Virology</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR2</font></td><td align=LEFT><font size =-1>MS 2158 </font></td><td align=LEFT><font size =-1>M. Abouhaidar</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB352H1>CSB352H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Bioinformatic Methods</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R4</font></td><td align=LEFT><font size =-1>RW 110 </font></td><td align=LEFT><font size =-1>N. Provart</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=3><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R5</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>P0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F12-2</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB353H1>CSB353H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Intro Plant-Microbe</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R3-5</font></td><td align=LEFT><font size =-1>WI 1016 </font></td><td align=LEFT><font size =-1>K. Yoshioka</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB397Y0>CSB397Y0</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>CSB Research Abroad</font></td><td align=LEFT><font size =-1>L3001</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>M. Woodin</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB426H1>CSB426H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Stress Reproduction</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M1</font></td><td align=LEFT><font size =-1>RW 142 </font></td><td align=LEFT><font size =-1>D. Lovejoy</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W10-12</font></td><td align=LEFT><font size =-1>RW 142 </font></td><td align=LEFT><font size =-1>D. Lovejoy</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB428H1>CSB428H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Adv Cell Bio II</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W1-4</font></td><td align=LEFT><font size =-1>RW 142 </font></td><td align=LEFT><font size =-1>Harris/Tba</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB429H1>CSB429H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Germ Cell Biology</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T6-9</font></td><td align=LEFT><font size =-1>RW 142 </font></td><td align=LEFT><font size =-1>D. Godt</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB430H1>CSB430H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Neurogenesis</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW4</font></td><td align=LEFT><font size =-1>RW 142 </font></td><td align=LEFT><font size =-1>V. Tropepe</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W5</font></td><td align=LEFT><font size =-1>RW 142 </font></td><td align=LEFT><font size =-1>V. Tropepe</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB431H1>CSB431H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Gastrulation</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M2</font></td><td align=LEFT><font size =-1>RW 15 A</font></td><td align=LEFT><font size =-1>Winklbauer/Bruce</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T3-5</font></td><td align=LEFT><font size =-1>RW 15 A</font></td><td align=LEFT><font size =-1>Winklbauer/Bruce</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB432H1>CSB432H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Advanced Neurophys</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T2-5</font></td>
+<td align=LEFT><strong><font size =-1>IN 312<br />
+  (note: room change)
+</font></strong></td><td align=LEFT><font size =-1>M. Woodin</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB435H1>CSB435H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Reg Net In Molec Bio</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T5-7</font></td><td align=LEFT><font size =-1>ES 3087 </font></td><td align=LEFT><font size =-1>A. Moses</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB445H1>CSB445H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Topic Sleep Research</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>R9-12</font></td><td align=LEFT><font size =-1>RW 15 A</font></td><td align=LEFT><font size =-1>R. Stephenson</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB452H1>CSB452H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Mol Plant-Microb Int</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M5-7</font></td><td align=LEFT><font size =-1>ES 3087 </font></td><td align=LEFT><font size =-1>Yoshioka/Desveaux</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB458H1>CSB458H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Epigenetics</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M5-8</font></td><td align=LEFT><font size =-1>RW 15 A</font></td><td align=LEFT><font size =-1>S. Varmuza</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB459H1>CSB459H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Plant Molecular Bio</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR10</font></td><td align=LEFT><font size =-1>ES 3087 </font></td><td align=LEFT><font size =-1>D. Goring</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB472H1>CSB472H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Comp Genomics Bioinf</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W10-12</font></td><td align=LEFT><font size =-1>RW 229 </font></td><td align=LEFT><font size =-1>Guttman/Provart</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W12</font></td><td align=LEFT><font size =-1>RW 229 </font></td><td align=LEFT><font size =-1>Guttman/Provart</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB473H1>CSB473H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Chemical Genomics</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T10-12</font></td><td align=LEFT><font size =-1>ES 3087 </font></td><td align=LEFT><font size =-1>Desveaux/Tba</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB474H1>CSB474H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Meth Genome Proteome</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>R12-4</font></td><td align=LEFT><font size =-1>ES 4076 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB475H1>CSB475H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Plant Metabolomics</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR5</font></td><td align=LEFT><font size =-1>ES 3087 </font></td><td align=LEFT><font size =-1>E. Nambara</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB483H1>CSB483H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Develop Bio Sem I</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-8</font></td><td align=LEFT><font size =-1>RW 15 A</font></td><td align=LEFT><font size =-1>R. Winklbauer</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB490H1>CSB490H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>TBL Cell and Molec</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M2-4</font></td><td align=LEFT><font size =-1>ES 3087 </font></td><td align=LEFT><font size =-1>Peisajovich/Chang</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB491H1>CSB491H1</a></font></td><td><font size =-1>S</font></td><td align=LEFT><font size =-1>TBR Cell and Molec<br />
+</font></td><td align=LEFT><font size =-1>L0101</font></td>
+  <td colspan="5" align=center><font size ="-1" color="red">Cancel</font></td>
+  <td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB497H1>CSB497H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Project in CSB I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=2><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB497H1>CSB497H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Project in CSB I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB498Y1>CSB498Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Project in CSB I</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csb.htm#CSB499Y1>CSB499Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Project in CSB II</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+</table></center>
+<p>
+<hr>
+<center>
+<font size=-1>Return to: [ <a href="/web/20130104232832/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/sponsors.htm">Course Listings</a> |  <a href="/web/20130104232832/http://www.artsci.utoronto.ca/current/undergraduate/course/timetable/1213_fw/">A & S 2012-2013 Fall/Winter Session Timetable: Contents</a>]</font>
+</center>
+<p><center>
+<TABLE BORDER=1 WIDTH=400 cellpadding=5>
+<tr><td align=center><a href="/web/20130104232832/http://www.artsci.utoronto.ca/current/undergraduate">
+<img src="/web/20130104232832im_/http://www.artsandscience.utoronto.ca/ofr/gifs/tiny_ofr.gif" alt=""></a></td>
+<td cellpadding="30"><i>Please send enquiries or comments to:
+<A HREF="mailto:ask@artsci.utoronto.ca">ask@artsci.utoronto.ca</A>
+<br>On-line date: April 4, 2012<br>
+Updated: December 21, 2012
+
+
+
+</td></tr>
+</table>
+</div>
+</div id="footer">
+<p>
+<font size="-1">All contents copyright & copy 2012.  &nbsp;</b>University of Toronto. All rights reserved.</center>
+<p>
+</div>
+
+</div>
+</body>
+</html>
+</body></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 23:28:32 Jan 4, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:23:51 Jun 20, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

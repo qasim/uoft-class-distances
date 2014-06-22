@@ -1,0 +1,1139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<HEAD>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<meta http=equiv="Content-Type" content="text.html;charset=utf-8" />
+<meta name="description" content="" />
+
+    <title>Arts & Science 2013-2014 Fall/Winter Session Timetable for: Computer Science [CSC courses - includes ECE]</title>
+
+   <link rel="stylesheet" href="/web/20130904183601cs_/http://www.artsandscience.utoronto.ca/testdir/cal/c/c01.css"  type="text/css" media="all" />
+
+</HEAD>
+
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app3.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1420070399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/www.artsandscience.utoronto.ca\/ofr\/timetable\/winter\/csc.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 475;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "4";
+var displayMonth = "Sep";
+var displayYear = "2013";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20130904183601" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20130703043933/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="3 Jul 2013"><strong>JUL</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 18:36:01 Sep 4, 2013">SEP</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20131005080258/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="5 Oct 2013"><strong>OCT</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20130703043933/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc.html" title="4:39:33 Jul 3, 2013" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 18:36:01 Sep 4, 2013">4</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20131005080258/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc.html" title="8:02:58 Oct 5, 2013" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20120827232501/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="27 Aug 2012"><strong>2012</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 18:36:01 Sep 4, 2013">2013</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2014
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20130904183601*/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>126 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">17 Dec 00 - 5 Dec 13</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:475px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:475px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="475"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=475_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000001_2001:-1:010100010101_2002:-1:010001000001_2003:-1:010101010001_2004:-1:010001010100_2005:-1:101000000000_2006:-1:000000000000_2007:-1:000000010000_2008:-1:000000ff9101_2009:-1:001011121111_2010:-1:101011111111_2011:-1:111111111111_2012:-1:110000111101_2013:8:000110101111_2014:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="wrapper">
+   <div id="header"></div>
+   <div id="banner"></div> 
+   <div id="content">
+
+<center> <h2><font color="#608568">Computer Science [CSC courses - includes ECE]</h2></CENTER></font>
+
+
+<p><hr>
+The following timetable information is the most current information available.  Courses and meeting sections added will be listed below. Courses and meeting sections cancelled will be indicated as such. 
+
+<hr><br>
+<p><b>Deadlines for changing from an accelerated/enriched course.  </b><br>
+20139, Fall session: October 4, 2013 <br>
+20141, Winter session: January 31, 2014  <br>
+Students registered in the following courses have an extended period, beyond the normal Add Date, during which they are permitted to switch:  <br>
+
+From CSC148H1/CSC150H1 to CSC108H1 <br>
+From CSC240H1 to CSC165H1 <b>or</b>   <br>
+From CSC240H1 to  CSC236H1 <b>if passed CSC165H1 </b><br>
+From CSC265H1 to CSC263H1  <br>
+From CSC350H1 to CSC336H1<br>
+From CSC375H1 to CSC373H1  </p>
+
+<p>After the last day to add, students may register in their new course at their college (not at the Computer Science undergrad office). If the course is full, no students will be allowed to register. Contact the instructor of the new course to make arrangements for a tutorial section. Deadlines are strictly enforced.</p>
+
+<p><b>Prerequisites, Co-requisites and Exclusions  </b><br>
+Do not assume that being able to register in the course means that you satisfy the prerequisites, because prerequisites, co-requisites, and exclusions are not checked at the time of enrolment. Due to circumstances beyond our control, prerequisite, corequisite, and exclusion checks will be performed after the 100% refund period.</p>
+
+
+<p><b>Waiver Deadlines:  </b><br>
+20139, Fall session:  September 3 to 19, 2013  <br>
+20141, Winter session: January 6 to 16, 2014 <br>
+These deadlines are strictly enforced.  <br>
+Waivers are considered for the term in which you are taking the course.   <br>
+1. Course waivers: These may be waived, when appropriate, according to the judgment of the instructor. INSTRUCTORS CANNOT WAIVE THE CGPA REQUIREMENT<br>
+2. CGPA waivers: Considered for students who have extenuating circumstances and are reasonably close to the required cGPA.   <br>
+<br>Request by emailing the CS undergraduate office, <a href="mailto: ug@cs.utoronto.ca">ug@cs.utoronto.ca</a>, from your University issued email account.  Use the appropriate subject line in your message: <br>
+20135 (summer)/20139 (fall)/20141(winter)   cGPA waiver request (your name)  <br>
+In the body of your email, include: your full name, student number, subject POSt, CS courses you are requesting a waiver for (i.e. CSCXXXH1F/S/Y), and state your extenuating circumstances why your CGPA waiver should be considered. <br>
+<br>NOTE: We will only consider a waiver request for the current session.  </p>
+<br><b>WAIVER DECISIONS WILL BE SENT TO YOUR UNIVERSITY ISSUED EMAIL ACCOUNTS ONLY.  </b></p>
+<p><b>Tutorials:</b> In courses where applicable, tutorials will be arranged after classes commence.   </p>
+<p><b>Current timetable and instructor contact information:</b> These will be posted on the bulletin board outside BA4252/4.  </p>
+<p><b>UTM and UTSC Minor subject POSt: </b>The University of Toronto Mississauga and University of Toronto Scarborough computer science Minor subject POSt is not recognized as a restricted CS subject POSt for St. George courses enrolments. </p>
+<p><b>Departmental Hours (September 4 to 6):  </b>Monday to Friday, 9:30 a.m. to 4:00 p.m. (416-978-6360, email: <a href="mailto: ug@cs.utoronto.ca">ug@cs.utoronto.ca</a>).</p>
+<hr><center>
+<b><a href="/web/20130904183601/http://www.artsci.utoronto.ca/current/course/timetable/1314_fw/codes-used-in-the-timetable-listings">Explanation on codes and Enrolment Indicators</a></b>
+</center>
+<p><center>
+<table border=1>
+<tr><TD ALIGN="CENTER" colspan="10"><font color=#608568><B>Computer Science [CSC courses - includes ECE]</B><br></font></TD></tr>
+<tr>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Course</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>SC</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Title<br><i>(subtitle)</i></b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Meeting<br>Section</b></FONT></TD>
+<TD VALIGN="CENTER" ROWSPAN="2"><FONT COLOR=#608568><b>Wait<br>List</b></FONT></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Time</b></font></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Location</b></font></TD>
+<TD VALIGN="LEFT" ROWSPAN="2"><FONT COLOR=#608568><b>Instructor</b></font></TD>
+<TD COLSPAN="2"><FONT COLOR=#608568><b>Enrolment</b></font></TD>
+</tr>
+<tr>
+<TD VALIGN="LEFT"><FONT COLOR=#608568><b>Ind</b></font></TD>
+<TD VALIGN="LEFT"><FONT COLOR=#608568><b>Controls</b></font></TD>
+</tr>
+<br>
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC104H1>CSC104H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Computational Thinking</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-8</font></td><td align=LEFT><font size =-1>MS 3154 </font></td><td align=LEFT><font size =-1>D. Heap</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=3><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W8</font></td><td align=LEFT><font size =-1>MS 3154 </font></td><td align=LEFT><font size =-1>D. Heap</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC104H1>CSC104H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Computational Thinking</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TRF9</font></td><td align=LEFT><font size =-1>WB 116 </font></td><td align=LEFT><font size =-1>D. Heap</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC108H1>CSC108H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Intro to Comp Prog</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF9</font></td><td align=LEFT><font size =-1>BA 1160 </font></td><td align=LEFT><font size =-1>M. Craig</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=28><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc108h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF10</font></td><td align=LEFT><font size =-1>BA 1160 </font></td><td align=LEFT><font size =-1>M. Craig</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0202</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF10</font></td><td align=LEFT><font size =-1>WB 116 </font></td><td align=LEFT><font size =-1>P. Gries</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0301</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF1</font></td><td align=LEFT><font size =-1>HS 610 </font></td><td align=LEFT><font size =-1>J. Campbell</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-9</font></td><td align=LEFT><font size =-1>MS 3153 </font></td><td align=LEFT><font size =-1>P. Gries</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T9-11</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T11-1</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T3-5</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W11-1</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0501</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W3-5</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0601</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R11-1</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0701</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R1-3</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0801</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R3-5</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0901</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F1-3</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T1001</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W1-3</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T7-9</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R7-9</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC108H1>CSC108H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Intro to Comp Prog</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF9</font></td><td align=LEFT><font size =-1>BA 1160 </font></td><td align=LEFT><font size =-1>J. Campbell</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF10</font></td><td align=LEFT><font size =-1>BA 1160 </font></td><td align=LEFT><font size =-1>J. Campbell</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-9</font></td><td align=LEFT><font size =-1>MS 3154 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R9-11</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R11-1</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R1-3</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F11-1</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0501</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F1-3</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0601</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R3-5</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R5-7</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R7-9</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC120H1>CSC120H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>CompSci for Sciences</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R7-9</font></td><td align=LEFT><font size =-1>BA 1180 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td><td valign=middle align=LEFT rowspan=3><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T3-5</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W7-9</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC148H1>CSC148H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Intro to Comp Sci</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW9</font></td><td align=LEFT><font size =-1>BA 1180 </font></td><td align=LEFT><font size =-1>D. Heap</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=16><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc148h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW10</font></td><td align=LEFT><font size =-1>BA 1180 </font></td><td align=LEFT><font size =-1>D. Heap</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T1-3</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>R9-11</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>F9-11</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC148H1>CSC148H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Intro to Comp Sci</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW9</font></td><td align=LEFT><font size =-1>WB 116 </font></td><td align=LEFT><font size =-1>D. Heap</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MW10</font></td><td align=LEFT><font size =-1>WB 116 </font></td><td align=LEFT><font size =-1>M. Craig</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-8</font></td><td align=LEFT><font size =-1>MS 3153 </font></td><td align=LEFT><font size =-1>G. Baumgartner</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T9-11</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T11-1</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0301</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T1-3</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0401</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W11-1</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0501</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W1-3</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0601</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W3-5</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T7-9</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W5-7</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC165H1>CSC165H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Math Expr&Rsng for Cs</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF12</font></td><td align=LEFT><font size =-1>MP 203 </font></td><td align=LEFT><font size =-1>T. Fairgrieve</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=8><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc165h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>M7-9</font></td><td align=LEFT><font size =-1>SF 1105 </font></td><td align=LEFT><font size =-1>T. Fairgrieve</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T6-9</font></td><td align=LEFT><font size =-1>SF 1105 </font></td><td align=LEFT><font size =-1>T. Fairgrieve</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R7-9</font></td><td align=LEFT><font size =-1>SF 1105 </font></td><td align=LEFT><font size =-1>T. Fairgrieve</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC165H1>CSC165H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Math Expr&Rsng for Cs</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF11</font></td><td align=LEFT><font size =-1>MP 103 </font></td><td align=LEFT><font size =-1>T. Fairgrieve</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T2-4</font></td><td align=LEFT><font size =-1>MP 203 </font></td><td align=LEFT><font size =-1>T. Fairgrieve</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF3</font></td><td align=LEFT><font size =-1>BA 1170 </font></td><td align=LEFT><font size =-1>T. Fairgrieve</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R2-4</font></td><td align=LEFT><font size =-1>MP 103 </font></td><td align=LEFT><font size =-1>T. Fairgrieve</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC200Y1>CSC200Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Eco & Soc Networks</font></td><td align=LEFT><font size =-1>L0101</font></td>
+  <td colspan="5"><div align="center"><font size ="-1" color="red">Cancel</font></div></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC207H1>CSC207H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Software Design</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>WF12</font></td><td align=LEFT><font size =-1>HS 610 </font></td><td align=LEFT><font size =-1>J. Campbell</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=10><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc207h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-8</font></td><td align=LEFT><font size =-1>BA 1130 </font></td><td align=LEFT><font size =-1>J. Campbell</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M12</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M2</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0301</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>W5</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>T5</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC207H1>CSC207H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Software Design</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>WF1</font></td><td align=LEFT><font size =-1>BA 1130 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0101</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M1</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T0201</font></td><td>&nbsp;</td><td align=LEFT><font size =-1>M2</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td>&nbsp;</td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC209H1>CSC209H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Soft Tools & Sys Prog</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MTR1</font></td><td align=LEFT><font size =-1>LM 161 </font></td><td align=LEFT><font size =-1>A. Rosenthal</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=4><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc209h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC209H1>CSC209H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Soft Tools & Sys Prog</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF12</font></td><td align=LEFT><font size =-1>BA 1130 </font></td><td align=LEFT><font size =-1>K. Reid</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T6</font></td><td align=LEFT><font size =-1>SF 1101 </font></td><td align=LEFT><font size =-1>K. Reid</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T7-9</font></td><td align=LEFT><font size =-1>SF 1101 </font></td><td align=LEFT><font size =-1>K. Reid</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC236H1>CSC236H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Intro to Theory Comp</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M11</font></td><td align=LEFT><font size =-1>SS 2102 </font></td><td align=LEFT><font size =-1>A. Farzan</font></td><td><font size =-1>P</font></td><td rowspan=2 align=LEFT valign=middle><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc236h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>WF11</font></td><td align=LEFT><font size =-1>SS 2135 </font></td><td align=LEFT><font size =-1>A. Farzan</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2503</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R6</font></td><td align=LEFT><font size =-1>BA 1180 </font></td><td align=LEFT><font size =-1>A. Farzan</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R7-9</font></td><td align=LEFT><font size =-1>BA 1180 </font></td><td align=LEFT><font size =-1>A. Farzan</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R6</font></td><td align=LEFT><font size =-1>BA 1180 </font></td><td align=LEFT><font size =-1>A. Farzan</font></td><td><font size =-1>P</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc236h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R7-9</font></td><td align=LEFT><font size =-1>BA 1180 </font></td><td align=LEFT><font size =-1>A. Farzan</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC236H1>CSC236H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Intro to Theory Comp</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR4</font></td><td align=LEFT><font size =-1>RW 110 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc236h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R5</font></td><td align=LEFT><font size =-1>RW 110 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR1</font></td><td align=LEFT><font size =-1>GB 120 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc236h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R11</font></td><td align=LEFT><font size =-1>GB 120 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2003</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR4</font></td><td align=LEFT><font size =-1>RW 110 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>R</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R5</font></td><td align=LEFT><font size =-1>RW 110 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  <td valign=middle align=LEFT>&nbsp;</td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC240H1>CSC240H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Enr Intro Theor Comp</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF11</font></td><td align=LEFT><font size =-1>RW 110 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc240h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC258H1>CSC258H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Computer Organizatn</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T6-9</font></td><td align=LEFT><font size =-1>BA 1170 </font></td><td align=LEFT><font size =-1>S. Engels</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=6><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc258h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R6-9</font></td><td align=LEFT><font size =-1>BA 3165 </font></td><td align=LEFT><font size =-1>S. Engels</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC258H1>CSC258H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Computer Organizatn</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF11</font></td><td align=LEFT><font size =-1>LM 162 </font></td><td align=LEFT><font size =-1>S. Engels</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T3-6</font></td><td align=LEFT><font size =-1>BA 3165 </font></td><td align=LEFT><font size =-1>S. Engels</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M6-9</font></td><td align=LEFT><font size =-1>BA 3165 </font></td><td align=LEFT><font size =-1>S. Engels</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T6-9</font></td><td align=LEFT><font size =-1>BA 1160 </font></td><td align=LEFT><font size =-1>S. Engels</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC263H1>CSC263H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Data Struct & Anal</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T10</font></td><td align=LEFT><font size =-1>LM 161 </font></td><td align=LEFT><font size =-1>T. Pitassi</font></td><td><font size =-1>P</font></td><td rowspan=2 align=LEFT valign=middle><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc263h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R10-12</font></td><td align=LEFT><font size =-1>LM 161 </font></td><td align=LEFT><font size =-1>T. Pitassi</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2003</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T10</font></td><td align=LEFT><font size =-1>LM 161 </font></td><td align=LEFT><font size =-1>T. Pitassi</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R10-12</font></td><td align=LEFT><font size =-1>LM 161 </font></td><td align=LEFT><font size =-1>T. Pitassi</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC263H1>CSC263H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Data Struct & Anal</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF3</font></td><td align=LEFT><font size =-1>BA 1130 </font></td><td align=LEFT><font size =-1>S. Toueg</font></td><td><font size =-1>P</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc263h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2503</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R6-8</font></td><td align=LEFT><font size =-1>BA 1160 </font></td><td align=LEFT><font size =-1>S. Toueg</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R8</font></td><td align=LEFT><font size =-1>BA 1160 </font></td><td align=LEFT><font size =-1>S. Toueg</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R6-8</font></td><td align=LEFT><font size =-1>BA 1160 </font></td><td align=LEFT><font size =-1>S. Toueg</font></td><td><font size =-1>P</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc263h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R8</font></td><td align=LEFT><font size =-1>BA 1160 </font></td><td align=LEFT><font size =-1>S. Toueg</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC265H1>CSC265H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Enr Data Struct Anal</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M10-12</font></td><td align=LEFT><font size =-1>BA 3116 </font></td><td align=LEFT><font size =-1>T. Pitassi</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc265h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R11</font></td><td align=LEFT><font size =-1>BA 3116 </font></td><td align=LEFT><font size =-1>T. Pitassi</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC290H1>CSC290H1</a></font></td><td><font size =-1>F</font></td><td align=LEFT><font size =-1>Communication for CS</font></td><td align=LEFT><font size =-1>L5101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc290h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC299Y1>CSC299Y1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Rsch Opportunity Prg</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R. Baecker</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC300H1>CSC300H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Computers & Society</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R6-8</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc300h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R8</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC301H1>CSC301H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Intro to Soft Eng</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR10</font></td><td align=LEFT><font size =-1>GB 248 </font></td><td align=LEFT><font size =-1>S. Sim</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=3><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc301h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R11</font></td><td align=LEFT><font size =-1>GB 248 </font></td><td align=LEFT><font size =-1>S. Sim</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC301H1>CSC301H1</a></font></td><td><font size =-1>S</font></td><td align=LEFT><font size =-1>Intro to Soft Eng</font></td><td align=LEFT><font size =-1>L5101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC302H1>CSC302H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Eng Lrg Soft Sys</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR10</font></td><td align=LEFT><font size =-1>GB 248 </font></td><td align=LEFT><font size =-1>M. Medland</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc302h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R11</font></td><td align=LEFT><font size =-1>GB 248 </font></td><td align=LEFT><font size =-1>M. Medland</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC309H1>CSC309H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Prog on the Web</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T3</font></td><td align=LEFT><font size =-1>BA 1180 </font></td><td align=LEFT><font size =-1>E. De Lara</font></td><td><font size =-1>P</font></td><td rowspan=3 align=LEFT valign=middle><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc309h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R3</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>E. De Lara</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R4</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>E. De Lara</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2001</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T3</font></td><td align=LEFT><font size =-1>BA 1180 </font></td><td align=LEFT><font size =-1>E. De Lara</font></td><td><font size =-1>R</font></td>
+  <td rowspan=3 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_APSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R3</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>E. De Lara</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R4</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>E. De Lara</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC309H1>CSC309H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Prog on the Web</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF10</font></td><td align=LEFT><font size =-1>LM 162 </font></td><td align=LEFT><font size =-1>E. De Lara</font></td><td><font size =-1>P</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc309h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2001</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF10</font></td><td align=LEFT><font size =-1>LM 162 </font></td><td align=LEFT><font size =-1>E. De Lara</font></td>
+  <td><font size =-1>R</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_APSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC310H1>CSC310H1</a></font></td><td><font size =-1>F</font></td><td align=LEFT><font size =-1>Information Theory</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc310h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC318H1>CSC318H1</a></font></td><td><font size =-1>F</font></td><td align=LEFT><font size =-1>Interact Comp Media</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc318h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2001</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_APSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2501</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M6</font></td><td align=LEFT><font size =-1>BA 1200 </font></td><td align=LEFT><font size =-1>O. St-Cyr</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_APSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>M7-9</font></td><td align=LEFT><font size =-1>BA 1200 </font></td><td align=LEFT><font size =-1>O. St-Cyr</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M6</font></td><td align=LEFT><font size =-1>BA 1200 </font></td><td align=LEFT><font size =-1>O. St-Cyr</font></td><td><font size =-1>P</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc318h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>M7-9</font></td><td align=LEFT><font size =-1>BA 1200 </font></td><td align=LEFT><font size =-1>O. St-Cyr</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC318H1>CSC318H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Interact Comp Media</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T4-6</font></td><td align=LEFT><font size =-1>BA 1210 </font></td><td align=LEFT><font size =-1>O. St-Cyr</font></td><td><font size =-1>P</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc318h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T6</font></td><td align=LEFT><font size =-1>BA 1210 </font></td><td align=LEFT><font size =-1>O. St-Cyr</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2001</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T4-6</font></td><td align=LEFT><font size =-1>BA 1210 </font></td><td align=LEFT><font size =-1>O. St-Cyr</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_APSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T6</font></td><td align=LEFT><font size =-1>BA 1210 </font></td><td align=LEFT><font size =-1>O. St-Cyr</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC320H1>CSC320H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Intro Visual Compt</font></td><td align=LEFT><font size =-1>L2501</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-9</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>R</font></td><td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_APSC.html">See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-9</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc320h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC321H1>CSC321H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Neural Networks</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR1</font></td><td align=LEFT><font size =-1>UC 179 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td><td rowspan=2 align=LEFT valign=middle><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc321h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R12</font></td><td align=LEFT><font size =-1>UC 179 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2001</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR1</font></td><td align=LEFT><font size =-1>UC 179 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_APSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R12</font></td><td align=LEFT><font size =-1>UC 179 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC324H1>CSC324H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Prog Languages</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R6</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>G. Baumgartner</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=3><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc324h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R7-9</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>G. Baumgartner</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC324H1>CSC324H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Prog Languages</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF2</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>G. Baumgartner</font></td><td><font size =-1>P</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC330H1>CSC330H1</a></font></td><td><font size =-1>F</font></td><td align=LEFT><font size =-1>Logical Specs</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc330h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC336H1>CSC336H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Numerical Methods</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF11</font></td><td align=LEFT><font size =-1>WI 1017 </font></td><td align=LEFT><font size =-1>K. Jackson</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc336h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2003</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF11</font></td><td align=LEFT><font size =-1>WI 1017 </font></td><td align=LEFT><font size =-1>K. Jackson</font></td><td><font size =-1>R</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC336H1>CSC336H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Numerical Methods</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M6</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>C. Christara</font></td><td><font size =-1>P</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc336h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>M7-9</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>C. Christara</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC343H1>CSC343H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Intro to Databases</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T1-3</font></td><td align=LEFT><font size =-1>MP 202 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td><td rowspan=4 align=LEFT valign=middle><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc343h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R1</font></td><td align=LEFT><font size =-1>MP 202 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L0201</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W1-3</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>F1</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2001</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T1-3</font></td><td align=LEFT><font size =-1>MP 202 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_APSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R1</font></td><td align=LEFT><font size =-1>MP 202 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2003</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W1-3</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>F1</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2203</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC343H1>CSC343H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Intro to Databases</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF12</font></td><td align=LEFT><font size =-1>MP 102 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc343h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2001</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF12</font></td><td align=LEFT><font size =-1>MP 102 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>R</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_APSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2005</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTM.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2501</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T6-8</font></td><td align=LEFT><font size =-1>BA 1130 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_APSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T8</font></td><td align=LEFT><font size =-1>BA 1130 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2505</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T6-8</font></td><td align=LEFT><font size =-1>BA 1130 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTM.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T8</font></td><td align=LEFT><font size =-1>BA 1130 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T6-8</font></td><td align=LEFT><font size =-1>BA 1130 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc343h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T8</font></td><td align=LEFT><font size =-1>BA 1130 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC350H1>CSC350H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Numerical Algebra</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T1-3</font></td><td align=LEFT><font size =-1>BA B024 </font></td><td align=LEFT><font size =-1>C. Christara</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc350h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R1</font></td><td align=LEFT><font size =-1>BA B024 </font></td><td align=LEFT><font size =-1>C. Christara</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC358H1>CSC358H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Intro Comp Networks</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M10</font></td><td align=LEFT><font size =-1>SS 2102 </font></td><td align=LEFT><font size =-1>P. Marbach</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc358h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R3-5</font></td><td align=LEFT><font size =-1>SS 2102 </font></td><td align=LEFT><font size =-1>P. Marbach</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC369H1>CSC369H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Operating Systems</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWR12</font></td><td align=LEFT><font size =-1>BA 1170 </font></td><td align=LEFT><font size =-1>A. Demke Brown</font></td><td><font size =-1>P</font></td><td rowspan=3 align=LEFT valign=middle><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc369h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC369H1>CSC369H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Operating Systems</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M3</font></td><td align=LEFT><font size =-1>RW 110 </font></td><td align=LEFT><font size =-1>K. Reid</font></td><td><font size =-1>P</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>TR2</font></td><td align=LEFT><font size =-1>RW 110 </font></td><td align=LEFT><font size =-1>K. Reid</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2003</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M3</font></td><td align=LEFT><font size =-1>RW 110 </font></td><td align=LEFT><font size =-1>K. Reid</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>TR2</font></td><td align=LEFT><font size =-1>RW 110 </font></td><td align=LEFT><font size =-1>K. Reid</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC372H1>CSC372H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Microprocessor Sftwr</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF1</font></td><td align=LEFT><font size =-1>BA 1240 </font></td><td align=LEFT><font size =-1>P. Anderson</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc372h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T3-6</font></td><td align=LEFT><font size =-1>BA 3165 </font></td><td align=LEFT><font size =-1>P. Anderson</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC373H1>CSC373H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Algo Design & Analysis</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF10</font></td><td align=LEFT><font size =-1>MP 203 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td><td rowspan=4 align=LEFT valign=middle><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc373h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R2</font></td><td align=LEFT><font size =-1>MP 202 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC373H1>CSC373H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Algo Design & Analysis</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF11</font></td><td align=LEFT><font size =-1>WI 1016 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>M4</font></td><td align=LEFT><font size =-1>WI 1016 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2003</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF11</font></td><td align=LEFT><font size =-1>WI 1016 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>M4</font></td><td align=LEFT><font size =-1>WI 1016 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC384H1>CSC384H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Intro Artif Intell</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T1</font></td><td align=LEFT><font size =-1>SS 1073 </font></td><td align=LEFT><font size =-1>F. Bacchus</font></td><td><font size =-1>P</font></td><td rowspan=3 align=LEFT valign=middle><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc384h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R1</font></td><td align=LEFT><font size =-1>SS 2102 </font></td><td align=LEFT><font size =-1>F. Bacchus</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R2</font></td><td align=LEFT><font size =-1>SS 2102 </font></td><td align=LEFT><font size =-1>F. Bacchus</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2001</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T1</font></td><td align=LEFT><font size =-1>SS 1073 </font></td><td align=LEFT><font size =-1>F. Bacchus</font></td><td><font size =-1>R</font></td>
+  <td rowspan=3 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_APSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R1</font></td><td align=LEFT><font size =-1>SS 2102 </font></td><td align=LEFT><font size =-1>F. Bacchus</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R2</font></td><td align=LEFT><font size =-1>SS 2102 </font></td><td align=LEFT><font size =-1>F. Bacchus</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2003</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T1</font></td><td align=LEFT><font size =-1>SS 1073 </font></td><td align=LEFT><font size =-1>F. Bacchus</font></td><td><font size =-1>R</font></td>
+  <td rowspan=3 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R1</font></td><td align=LEFT><font size =-1>SS 2102 </font></td><td align=LEFT><font size =-1>F. Bacchus</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R2</font></td><td align=LEFT><font size =-1>SS 2102 </font></td><td align=LEFT><font size =-1>F. Bacchus</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2005</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T1</font></td><td align=LEFT><font size =-1>SS 1073 </font></td><td align=LEFT><font size =-1>F. Bacchus</font></td><td><font size =-1>R</font></td>
+  <td rowspan=3 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTM.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R1</font></td><td align=LEFT><font size =-1>SS 2102 </font></td><td align=LEFT><font size =-1>F. Bacchus</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R2</font></td><td align=LEFT><font size =-1>SS 2102 </font></td><td align=LEFT><font size =-1>F. Bacchus</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2501</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_APSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2503</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2505</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTM.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc384h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC384H1>CSC384H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Intro Artif Intell</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF1</font></td><td align=LEFT><font size =-1>GB 119 </font></td><td align=LEFT><font size =-1>S. McIlraith</font></td><td><font size =-1>P</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc384h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2001</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF1</font></td><td align=LEFT><font size =-1>GB 119 </font></td><td align=LEFT><font size =-1>S. McIlraith</font></td><td><font size =-1>R</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_APSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2003</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF1</font></td><td align=LEFT><font size =-1>GB 119 </font></td><td align=LEFT><font size =-1>S. McIlraith</font></td><td><font size =-1>R</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2005</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF1</font></td><td align=LEFT><font size =-1>GB 119 </font></td><td align=LEFT><font size =-1>S. McIlraith</font></td><td><font size =-1>R</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTM.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC401H1>CSC401H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Natural Lang Compt</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF10</font></td><td align=LEFT><font size =-1>RW 110 </font></td><td align=LEFT><font size =-1>F. Rudzicz</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc401h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2001</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF10</font></td><td align=LEFT><font size =-1>RW 110 </font></td><td align=LEFT><font size =-1>F. Rudzicz</font></td><td><font size =-1>R</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_APSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2005</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF10</font></td><td align=LEFT><font size =-1>RW 110 </font></td><td align=LEFT><font size =-1>F. Rudzicz</font></td><td><font size =-1>R</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTM.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC404H1>CSC404H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Video Game Design</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T10</font></td><td align=LEFT><font size =-1>BA 2145 </font></td><td align=LEFT><font size =-1>S. Engels</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc404h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R10-12</font></td><td align=LEFT><font size =-1>BA 2145 </font></td><td align=LEFT><font size =-1>S. Engels</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC410H1>CSC410H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Software Test & Verif</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M12</font></td><td align=LEFT><font size =-1>BA 1200 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc410h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W11-1</font></td><td align=LEFT><font size =-1>BA 1200 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC411H1>CSC411H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Machine Learning</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF3</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>R. Zemel</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc411h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2001</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF3</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>R. Zemel</font></td><td><font size =-1>R</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_APSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC418H1>CSC418H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Computer Graphics</font></td><td align=LEFT><font size =-1>L2501</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6</font></td><td align=LEFT><font size =-1>BA 1170 </font></td><td align=LEFT><font size =-1>L. Moore</font></td><td><font size =-1>R</font></td><td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_APSC.html">See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W7-9</font></td><td align=LEFT><font size =-1>BA 1170 </font></td><td align=LEFT><font size =-1>L. Moore</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2505</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6</font></td><td align=LEFT><font size =-1>BA 1170 </font></td><td align=LEFT><font size =-1>L. Moore</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTM.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W7-9</font></td><td align=LEFT><font size =-1>BA 1170 </font></td><td align=LEFT><font size =-1>L. Moore</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6</font></td><td align=LEFT><font size =-1>BA 1170 </font></td><td align=LEFT><font size =-1>L. Moore</font></td><td><font size =-1>P</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc418h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W7-9</font></td><td align=LEFT><font size =-1>BA 1170 </font></td><td align=LEFT><font size =-1>L. Moore</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC418H1>CSC418H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Computer Graphics</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M3</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc418h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W3-5</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2001</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M3</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_APSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W3-5</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2003</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M3</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W3-5</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2005</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M3</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTM.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W3-5</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC428H1>CSC428H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Human-Comp Interact</font></td><td align=LEFT><font size =-1>L2501</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M6-8</font></td><td align=LEFT><font size =-1>BA 1230 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>R</font></td><td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_APSC.html">See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>M8</font></td><td align=LEFT><font size =-1>BA 1230 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2505</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M6-8</font></td><td align=LEFT><font size =-1>BA 1230 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTM.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>M8</font></td><td align=LEFT><font size =-1>BA 1230 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M6-8</font></td><td align=LEFT><font size =-1>BA 1230 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc428h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>M8</font></td><td align=LEFT><font size =-1>BA 1230 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC438H1>CSC438H1</a></font></td><td><font size =-1>F</font></td><td align=LEFT><font size =-1>Computabil & Logic</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc438h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2003</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC438H1>CSC438H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Computabil & Logic</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF2</font></td><td align=LEFT><font size =-1>BA 1220 </font></td><td align=LEFT><font size =-1>S. Cook</font></td><td><font size =-1>P</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc438h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2003</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF2</font></td><td align=LEFT><font size =-1>BA 1220 </font></td><td align=LEFT><font size =-1>S. Cook</font></td><td><font size =-1>R</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC443H1>CSC443H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Database Sys Techn</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T3-5</font></td><td align=LEFT><font size =-1>BA 1220 </font></td><td align=LEFT><font size =-1>R. Miller</font></td><td><font size =-1>P</font></td><td rowspan=2 align=LEFT valign=middle><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc443h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5</font></td><td align=LEFT><font size =-1>BA 1220 </font></td><td align=LEFT><font size =-1>R. Miller</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2001</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T3-5</font></td><td align=LEFT><font size =-1>BA 1220 </font></td><td align=LEFT><font size =-1>R. Miller</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_APSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>T5</font></td><td align=LEFT><font size =-1>BA 1220 </font></td><td align=LEFT><font size =-1>R. Miller</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC454H1>CSC454H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Business Software</font></td><td align=LEFT><font size =-1>L2503</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-8</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>A. Wytenburg</font></td><td><font size =-1>R</font></td><td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTSC.html">See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W8</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>A. Wytenburg</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2505</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-8</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>A. Wytenburg</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTM.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W8</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>A. Wytenburg</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L5101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W6-8</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>A. Wytenburg</font></td><td><font size =-1>P</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc454h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W8</font></td><td align=LEFT><font size =-1>BA 1190 </font></td><td align=LEFT><font size =-1>A. Wytenburg</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC456H1>CSC456H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>High-Perf Sci Comp</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>M1-3</font></td><td align=LEFT><font size =-1>BA 3012 </font></td><td align=LEFT><font size =-1>C. Christara</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc456h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>W1</font></td><td align=LEFT><font size =-1>BA 3012 </font></td><td align=LEFT><font size =-1>C. Christara</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC458H1>CSC458H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Computer Networks</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T1-3</font></td>
+<td align=LEFT><font size="-1"><strong>GB 220<br />
+  (note: room change)
+</strong></font></td><td align=LEFT><font size =-1>J. Lim</font></td><td><font size =-1>P</font></td><td rowspan=2 align=LEFT valign=middle><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc458h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>F1</font></td><td align=LEFT><font size =-1>BA 1180 </font></td><td align=LEFT><font size =-1>J. Lim</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2003</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T1-3</font></td>
+<td align=LEFT><font size="-1"><strong>GB 220<br />
+   (note: room change)</strong> </font></td><td align=LEFT><font size =-1>J. Lim</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>F1</font></td><td align=LEFT><font size =-1>BA 1180 </font></td><td align=LEFT><font size =-1>J. Lim</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2005</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>T1-3</font></td>
+<td align=LEFT><font size="-1"><strong>GB 220<br />
+  (note: room change)
+</strong></font></td><td align=LEFT><font size =-1>J. Lim</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTM.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>F1</font></td><td align=LEFT><font size =-1>BA 1180 </font></td><td align=LEFT><font size =-1>J. Lim</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC463H1>CSC463H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Complex & Comput</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>MWF2</font></td><td align=LEFT><font size =-1>BA 1220 </font></td><td align=LEFT><font size =-1>S. Cook</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=1><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc463h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC469H1>CSC469H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Oper Sys Design</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>R10-12</font></td><td align=LEFT><font size =-1>SS 2106 </font></td><td align=LEFT><font size =-1>A. Demke Brown</font></td><td><font size =-1>P</font></td><td valign=middle align=LEFT rowspan=2><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc469h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R1</font></td><td align=LEFT><font size =-1>SS 2108 </font></td><td align=LEFT><font size =-1>A. Demke Brown</font></td><td><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC485H1>CSC485H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Comp Linguistics</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>W1-3</font></td><td align=LEFT><font size =-1>LM 161 </font></td><td align=LEFT><font size =-1>G. Hirst</font></td><td><font size =-1>P</font></td><td rowspan=2 align=LEFT valign=middle><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc485h1.html>See Details</a></font></td></tr>
+
+<tr>
+  <td align=LEFT>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td ALIGN='LEFT'>&nbsp;</td>
+  <td align=LEFT>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td align=LEFT><font size ="-1">R4</font></td>
+  <td align=LEFT><font size ="-1">BA 1180</font></td>
+  <td align=LEFT><font size ="-1">G. Hirst</font></td>
+  <td>&nbsp;</td>
+  </tr>
+<tr>
+  <td align=LEFT><font size =-1><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC485H1">CSC486H1</a></font></td>
+  <td><font size ="-1">S</font></td>
+  <td ALIGN='LEFT'><font size="-1">Knowlege Rep &amp; Reas<br />
+      <strong>(note: course added)</strong> </font></td>
+  <td align=LEFT><font size="-1">L0101</font></td>
+  <td><font size="-1">Y</font></td>
+  <td align=LEFT><font size="-1">F12-2<br />
+  W1</font></td>
+  <td align=LEFT><font size ="-1">BA 1200</font></td>
+  <td align=LEFT><font size="-1">V. Belle</font></td>
+  <td><font size =-1>P</font></td>
+  <td valign=middle align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc486h1.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC488H1>CSC488H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Compilers & Interpreters</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR2</font></td><td align=LEFT><font size =-1>BA 1210 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>P</font></td><td rowspan=2 align=LEFT valign=middle><font size =-1><a href=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_csc488h1.html>See Details</a></font></td></tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R1</font></td><td align=LEFT><font size =-1>BA 1210 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2003</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR2</font></td><td align=LEFT><font size =-1>BA 1210 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTSC.html">See Details</a></font></td>
+</tr>
+
+<tr><td height="35" align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R1</font></td><td align=LEFT><font size =-1>BA 1210 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>L2005</font></td><td><font size =-1>Y</font></td><td align=LEFT><font size =-1>TR2</font></td><td align=LEFT><font size =-1>BA 1210 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>R</font></td>
+  <td rowspan=2 align=LEFT valign=middle><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/csc_UTM.html">See Details</a></font></td>
+</tr>
+
+<tr><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td ALIGN='LEFT'><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>R1</font></td><td align=LEFT><font size =-1>BA 1210 </font></td><td align=LEFT><font size =-1>Tba</font></td><td><font size =-1>&nbsp;</font></td>
+  </tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC490H1>CSC490H1</a></font></td><td><font size =-1>F</font></td><td align=LEFT><font size =-1>Capstone Design Proj</font></td><td align=LEFT><font size =-1>L0101</font></td><td colspan=5 align=center><font size =-1 color=red>Cancel</font></td><td valign=middle align=LEFT rowspan=1><font size =-1>&nbsp;</font></td></tr>
+
+<tr>
+  <td align=LEFT><font size ="-1"><a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC490H1">CSC490H1</a></font></td>
+  <td><font size ="-1">S</font></td>
+  <td ALIGN='LEFT'><font size ="-1">Capstone Design Proj<br />
+      <strong>(note: course added)</strong> </font></td>
+  <td align=LEFT><font size ="-1">L0101</font></td>
+  <td><font size ="-1">N</font></td>
+  <td align=LEFT><font size="-1">R3-5</font></td>
+  <td align=LEFT><font size="-1">RS 208</font></td>
+  <td align=LEFT><font size="-1">K. Singh</font></td>
+  <td><font size="-1">E</font></td>
+  <td valign=middle align=LEFT rowspan=4><font size =-1>&nbsp;</font></td>
+</tr>
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC494H1>CSC494H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Project in CSC</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC494H1>CSC494H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Project in CSC</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC494H1>CSC494H1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Project in CSC</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC495H1>CSC495H1</a></font></td><td><font size =-1>F</font></td><td ALIGN='LEFT'><font size =-1>Project in CSC</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td><td valign=middle align=LEFT rowspan=3><font size =-1>&nbsp;</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC495H1>CSC495H1</a></font></td><td><font size =-1>S</font></td><td ALIGN='LEFT'><font size =-1>Project in CSC</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+<tr><td align=LEFT><font size =-1><a HREF=/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC495H1>CSC495H1</a></font></td><td><font size =-1>Y</font></td><td ALIGN='LEFT'><font size =-1>Project in CSC</font></td><td align=LEFT><font size =-1>L0101</font></td><td><font size =-1>N</font></td><td align=LEFT><font size =-1>TBA</font></td><td align=LEFT><font size =-1>&nbsp;</font></td><td align=LEFT><font size =-1>Staff</font></td><td><font size =-1>E</font></td></tr>
+
+</table></center>
+<p>
+<hr>
+<center>
+<font size=-1>Return to: [ <a href="/web/20130904183601/http://www.artsandscience.utoronto.ca/ofr/timetable/winter/sponsors.htm">Course Listings</a> |  <a href="/web/20130904183601/http://www.artsci.utoronto.ca/current/course/timetable">A & S 2013-2014 Fall/Winter Session Timetable: Contents</a>]</font>
+</center>
+<p><center>
+<TABLE BORDER=1 WIDTH=400 cellpadding=5>
+<tr>
+<td cellpadding="30"><i>Faculty of Arts and Science, University of Toronto</i><br>
+  Please send enquiries or comments to:
+  <A HREF="mailto:ask@artsci.utoronto.ca">ask@artsci.utoronto.ca</A>
+  <br>On-line date: August 19, 2013 (including all changes since March 28, 2013 version)
+  
+  
+  
+</td></tr>
+</table>
+</div>
+</div id="footer">
+<p>
+<font size="-1">All contents copyright & copy  2013.  &nbsp;</b>University of Toronto. All rights reserved.</center>
+<p>
+</div>
+
+</div>
+</body>
+</html>
+</body></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 18:36:01 Sep 4, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:23:58 Jun 20, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
