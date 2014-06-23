@@ -2,15 +2,72 @@ body {
 	font-family: 'Roboto Slab';
 	overflow: auto;
 	margin: 0 auto;
-	padding: 8px;
+	padding: 0px;
 	width: 760px;
+	margin-top: 60px;
 }
+
+.top-bar {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	font-weight: bold;
+	background: #ccc;
+	z-index: 0;
+	text-align: center;
+	overflow: hidden;
+}
+
+	.top-bar a:link, .top-bar a:visited {
+		font-weight: 300;
+		text-decoration: none;
+		color: #0095dd;
+	}
+
+	.info-holder {
+		width: 760px;
+		margin: 0 auto;
+		margin-top: 12px;
+	}
+
+	.info-image {
+		float: left;
+	}
+	.info-text {
+		float: left;
+		text-align: left;
+		width: 410px;
+		font-weight: 300;
+		margin-left: 12px;
+		line-height: 22px;
+	}
+
+.footer {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	line-height: 32px;
+	height: 32px;
+	background: #ccc;
+	text-align: center;
+	color: #777;
+}
+
+	.footer a:link, .footer a:visited {
+		text-decoration: none;
+		color: #000;
+	}
 
 .search {
 	padding: 4px 6px;
 	background: #ccc;
 	margin-bottom: 36px;
 	white-space: nowrap;
+	display: none;
 }
 
 	.search #griddy_url {
@@ -30,6 +87,7 @@ body {
 	float: left;
 	margin-right: 18px;
 	margin-bottom: 24px;
+	display: none;
 }
 
 .section-holder.spring {
@@ -96,7 +154,7 @@ body {
 			color: #0095dd;
 		}
 
-	.duration {
+	.duration-holder {
 		width: 128px;
 		text-align: center;
 		padding: 12px;
@@ -105,7 +163,7 @@ body {
 		height: auto;
 	}
 
-		.duration a:link, .duration a:visited {
+		.duration-holder a:link, .duration-holder a:visited {
 			text-decoration: none;
 			color: #0095dd;
 		}

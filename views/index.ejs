@@ -15,8 +15,24 @@
 		<link href="stylesheets/main.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
+		<div class="top-bar">
+			UofT Class Distances <a id="more" href="#">(more info)</a> <br />
+			<div class="info-holder">
+				<div class="info-image">
+					<img src="images/griddy.png" height="170" />
+				</div>
+				<div class="info-text">
+					This service allows you to enter your unique <a href="http://griddy.org" target="_blank">Griddy</a> URL (image to the left) and see how much time it will take to get between adjacent classes in your timetable.
+					<br /><br />
+					Currently, the service is making a smart guess of where your class is going to be held based off of previous years. Once more information is available for this year's class locations, the service will be more accurate.
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			© 2014 - uoft.qas.im - Developed by <a href="mailto:me@qas.im" target="_blank">Qasim Iqbal</a>.
+		</div>
 		<div class="search">
-			<input type="text" id="griddy_url" placeholder="Enter Griddy.org URL..." value="http://griddy.org?link=SElTMTA5WTFZIEwwMTAxLExJTjEwMFkxWSBMNTEwMSxMSU4xMDBZMVkgVDAxMDEsRU5HMTAwSDFGIEw1MTAxLEVORzE0MFkxWSBMMDEwMSxFTkcxNDBZMVkgVDAxMDEsUE1VMTk5SDFGIEwwMTEyLFBTWTMwN0gxRiBMMDEwMSxFTkcyMDVIMUYgTDAxMDEsQklHMTAxWTFZIFQ1MTAxLExURTE5OUgxUyBMMDEwMSxOTUMxMDJIMVMgTDAxMDEsTk1DMTAySDFTIFQwMjAx" />
+			<input type="text" id="griddy_url" placeholder="Enter Griddy.org URL..." />
 			<input type="button" id="submit" value="go" />
 		</div>
 		<div class="section-holder fall">
@@ -32,7 +48,7 @@
 				WINTER TERM
 			</div>
 			<div class="section" id="spring">
-				
+
 			</div>
 		</div>
 	</body>

@@ -57,7 +57,7 @@ var adjacentClasses = {};
 
 //When a client connects
 io.sockets.on('connection', function(socket) {
-
+  socket.emit('connection');
   socket.on('go', function(data) {
 
     courseList = data.courseList;
