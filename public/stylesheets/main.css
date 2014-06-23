@@ -1,6 +1,111 @@
 body {
-	font-family: arial;
-	overflow: hidden;
-	margin: 0;
+	font-family: 'Roboto Slab';
+	overflow: auto;
+	margin: 0 auto;
 	padding: 8px;
+	width: 760px;
 }
+
+.search {
+	padding: 4px 6px;
+	background: #ccc;
+	margin-bottom: 36px;
+	white-space: nowrap;
+}
+
+	.search #griddy_url {
+		border: 0;
+		padding: 12px;
+		width: 660px;
+	}
+
+	.search #submit {
+		border: 0px;
+		background: #eee;
+		width: 60px;
+		height: 36px;
+	}
+
+.section-holder {
+	float: left;
+	margin-right: 18px;
+	margin-bottom: 24px;
+}
+
+.section-holder.spring {
+	float: right;
+}
+
+.section {
+	background: #fff;
+	border: 1px solid #fff;
+	padding: 18px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	width: 454px;
+}
+
+.section-title {
+	font-style: italic;
+	margin-left: 22px;
+	font-size: 24px;
+	border-bottom: 2px solid #ccc;
+	margin-bottom: 24px;
+}
+
+.pair {
+	margin-bottom: 24px;
+}
+
+.class {
+	width: 268px;
+	height: auto;
+	padding: 12px;
+	background: #ddd;
+}
+
+	.course-code {
+		font-weight: 700;
+		text-align: center;
+		font-size: 18px;
+		margin-bottom: 10px;
+		background: #eee;
+		padding: 6px;
+	}
+
+	.time {
+		font-weight: 100;
+		text-align: center;
+		margin-bottom: 6px;
+	}
+
+		.time em {
+			font-weight: 300;
+			font-style: normal;
+		}
+
+	.location {
+		text-align: center;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+		.location a:link, .location a:visited {
+			text-decoration: none;
+			color: #0095dd;
+		}
+
+	.duration {
+		width: 128px;
+		text-align: center;
+		padding: 12px;
+		background: #ddd;
+		font-size: 28px;
+		height: auto;
+	}
+
+		.duration a:link, .duration a:visited {
+			text-decoration: none;
+			color: #0095dd;
+		}

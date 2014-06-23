@@ -9,14 +9,19 @@ window.getDistanceMatrix = function (firstClass, secondClass) {
   }, function (response, status) {
 
 		if (status == google.maps.DistanceMatrixStatus.OK) {
-			console.log([
-				firstClass.info.name,
-				secondClass.info.name,
-				response.rows[0].elements[0].duration
-			]);
+			window.updateHtml(
+				firstClass,
+				secondClass,
+				response.rows[0].elements[0].duration.text
+			);
 		}
 
 	});
+}
+
+window.updateHtml = function(firstClass, secondClass, duration) {
+	var id = 'id-' + firstClass.info.id + '-to-' + secondClass.info.id;
+	$('table.' + id + ' .duration').html(duration);
 }
 
 window.service = new google.maps.DistanceMatrixService();
@@ -34,15 +39,34 @@ $(document).ready(function() {
 	socket.on('adjacent classes', function(data) {
 		var pairs = JSON.parse(data);
 		console.log(pairs);
-		for(var i = 0; i < pairs.spring.length; i++) {
-			var origin = pairs.spring[i][0].info.location;
-			var destination = pairs.spring[i][1].info.location;
-			console.log(origin, destination);
+
+		for(var i = 0; i < pairs.fall.length; i++) {
+			var origin = pairs.fall[i][0].info.location;
+			var destination = pairs.fall[i][1].info.location;
+			var id = 'id-' + pairs.fall[i][0].info.id + '-to-' + pairs.fall[i][1].info.id;
+			$('#fall').append('\
+			<table border="1" cellpadding="8" class="' + id + '">\
+				<tr>\
+					<td>' + pairs.fall[i][0].info.name + '</td>\
+					<td rowspan="2" class="duration">...</td>\
+				</tr>\
+				<tr>\
+					<td>' + pairs.fall[i][1].info.name + '</td>\
+				</tr>\
+			</table><br />');
+
 			if(origin != destination) {
-				window.getDistanceMatrix(pairs.spring[i][0], pairs.spring[i][1]);
+				window.getDistanceMatrix(pairs.fall[i][0], pairs.fall[i][1]);
+			} else {
+				window.updateHtml(
+					pairs.fall[i][0],
+					pairs.fall[i][1],
+					'0 mins'
+				);
 			}
 
 		}
+
 	});
 
 });
