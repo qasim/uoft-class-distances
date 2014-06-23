@@ -7,6 +7,12 @@ body {
 	margin-top: 60px;
 }
 
+.loader {
+	text-align: center;
+	color: #aaa;
+	padding-bottom: 16px;
+}
+
 .top-bar {
 	position: absolute;
 	top: 0px;

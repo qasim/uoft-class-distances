@@ -110,12 +110,16 @@ window.fillPage = function(type, courseInfo) {
 	}
 }
 
+window.hadConnection = false;
+
 $(document).ready(function() {
 
 	//Connect to our server-side
 	socket = io.connect(location.href);
 
 	socket.on('connection', function() {
+		window.hadConnection = true;
+		$('.loader').fadeOut('fast');
 		$('.search').fadeIn('fast');
 	})
 
