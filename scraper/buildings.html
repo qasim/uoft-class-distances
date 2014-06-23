@@ -1,0 +1,1491 @@
+z<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Building Listing | U of T Map</title>
+	<meta name="description" content="University of Toronto Map">
+	<meta name="author" content="Web Services | University of Toronto">
+	<link rel="shortcut icon" href="http://map.utoronto.ca/favicon.ico">
+	<link rel="stylesheet" href="http://map.utoronto.ca/_assets/_styles/map.css" media="all">
+    <!--
+         <link rel="stylesheet" href="http://map.utoronto.ca/_assets/_styles/map_print.css" media="print">
+    -->
+	<script src="http://map.utoronto.ca/_assets/_js/libs/modernizr-2.6.2_cssfilters.js"></script>
+	<link rel="stylesheet"  href="/_assets/_styles/jquery-ui-1.8.6.custom.css" type="text/css" media="screen" />
+    </head>
+<body class="sidebar_none">
+    <div class="visuallyhidden"><a tabindex="1" href="#q">Are you using a screen reader? Press your function/alt key and s to search for your location.  888</a></div>
+    <header id="masthead" class="shadow_header_footer">
+		<div class="fixed_width">
+						<h1 id="wordmark" class="ir"><a tabindex="2" href="http://www.utoronto.ca"><img alt="University of Toronto Logo" src="http://map.utoronto.ca/_assets/_images/logos/utsg.png" ></a></h1>
+
+            <!--Comment out the below place holder when displaying links to other campuses-->
+            <!--div class="place-holder"><ul></ul></div-->
+            <!--Uncomment the below block of code to display links to other campuses-->
+
+            <div class="campus-links" >
+                <h2>Choose a campus map</h2>
+                <ul>
+                <li><a tabindex="9" href="/utm" title="Go to map of the Mississauga campus" class="">UTM</a></li>
+                    <li><a tabindex="10" href="/" title="Go to map of the Downtown campus" class="active">Downtown</a></li>
+                    <li><a tabindex="11" href="/utsc" title="Go to map of Scarborough campus" class="">UTSC</a></li>
+                </ul>
+            </div>
+
+            <a tabindex="8" href="/c/join_in" id="join_in" class="bounce join-in" title="Join In! Contribute to the map.">
+                <h2 class="heading">Join in!</h2>
+                <span>Collaborate on the map</span>
+            </a>
+
+			<nav>
+				<form role="search" id="search_header" class="search" action="http://map.utoronto.ca/utsg/s" method="get">
+                    <input type="hidden" id="map_slug" value="utsg"/>
+    <input tabindex="2" class="round_large cap_right js-search-input" type="text" id="q" name="q" accesskey="s" placeholder="Search the St. George campus map for:" title="Search the St. George campus map for:" />
+    				<input class="gradient_dark_grey round_large cap_left" type="submit" value="Go" />
+    			</form>
+    			<ul id="nav_main">
+                	<li><a tabindex="3" href="http://map.utoronto.ca/utsg">Home</a></li>
+    		    	<li><a tabindex="4" href="http://map.utoronto.ca/utsg#dmi" id="dmi">Get Directions</a></li>
+    		    	<li><a href="http://map.utoronto.ca/utsg/c/buildings" tabindex="5">Building List</a></li>
+    		    	<li><a href="http://map.utoronto.ca/utsg/c/printable" tabindex="6">Other Maps</a></li>
+		    		<li class="last"><a tabindex="7" href="http://discover.utoronto.ca/connect/campus-tours" target="_blank">Campus Tours</a></li>
+    			</ul>
+    		</nav>
+
+      </div>
+    </header>
+    <section tabindex="-1" role="main" id="main">
+	<div class="fixed_width">
+		<div class="inner">
+			<h2>Building Listing</h2>
+	<div id="blds">
+	<form id="search_main" class="search" action="" method="get">
+    	<input class="round_large" type="text" id="building" name="building" accesskey="s" placeholder="Find a building by name or code:" title="Find a building by name or code:" />
+	</form>
+  <ul class="buildinglist">
+		<li>
+            <img src="/_assets/_images/_buildings_pics/AN.jpg" alt="" />
+			<dl>
+            <dt><h3>Annesley Hall</h3> | AN</dt>
+            <dd>95  Queen's Park, M5S 2C7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/506" title="Click to find this building on the map." class="map_it">Map Annesley Hall</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/AP.jpg" alt="" />
+			<dl>
+            <dt><h3>Anthropology Building</h3> | AP</dt>
+            <dd>19  Russell Street, M5S 2S2</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/079" title="Click to find this building on the map." class="map_it">Map Anthropology Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/AR.jpg" alt="" />
+			<dl>
+            <dt><h3>Architecture Building</h3> | AR</dt>
+            <dd>230  College Street, M5T 1R2</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/028" title="Click to find this building on the map." class="map_it">Map Architecture Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/AB.jpg" alt="" />
+			<dl>
+            <dt><h3>Astronomy & Astrophysics Building</h3> | AB</dt>
+            <dd>50  St. George Street, M5S 3H4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/036" title="Click to find this building on the map." class="map_it">Map Astronomy & Astrophysics Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/BA.jpg" alt="" />
+			<dl>
+            <dt><h3>Bahen Centre for Information Technology</h3> | BA</dt>
+            <dd>40  St. George Street, M5S 2E4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/080" title="Click to find this building on the map." class="map_it">Map Bahen Centre for Information Technology</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/BF.jpg" alt="" />
+			<dl>
+            <dt><h3>Bancroft Building</h3> | BF</dt>
+            <dd>4  Bancroft Avenue, M5S 1C1</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/057" title="Click to find this building on the map." class="map_it">Map Bancroft Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/BI.jpg" alt="" />
+			<dl>
+            <dt><h3>Banting Institute</h3> | BI</dt>
+            <dd>100  College Street, M5G 1L5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/016" title="Click to find this building on the map." class="map_it">Map Banting Institute</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/CB.jpg" alt="" />
+			<dl>
+            <dt><h3>Best Institute</h3> | CB</dt>
+            <dd>112  College St, M5G 1L6</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/052" title="Click to find this building on the map." class="map_it">Map Best Institute</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/BC.jpg" alt="" />
+			<dl>
+            <dt><h3>Birge-Carnegie Library</h3> | BC</dt>
+            <dd>75a   Queen's Park, M5S 1K7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/503" title="Click to find this building on the map." class="map_it">Map Birge-Carnegie Library</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/FE.jpg" alt="" />
+			<dl>
+            <dt><h3>Bloor Street West-371</h3> | FE</dt>
+            <dd>371  Bloor Street West, M5S 2R7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/014" title="Click to find this building on the map." class="map_it">Map Bloor Street West-371</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/NB.jpg" alt="" />
+			<dl>
+            <dt><h3>Borden Building North</h3> | NB</dt>
+            <dd>563  Spadina Crescent, M5S 2J7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/061A" title="Click to find this building on the map." class="map_it">Map Borden Building North</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/SB.jpg" alt="" />
+			<dl>
+            <dt><h3>Borden Building South</h3> | SB</dt>
+            <dd>487  Spadina Crescent, M5S 2T4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/061" title="Click to find this building on the map." class="map_it">Map Borden Building South</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/BR.jpg" alt="" />
+			<dl>
+            <dt><h3>Brennan Hall</h3> | BR</dt>
+            <dd>81  St. Mary Street, M5S 1J4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/411" title="Click to find this building on the map." class="map_it">Map Brennan Hall</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/BW.jpg" alt="" />
+			<dl>
+            <dt><h3>Burwash Hall</h3> | BW</dt>
+            <dd>89  Charles Street West, M5S 1K6</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/504" title="Click to find this building on the map." class="map_it">Map Burwash Hall</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/LB.jpg" alt="" />
+			<dl>
+            <dt><h3>Burwash Residence (Lower Houses)</h3> | LB</dt>
+            <dd>89  Charles Street West, M5S 1K6</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/505" title="Click to find this building on the map." class="map_it">Map Burwash Residence (Lower Houses)</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/UB.jpg" alt="" />
+			<dl>
+            <dt><h3>Burwash Residence (Upper Houses)</h3> | UB</dt>
+            <dd>89  Charles Street West, M5S 1K6</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/505A" title="Click to find this building on the map." class="map_it">Map Burwash Residence (Upper Houses)</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/CG.jpg" alt="" />
+			<dl>
+            <dt><h3>Canadiana Gallery</h3> | CG</dt>
+            <dd>14  Queen's Park Crescent West, M5S 3K9</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/047" title="Click to find this building on the map." class="map_it">Map Canadiana Gallery</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/CF.jpg" alt="" />
+			<dl>
+            <dt><h3>Cardinal Flahiff Building</h3> | CF</dt>
+            <dd>95  St. Joseph Street, M5S 2R9</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/430" title="Click to find this building on the map." class="map_it">Map Cardinal Flahiff Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/CR.jpg" alt="" />
+			<dl>
+            <dt><h3>Carr Hall</h3> | CR</dt>
+            <dd>100  St. Joseph Street, M5S 1J4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/426" title="Click to find this building on the map." class="map_it">Map Carr Hall</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/ST.jpg" alt="" />
+			<dl>
+            <dt><h3>Central Steam Plant</h3> | ST</dt>
+            <dd>17  Russell Street, M5S 2S2</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/018" title="Click to find this building on the map." class="map_it">Map Central Steam Plant</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/default.jpg" alt="" />
+			<dl>
+            <dt><h3>Charles St. West-30</h3> | XX790</dt>
+            <dd>30  Charles St. West,  </dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/790" title="Click to find this building on the map." class="map_it">Map Charles St. West-30</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/default.jpg" alt="" />
+			<dl>
+            <dt><h3>Charles St. West-35</h3> | XX791</dt>
+            <dd>35  Charles St. West,  </dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/791" title="Click to find this building on the map." class="map_it">Map Charles St. West-35</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/LH.jpg" alt="" />
+			<dl>
+            <dt><h3>Charles Street West-65</h3> | LH</dt>
+            <dd>65  Charles Street West, M5S 1K5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/516" title="Click to find this building on the map." class="map_it">Map Charles Street West-65</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/CN.jpg" alt="" />
+			<dl>
+            <dt><h3>Chestnut Residence and Conference Centre</h3> | CN</dt>
+            <dd>89  Chestnut Street, M5G 1R1</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/158" title="Click to find this building on the map." class="map_it">Map Chestnut Residence and Conference Centre</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/BN.jpg" alt="" />
+			<dl>
+            <dt><h3>Clara Benson Building</h3> | BN</dt>
+            <dd>320  Huron Street, M5S 3J7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/068" title="Click to find this building on the map." class="map_it">Map Clara Benson Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/BL.jpg" alt="" />
+			<dl>
+            <dt><h3>Claude T. Bissell Building</h3> | BL</dt>
+            <dd>140  St. George Street, M5S 3G6</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/006A" title="Click to find this building on the map." class="map_it">Map Claude T. Bissell Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/CX.jpg" alt="" />
+			<dl>
+            <dt><h3>College Street - 245</h3> | CX</dt>
+            <dd>245 College Street,  </dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/085" title="Click to find this building on the map." class="map_it">Map College Street - 245</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/CE.jpg" alt="" />
+			<dl>
+            <dt><h3>College Street-229</h3> | CE</dt>
+            <dd>229  College Street, M5T 1R4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/179" title="Click to find this building on the map." class="map_it">Map College Street-229</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/ZC.jpg" alt="" />
+			<dl>
+            <dt><h3>College Street-88</h3> | ZC</dt>
+            <dd>88  College Street, M5G 1L4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/090" title="Click to find this building on the map." class="map_it">Map College Street-88</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/OG.jpg" alt="" />
+			<dl>
+            <dt><h3>College Street-92</h3> | OG</dt>
+            <dd>92  College Street, M5S 1L5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/071" title="Click to find this building on the map." class="map_it">Map College Street-92</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/CH.jpg" alt="" />
+			<dl>
+            <dt><h3>Convocation Hall</h3> | CH</dt>
+            <dd>31  King's College Circle, M5S 1A1</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/010A" title="Click to find this building on the map." class="map_it">Map Convocation Hall</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/CU.jpg" alt="" />
+			<dl>
+            <dt><h3>Cumberland House</h3> | CU</dt>
+            <dd>33  St. George Street, M5S 2E3</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/026" title="Click to find this building on the map." class="map_it">Map Cumberland House</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/PT.jpg" alt="" />
+			<dl>
+            <dt><h3>D.L. Pratt Building</h3> | PT</dt>
+            <dd>6  King's College Road, M5S 3H5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/008A" title="Click to find this building on the map." class="map_it">Map D.L. Pratt Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/DN.jpg" alt="" />
+			<dl>
+            <dt><h3>Dentistry Building</h3> | DN</dt>
+            <dd>124  Edward Street, M5G 1G6</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/065" title="Click to find this building on the map." class="map_it">Map Dentistry Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/MF.jpg" alt="" />
+			<dl>
+            <dt><h3>Devonshire Place-100 (Demolished Feb, 2012)</h3> | MF</dt>
+            <dd>100  Devonshire Place, M5S 2C9</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/141" title="Click to find this building on the map." class="map_it">Map Devonshire Place-100 (Demolished Feb, 2012)</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/PR.jpg" alt="" />
+			<dl>
+            <dt><h3>E.J. Pratt Library</h3> | PR</dt>
+            <dd>71  Queen's Park Crescent East, M5S 1K7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/514" title="Click to find this building on the map." class="map_it">Map E.J. Pratt Library</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/ER.jpg" alt="" />
+			<dl>
+            <dt><h3>Early Learning Centre</h3> | ER</dt>
+            <dd>7  Glen Morris Street, M5S 1H9</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/129" title="Click to find this building on the map." class="map_it">Map Early Learning Centre</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/ES.jpg" alt="" />
+			<dl>
+            <dt><h3>Earth Sciences Centre</h3> | ES</dt>
+            <dd>33  Willcocks Street, M5S 3B3</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/062" title="Click to find this building on the map." class="map_it">Map Earth Sciences Centre</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/EJ.jpg" alt="" />
+			<dl>
+            <dt><h3>Edward Johnson Building</h3> | EJ</dt>
+            <dd>80  Queen's Park, M5S 2C5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/051" title="Click to find this building on the map." class="map_it">Map Edward Johnson Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/default.jpg" alt="" />
+			<dl>
+            <dt><h3>Electrometallurgy Lab</h3> | EL</dt>
+            <dd>11  King's College Road (rear), M5S 3J2</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/093" title="Click to find this building on the map." class="map_it">Map Electrometallurgy Lab</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/EH.jpg" alt="" />
+			<dl>
+            <dt><h3>Elmsley Hall</h3> | EH</dt>
+            <dd>81  St. Mary Street, M5S 1J4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/405" title="Click to find this building on the map." class="map_it">Map Elmsley Hall</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/EM.jpg" alt="" />
+			<dl>
+            <dt><h3>Emmanuel College</h3> | EM</dt>
+            <dd>75  Queen's Park, M5S 1K7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/502" title="Click to find this building on the map." class="map_it">Map Emmanuel College</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/EA.jpg" alt="" />
+			<dl>
+            <dt><h3>Engineering Annex</h3> | EA</dt>
+            <dd>11  King's College Road, M5S 1A4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/021" title="Click to find this building on the map." class="map_it">Map Engineering Annex</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/AD.jpg" alt="" />
+			<dl>
+            <dt><h3>Enrolment Services</h3> | AD</dt>
+            <dd>172 St. George Street, M5R 0A3</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/127" title="Click to find this building on the map." class="map_it">Map Enrolment Services</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/EX.jpg" alt="" />
+			<dl>
+            <dt><h3>Exam Centre</h3> | EX</dt>
+            <dd>255  McCaul Street, M5T 1W7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/155" title="Click to find this building on the map." class="map_it">Map Exam Centre</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/SK.jpg" alt="" />
+			<dl>
+            <dt><h3>Factor-Inwentash Faculty of Social Work</h3> | SK</dt>
+            <dd>246  Bloor Street West, M5S 1V4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/111" title="Click to find this building on the map." class="map_it">Map Factor-Inwentash Faculty of Social Work</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/FC.jpg" alt="" />
+			<dl>
+            <dt><h3>Faculty Club</h3> | FC</dt>
+            <dd>41  Willcocks Street, M5S 1C7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/075" title="Click to find this building on the map." class="map_it">Map Faculty Club</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/FH.jpg" alt="" />
+			<dl>
+            <dt><h3>Falconer Hall</h3> | FH</dt>
+            <dd>84  Queen's Park, M5S 2C5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/050" title="Click to find this building on the map." class="map_it">Map Falconer Hall</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/LG.jpg" alt="" />
+			<dl>
+            <dt><h3>Fasken Martineau Building</h3> | LG</dt>
+            <dd>655  Spadina Avenue, M5S 2H9</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/151" title="Click to find this building on the map." class="map_it">Map Fasken Martineau Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/FI.jpg" alt="" />
+			<dl>
+            <dt><h3>Fields Inst for Research in Math Science</h3> | FI</dt>
+            <dd>222  College Street, M5T 3J1</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/105" title="Click to find this building on the map." class="map_it">Map Fields Inst for Research in Math Science</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/FS.jpg" alt="" />
+			<dl>
+            <dt><h3>Fisher House</h3> | FS</dt>
+            <dd>59  Queen's Park Crescent East, M5S 2C4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/420" title="Click to find this building on the map." class="map_it">Map Fisher House</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/FG.jpg" alt="" />
+			<dl>
+            <dt><h3>FitzGerald Building</h3> | FG</dt>
+            <dd>150  College Street, M5S 1A8</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/025" title="Click to find this building on the map." class="map_it">Map FitzGerald Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/LW.jpg" alt="" />
+			<dl>
+            <dt><h3>Flavelle House</h3> | LW</dt>
+            <dd>78  Queen's Park, M5S 2C5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/040" title="Click to find this building on the map." class="map_it">Map Flavelle House</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/BH.jpg" alt="" />
+			<dl>
+            <dt><h3>Founders House</h3> | BH</dt>
+            <dd>1  Elmsley Place,  </dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/428" title="Click to find this building on the map." class="map_it">Map Founders House</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/GA.jpg" alt="" />
+			<dl>
+            <dt><h3>Gage Building</h3> | GA</dt>
+            <dd>223  College Street, M5T 1R4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/082" title="Click to find this building on the map." class="map_it">Map Gage Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/GB.jpg" alt="" />
+			<dl>
+            <dt><h3>Galbraith Building</h3> | GB</dt>
+            <dd>35  St. George Street, M5S 1A4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/070" title="Click to find this building on the map." class="map_it">Map Galbraith Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/GI.jpg" alt="" />
+			<dl>
+            <dt><h3>George Ignatieff Theatre</h3> | GI</dt>
+            <dd>15  Devonshire Place, M5S 1H8</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/603" title="Click to find this building on the map." class="map_it">Map George Ignatieff Theatre</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/LA.jpg" alt="" />
+			<dl>
+            <dt><h3>Gerald Larkin Building</h3> | LA</dt>
+            <dd>15  Devonshire Place, M5S 1H8</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/602" title="Click to find this building on the map." class="map_it">Map Gerald Larkin Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/SM.jpg" alt="" />
+			<dl>
+            <dt><h3>Gerstein Science Information Centre in the Sigmund Samuel Library Bldg</h3> | SM</dt>
+            <dd>7 and 9 King's College Circle, M5S 3K1</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/003" title="Click to find this building on the map." class="map_it">Map Gerstein Science Information Centre in the Sigmund Samuel Library Bldg</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/GH.jpg" alt="" />
+			<dl>
+            <dt><h3>Gilson House</h3> | GH</dt>
+            <dd>8  Elmsley Place,  </dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/422" title="Click to find this building on the map." class="map_it">Map Gilson House</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/default.jpg" alt="" />
+			<dl>
+            <dt><h3>Goldring Centre for High Performance Sport (Under Construction)</h3> | GO</dt>
+            <dd>100 Devonshire Place,  </dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/042" title="Click to find this building on the map." class="map_it">Map Goldring Centre for High Performance Sport (Under Construction)</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/default.jpg" alt="" />
+			<dl>
+            <dt><h3>Goldring Student Centre</h3> | GC</dt>
+            <dd>150  Charles Street West, M5S 1K9</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/507" title="Click to find this building on the map." class="map_it">Map Goldring Student Centre</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/GD.jpg" alt="" />
+			<dl>
+            <dt><h3>Graduate House</h3> | GD</dt>
+            <dd>60  Harbord Street, M5S 1A1</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/064" title="Click to find this building on the map." class="map_it">Map Graduate House</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/GU.jpg" alt="" />
+			<dl>
+            <dt><h3>Graduate Students' Union</h3> | GU</dt>
+            <dd>16  Bancroft Avenue, M5S 1C1</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/056" title="Click to find this building on the map." class="map_it">Map Graduate Students' Union</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/HH.jpg" alt="" />
+			<dl>
+            <dt><h3>Hart House</h3> | HH</dt>
+            <dd>7  Hart House Circle, M5S 3H3</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/002" title="Click to find this building on the map." class="map_it">Map Hart House</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/HA.jpg" alt="" />
+			<dl>
+            <dt><h3>Haultain Building</h3> | HA</dt>
+            <dd>170  College Street (rear of), M5S 3E3</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/024" title="Click to find this building on the map." class="map_it">Map Haultain Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/HS.jpg" alt="" />
+			<dl>
+            <dt><h3>Health Sciences Building</h3> | HS</dt>
+            <dd>155  College Street, M5T 1P8</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/154" title="Click to find this building on the map." class="map_it">Map Health Sciences Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/HU.jpg" alt="" />
+			<dl>
+            <dt><h3>Huron Street-215</h3> | HU</dt>
+            <dd>215  Huron Street, M5S 1A2</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/067" title="Click to find this building on the map." class="map_it">Map Huron Street-215</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/CA.jpg" alt="" />
+			<dl>
+            <dt><h3>Huron Street-370</h3> | CA</dt>
+            <dd>370  Huron Street, M5S 2G4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/138" title="Click to find this building on the map." class="map_it">Map Huron Street-370</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/IN.jpg" alt="" />
+			<dl>
+            <dt><h3>Innis College</h3> | IN</dt>
+            <dd>2  Sussex Avenue, M5S 1J5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/132" title="Click to find this building on the map." class="map_it">Map Innis College</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/IS.jpg" alt="" />
+			<dl>
+            <dt><h3>Innis College Student Residence</h3> | IS</dt>
+            <dd>111  St. George Street, M5S 2E8</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/133" title="Click to find this building on the map." class="map_it">Map Innis College Student Residence</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/BT.jpg" alt="" />
+			<dl>
+            <dt><h3>Isabel Bader Theatre</h3> | BT</dt>
+            <dd>93  Charles St. West, M5S 1K9</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/509" title="Click to find this building on the map." class="map_it">Map Isabel Bader Theatre</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/KL.jpg" alt="" />
+			<dl>
+            <dt><h3>J. M. Kelly Library</h3> | KL</dt>
+            <dd>113  St. Joseph Street, M5S 1J4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/429" title="Click to find this building on the map." class="map_it">Map J. M. Kelly Library</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/DR.jpg" alt="" />
+			<dl>
+            <dt><h3>J. Robert S. Prichard Alumni House</h3> | DR</dt>
+            <dd>21  King's College Circle, M5S 3J3</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/019" title="Click to find this building on the map." class="map_it">Map J. Robert S. Prichard Alumni House</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/JH.jpg" alt="" />
+			<dl>
+            <dt><h3>Jackman Humanities Building</h3> | JH</dt>
+            <dd>170  St. George Street, M5R 2M8</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/128" title="Click to find this building on the map." class="map_it">Map Jackman Humanities Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/RL.jpg" alt="" />
+			<dl>
+            <dt><h3>John P. Robarts Library Building</h3> | RL</dt>
+            <dd>130  St. George Street, M5S 1A5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/006" title="Click to find this building on the map." class="map_it">Map John P. Robarts Library Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/KX.jpg" alt="" />
+			<dl>
+            <dt><h3>Knox College</h3> | KX</dt>
+            <dd>59  St. George Street, M5S 2E6</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/575" title="Click to find this building on the map." class="map_it">Map Knox College</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/KP.jpg" alt="" />
+			<dl>
+            <dt><h3>Koffler House</h3> | KP</dt>
+            <dd>569  Spadina Crescent, M5S 2J7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/145" title="Click to find this building on the map." class="map_it">Map Koffler House</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/KS.jpg" alt="" />
+			<dl>
+            <dt><h3>Koffler Student Services Centre</h3> | KS</dt>
+            <dd>214  College Street, M5T 2Z9</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/143" title="Click to find this building on the map." class="map_it">Map Koffler Student Services Centre</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/LM.jpg" alt="" />
+			<dl>
+            <dt><h3>Lash Miller Chemical Laboratories</h3> | LM</dt>
+            <dd>80  St. George Street, M5S 3H6</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/073" title="Click to find this building on the map." class="map_it">Map Lash Miller Chemical Laboratories</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/MB.jpg" alt="" />
+			<dl>
+            <dt><h3>Lassonde Mining Building</h3> | MB</dt>
+            <dd>170  College Street, M5S 3E3</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/007" title="Click to find this building on the map." class="map_it">Map Lassonde Mining Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/WR.jpg" alt="" />
+			<dl>
+            <dt><h3>Leighton Goldie McCarthy House (Child Study)</h3> | WR</dt>
+            <dd>45  Walmer Road, M5R 2X2</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/053" title="Click to find this building on the map." class="map_it">Map Leighton Goldie McCarthy House (Child Study)</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/PB.jpg" alt="" />
+			<dl>
+            <dt><h3>Leslie L. Dan Pharmacy Building</h3> | PB</dt>
+            <dd>144  College Street, M5S 3M2</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/161" title="Click to find this building on the map." class="map_it">Map Leslie L. Dan Pharmacy Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/LI.jpg" alt="" />
+			<dl>
+            <dt><h3>Lillian Massey Building</h3> | LI</dt>
+            <dd>125 Queen's Park, M5S 2C7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/528" title="Click to find this building on the map." class="map_it">Map Lillian Massey Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/LC.jpg" alt="" />
+			<dl>
+            <dt><h3>Loretto College</h3> | LC</dt>
+            <dd>70  St. Mary Street, M5S 1J3</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/401" title="Click to find this building on the map." class="map_it">Map Loretto College</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/SO.jpg" alt="" />
+			<dl>
+            <dt><h3>Louis B. Stewart Observatory (UTSU)</h3> | SO</dt>
+            <dd>12  Hart House Circle, M5S 3J9</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/120" title="Click to find this building on the map." class="map_it">Map Louis B. Stewart Observatory (UTSU)</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/GM.jpg" alt="" />
+			<dl>
+            <dt><h3>Luella Massey Studio Theatre</h3> | GM</dt>
+            <dd>4  Glen Morris Street, M5S 1J1</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/091" title="Click to find this building on the map." class="map_it">Map Luella Massey Studio Theatre</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/MM.jpg" alt="" />
+			<dl>
+            <dt><h3>Macdonald-Mowat House</h3> | MM</dt>
+            <dd>63  St. George Street, M5S 2Z9</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/172" title="Click to find this building on the map." class="map_it">Map Macdonald-Mowat House</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/MG.jpg" alt="" />
+			<dl>
+            <dt><h3>Margaret Addison Hall</h3> | MG</dt>
+            <dd>140  Charles Street West, M5S 1K9</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/508" title="Click to find this building on the map." class="map_it">Map Margaret Addison Hall</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/MN.jpg" alt="" />
+			<dl>
+            <dt><h3>Maritain House</h3> | MN</dt>
+            <dd>6  Elmsley Place,  </dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/423" title="Click to find this building on the map." class="map_it">Map Maritain House</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/MA.jpg" alt="" />
+			<dl>
+            <dt><h3>Massey College</h3> | MA</dt>
+            <dd>4  Devonshire Place, M5S 2E1</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/034" title="Click to find this building on the map." class="map_it">Map Massey College</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/GE.jpg" alt="" />
+			<dl>
+            <dt><h3>Max Gluskin House</h3> | GE</dt>
+            <dd>150  St. George Street, M5S 3G7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/104" title="Click to find this building on the map." class="map_it">Map Max Gluskin House</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/RM.jpg" alt="" />
+			<dl>
+            <dt><h3>McCaul Street-254/256</h3> | RM</dt>
+            <dd>254-256   McCaul Street, M5T 1W5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/083" title="Click to find this building on the map." class="map_it">Map McCaul Street-254/256</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/default.jpg" alt="" />
+			<dl>
+            <dt><h3>McCorkell House</h3> | MZ</dt>
+            <dd>2  Elmsley Place,  </dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/427" title="Click to find this building on the map." class="map_it">Map McCorkell House</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/MP.jpg" alt="" />
+			<dl>
+            <dt><h3>McLennan Physical Laboratories</h3> | MP</dt>
+            <dd>255  Huron Street, M5S 1A7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/078" title="Click to find this building on the map." class="map_it">Map McLennan Physical Laboratories</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/MR.jpg" alt="" />
+			<dl>
+            <dt><h3>McMurrich Bldg</h3> | MR</dt>
+            <dd>12  Queen's Park Crescent W, M5S 1S8</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/004" title="Click to find this building on the map." class="map_it">Map McMurrich Bldg</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/MC.jpg" alt="" />
+			<dl>
+            <dt><h3>Mechanical Engineering Building</h3> | MC</dt>
+            <dd>5  King's College Road, M5S 3G8</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/022" title="Click to find this building on the map." class="map_it">Map Mechanical Engineering Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/MS.jpg" alt="" />
+			<dl>
+            <dt><h3>Medical Sciences Building</h3> | MS</dt>
+            <dd>1  King's College Circle, M5S 1A8</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/005" title="Click to find this building on the map." class="map_it">Map Medical Sciences Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/MH.jpg" alt="" />
+			<dl>
+            <dt><h3>More House</h3> | MH</dt>
+            <dd>59  Queen's Park Crescent East, M5S 2C4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/419" title="Click to find this building on the map." class="map_it">Map More House</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/MO.jpg" alt="" />
+			<dl>
+            <dt><h3>Morrison Hall</h3> | MO</dt>
+            <dd>75  St. George Street, M5S 2E5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/101" title="Click to find this building on the map." class="map_it">Map Morrison Hall</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/MU.jpg" alt="" />
+			<dl>
+            <dt><h3>Munk School of Global Affairs - Graham Library</h3> | MU</dt>
+            <dd>5  Devonshire Place, M5S 3K7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/012C" title="Click to find this building on the map." class="map_it">Map Munk School of Global Affairs - Graham Library</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/MK.jpg" alt="" />
+			<dl>
+            <dt><h3>Munk School of Global Affairs at the Observatory</h3> | MK</dt>
+            <dd>315  Bloor Street West, M5S 1A3</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/089" title="Click to find this building on the map." class="map_it">Map Munk School of Global Affairs at the Observatory</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/MU.jpg" alt="" />
+			<dl>
+            <dt><h3>Munk School of Global Affairs at Trinity</h3> | MU</dt>
+            <dd>1  Devonshire Place, M5S 3K7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/012A" title="Click to find this building on the map." class="map_it">Map Munk School of Global Affairs at Trinity</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/AH.jpg" alt="" />
+			<dl>
+            <dt><h3>Muzzo Family Alumni Hall</h3> | AH</dt>
+            <dd>121  St. Joseph Street, M5S 1J4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/407" title="Click to find this building on the map." class="map_it">Map Muzzo Family Alumni Hall</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/NR.jpg" alt="" />
+			<dl>
+            <dt><h3>New College III</h3> | NR</dt>
+            <dd>45  Willcocks Street, M5S 1C7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/131" title="Click to find this building on the map." class="map_it">Map New College III</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/VI.jpg" alt="" />
+			<dl>
+            <dt><h3>Nona Macdonald Visitors Centre</h3> | VI</dt>
+            <dd>25 King's College Circle, M5S 1A1</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/575A" title="Click to find this building on the map." class="map_it">Map Nona Macdonald Visitors Centre</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/NF.jpg" alt="" />
+			<dl>
+            <dt><h3>Northrop Frye Hall</h3> | NF</dt>
+            <dd>73  Queen's Park Crescent East, M5S 1K7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/515" title="Click to find this building on the map." class="map_it">Map Northrop Frye Hall</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/OH.jpg" alt="" />
+			<dl>
+            <dt><h3>Odette (Louis) Hall</h3> | OH</dt>
+            <dd>50  St. Joseph Street, M5S 1J4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/415" title="Click to find this building on the map." class="map_it">Map Odette (Louis) Hall</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/OA.jpg" alt="" />
+			<dl>
+            <dt><h3>Old Admin Bldg (Board of Ed)</h3> | OA</dt>
+            <dd>263  McCaul Street, M5T 1W7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/156" title="Click to find this building on the map." class="map_it">Map Old Admin Bldg (Board of Ed)</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/OI.jpg" alt="" />
+			<dl>
+            <dt><h3>Ontario Institute for Studies in Education</h3> | OI</dt>
+            <dd>252  Bloor Street West, M5S 1V6</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/123" title="Click to find this building on the map." class="map_it">Map Ontario Institute for Studies in Education</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/PH.jpg" alt="" />
+			<dl>
+            <dt><h3>Phelan House</h3> | PH</dt>
+            <dd>3  Elmsley Place,  </dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/417" title="Click to find this building on the map." class="map_it">Map Phelan House</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/PG.jpg" alt="" />
+			<dl>
+            <dt><h3>Physical Geography Building</h3> | PG</dt>
+            <dd>45  St. George Street, M5S 2E5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/027" title="Click to find this building on the map." class="map_it">Map Physical Geography Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/PI.jpg" alt="" />
+			<dl>
+            <dt><h3>Pontifical Institute of Mediaeval Studies</h3> | PI</dt>
+            <dd>59  Queen's Park Crescent East, M5S 2C4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/418" title="Click to find this building on the map." class="map_it">Map Pontifical Institute of Mediaeval Studies</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/ME.jpg" alt="" />
+			<dl>
+            <dt><h3>Queen's Park Crescent East-39</h3> | ME</dt>
+            <dd>39  Queen's Park Crescent East, M5S 2C3</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/097" title="Click to find this building on the map." class="map_it">Map Queen's Park Crescent East-39</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/XQ.jpg" alt="" />
+			<dl>
+            <dt><h3>Queen's Park Crescent East-43</h3> | XQ</dt>
+            <dd>43  Queen's Park Crescent East, M5S 2C3</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/433" title="Click to find this building on the map." class="map_it">Map Queen's Park Crescent East-43</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/TZ.jpg" alt="" />
+			<dl>
+            <dt><h3>Queen's Park Crescent West-6</h3> | TZ</dt>
+            <dd>6  Queen's Park Crescent West, M5S 3H2</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/011" title="Click to find this building on the map." class="map_it">Map Queen's Park Crescent West-6</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/ML.jpg" alt="" />
+			<dl>
+            <dt><h3>Queen's Park Crsc. E.-39A</h3> | ML</dt>
+            <dd>39A   Queen's Park Crsc. E, M5S 2C3</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/097A" title="Click to find this building on the map." class="map_it">Map Queen's Park Crsc. E.-39A</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/default.jpg" alt="" />
+			<dl>
+            <dt><h3>Queen's Park-90</h3> | PL</dt>
+            <dd>90 Queen's Park,  </dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/017" title="Click to find this building on the map." class="map_it">Map Queen's Park-90</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/RW.jpg" alt="" />
+			<dl>
+            <dt><h3>Ramsay Wright Laboratories</h3> | RW</dt>
+            <dd>25  Harbord Street, M5S 3G5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/072" title="Click to find this building on the map." class="map_it">Map Ramsay Wright Laboratories</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/default.jpg" alt="" />
+			<dl>
+            <dt><h3>Regis College</h3> | RG</dt>
+            <dd>100 Wellesley Street West, M5S 1C5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/478" title="Click to find this building on the map." class="map_it">Map Regis College</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/RU.jpg" alt="" />
+			<dl>
+            <dt><h3>Rehabilitation Sciences Building</h3> | RU</dt>
+            <dd>500  University Avenue, M5G 1V7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/152" title="Click to find this building on the map." class="map_it">Map Rehabilitation Sciences Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/RS.jpg" alt="" />
+			<dl>
+            <dt><h3>Rosebrugh Building</h3> | RS</dt>
+            <dd>164  College Street, M5S 3G9</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/020" title="Click to find this building on the map." class="map_it">Map Rosebrugh Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/RT.jpg" alt="" />
+			<dl>
+            <dt><h3>Rotman School of Management</h3> | RT</dt>
+            <dd>105  St. George Street, M5S 3E6</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/134" title="Click to find this building on the map." class="map_it">Map Rotman School of Management</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/RJ.jpg" alt="" />
+			<dl>
+            <dt><h3>Rowell Jackman Hall</h3> | RJ</dt>
+            <dd>85  Charles Street West, M5S 1K5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/518" title="Click to find this building on the map." class="map_it">Map Rowell Jackman Hall</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/SR.jpg" alt="" />
+			<dl>
+            <dt><h3>Sam Sorbara Hall Student Residence</h3> | SR</dt>
+            <dd>70  St. Joseph Street,  </dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/435" title="Click to find this building on the map." class="map_it">Map Sam Sorbara Hall Student Residence</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/SF.jpg" alt="" />
+			<dl>
+            <dt><h3>Sandford Fleming Building</h3> | SF</dt>
+            <dd>10  King's College Road, M5S 3G4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/009" title="Click to find this building on the map." class="map_it">Map Sandford Fleming Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/CS.jpg" alt="" />
+			<dl>
+            <dt><h3>School of Continuing Studies</h3> | CS</dt>
+            <dd>158  St. George Street, M5S 2V8</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/103" title="Click to find this building on the map." class="map_it">Map School of Continuing Studies</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/GS.jpg" alt="" />
+			<dl>
+            <dt><h3>School of Graduate Studies</h3> | GS</dt>
+            <dd>65  St. George Street, M5S 2E5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/043" title="Click to find this building on the map." class="map_it">Map School of Graduate Studies</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/SS.jpg" alt="" />
+			<dl>
+            <dt><h3>Sidney Smith Hall</h3> | SS</dt>
+            <dd>100  St. George Street, M5S 3G3</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/033" title="Click to find this building on the map." class="map_it">Map Sidney Smith Hall</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/SI.jpg" alt="" />
+			<dl>
+            <dt><h3>Simcoe Hall</h3> | SI</dt>
+            <dd>27  King's College Circle, M5S 1A1</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/010" title="Click to find this building on the map." class="map_it">Map Simcoe Hall</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/SD.jpg" alt="" />
+			<dl>
+            <dt><h3>Sir Daniel Wilson Residence</h3> | SD</dt>
+            <dd>73  St. George Street, M5S 2E5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/029" title="Click to find this building on the map." class="map_it">Map Sir Daniel Wilson Residence</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/TR.jpg" alt="" />
+			<dl>
+            <dt><h3>Soldiers' Tower</h3> | TR</dt>
+            <dd>7  Hart House Circle, M5S 3H3</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/102" title="Click to find this building on the map." class="map_it">Map Soldiers' Tower</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/TT.jpg" alt="" />
+			<dl>
+            <dt><h3>Spadina Ave-455</h3> | TT</dt>
+            <dd>455  Spadina Avenue, M5S 2G8</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/171" title="Click to find this building on the map." class="map_it">Map Spadina Ave-455</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/SA.jpg" alt="" />
+			<dl>
+            <dt><h3>Spadina Ave-713</h3> | SA</dt>
+            <dd>713  Spadina Avenue, M5S 2J4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/142" title="Click to find this building on the map." class="map_it">Map Spadina Ave-713</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/IA.jpg" alt="" />
+			<dl>
+            <dt><h3>Spadina Avenue-703</h3> | IA</dt>
+            <dd>703  Spadina Avenue, M5S 2J4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/125" title="Click to find this building on the map." class="map_it">Map Spadina Avenue-703</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/FA.jpg" alt="" />
+			<dl>
+            <dt><h3>Spadina Avenue-720</h3> | FA</dt>
+            <dd>720  Spadina Avenue, M5S 2T9</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/189" title="Click to find this building on the map." class="map_it">Map Spadina Avenue-720</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/SP.jpg" alt="" />
+			<dl>
+            <dt><h3>Spadina Crescent-1 (Under Renovation)</h3> | SP</dt>
+            <dd>1  Spadina Crescent, M5S 2J5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/054" title="Click to find this building on the map." class="map_it">Map Spadina Crescent-1 (Under Renovation)</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/CD.jpg" alt="" />
+			<dl>
+            <dt><h3>Spadina Road-56</h3> | CD</dt>
+            <dd>56  Spadina Road,  </dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/153" title="Click to find this building on the map." class="map_it">Map Spadina Road-56</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/BS.jpg" alt="" />
+			<dl>
+            <dt><h3>St. Basil's Church</h3> | BS</dt>
+            <dd>50  St. Joseph Street, M5S IJ4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/413" title="Click to find this building on the map." class="map_it">Map St. Basil's Church</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/IR.jpg" alt="" />
+			<dl>
+            <dt><h3>St. George Street-121</h3> | IR</dt>
+            <dd>121  St. George Street, M5S 2E8</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/110" title="Click to find this building on the map." class="map_it">Map St. George Street-121</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/SG.jpg" alt="" />
+			<dl>
+            <dt><h3>St. George Street-49</h3> | SG</dt>
+            <dd>49  St. George Street, M5S 2E5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/039" title="Click to find this building on the map." class="map_it">Map St. George Street-49</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/WA.jpg" alt="" />
+			<dl>
+            <dt><h3>St. George Street123</h3> | WA</dt>
+            <dd>123  St. George Street, M5S 2E8</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/088" title="Click to find this building on the map." class="map_it">Map St. George Street123</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/HI.jpg" alt="" />
+			<dl>
+            <dt><h3>St. Hilda's College</h3> | HI</dt>
+            <dd>44  Devonshire Place, M5S 2E2</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/608" title="Click to find this building on the map." class="map_it">Map St. Hilda's College</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/SN.jpg" alt="" />
+			<dl>
+            <dt><h3>Stephenson House</h3> | SN</dt>
+            <dd>63  Charles Street West, M5S 1K5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/513" title="Click to find this building on the map." class="map_it">Map Stephenson House</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/EP.jpg" alt="" />
+			<dl>
+            <dt><h3>Stewart Building</h3> | EP</dt>
+            <dd>149 College Street, M5T 1P5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/192" title="Click to find this building on the map." class="map_it">Map Stewart Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/SV.jpg" alt="" />
+			<dl>
+            <dt><h3>Sullivan House</h3> | SV</dt>
+            <dd>96  St. Joseph Street,  </dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/425" title="Click to find this building on the map." class="map_it">Map Sullivan House</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/SU.jpg" alt="" />
+			<dl>
+            <dt><h3>Sussex Avenue-40</h3> | SU</dt>
+            <dd>40  Sussex Avenue, M5S 1J7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/146" title="Click to find this building on the map." class="map_it">Map Sussex Avenue-40</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/SC.jpg" alt="" />
+			<dl>
+            <dt><h3>Sussex Court</h3> | SC</dt>
+            <dd>21  Sussex Avenue, M5S 1J6</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/077" title="Click to find this building on the map." class="map_it">Map Sussex Court</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/TF.jpg" alt="" />
+			<dl>
+            <dt><h3>Teefy Hall</h3> | TF</dt>
+            <dd>57  Queen's Park Crescent East, M5S 2C4</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/421" title="Click to find this building on the map." class="map_it">Map Teefy Hall</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/DC.jpg" alt="" />
+			<dl>
+            <dt><h3>Terrence Donnelly Ctr for Cellular & Biomolecular Res</h3> | DC</dt>
+            <dd>160  College Street, M5S 3E1</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/160" title="Click to find this building on the map." class="map_it">Map Terrence Donnelly Ctr for Cellular & Biomolecular Res</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/RB.jpg" alt="" />
+			<dl>
+            <dt><h3>Thomas Fisher Rare Book Library Building</h3> | RB</dt>
+            <dd>120  St. George Street, M5S 1A5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/006B" title="Click to find this building on the map." class="map_it">Map Thomas Fisher Rare Book Library Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/TH.jpg" alt="" />
+			<dl>
+            <dt><h3>Toronto School of Theology</h3> | TH</dt>
+            <dd>47  Queen's Park Crescent East, M5S 2C3</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/434" title="Click to find this building on the map." class="map_it">Map Toronto School of Theology</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/TC.jpg" alt="" />
+			<dl>
+            <dt><h3>Trinity College</h3> | TC</dt>
+            <dd>6  Hoskin Avenue, M5S 1H8</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/600" title="Click to find this building on the map." class="map_it">Map Trinity College</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/UC.jpg" alt="" />
+			<dl>
+            <dt><h3>University College</h3> | UC</dt>
+            <dd>15  King's College Circle, M5S 3H7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/001" title="Click to find this building on the map." class="map_it">Map University College</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/UP.jpg" alt="" />
+			<dl>
+            <dt><h3>University College Union</h3> | UP</dt>
+            <dd>79  St. George Street, M5S 2E5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/023" title="Click to find this building on the map." class="map_it">Map University College Union</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/VA.jpg" alt="" />
+			<dl>
+            <dt><h3>Varsity Centre</h3> | VA</dt>
+            <dd>299  Bloor Street West,  </dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/030A" title="Click to find this building on the map." class="map_it">Map Varsity Centre</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/VP.jpg" alt="" />
+			<dl>
+            <dt><h3>Varsity Pavilion</h3> | VP</dt>
+            <dd>299 Bloor Street West,  </dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/041" title="Click to find this building on the map." class="map_it">Map Varsity Pavilion</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/VC.jpg" alt="" />
+			<dl>
+            <dt><h3>Victoria College</h3> | VC</dt>
+            <dd>91  Charles Street West, M5S 1K7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/501" title="Click to find this building on the map." class="map_it">Map Victoria College</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/WB.jpg" alt="" />
+			<dl>
+            <dt><h3>Wallberg Building</h3> | WB</dt>
+            <dd>184-200   College Street, M56 3E5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/008" title="Click to find this building on the map." class="map_it">Map Wallberg Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/WS.jpg" alt="" />
+			<dl>
+            <dt><h3>Warren Stevens Building</h3> | WS</dt>
+            <dd>55  Harbord Street, M5S 2W6</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/068A" title="Click to find this building on the map." class="map_it">Map Warren Stevens Building</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/JP.jpg" alt="" />
+			<dl>
+            <dt><h3>Wellesley Street West -90</h3> | JP</dt>
+            <dd>90 Wellesley Street West, M5S 1C5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/098B" title="Click to find this building on the map." class="map_it">Map Wellesley Street West -90</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/WE.jpg" alt="" />
+			<dl>
+            <dt><h3>Wetmore Hall-New College</h3> | WE</dt>
+            <dd>300  Huron Street, M5S 2Z3</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/032" title="Click to find this building on the map." class="map_it">Map Wetmore Hall-New College</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/WT.jpg" alt="" />
+			<dl>
+            <dt><h3>Whitney Hall</h3> | WT</dt>
+            <dd>85  St. George Street, M5S 2E5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/013" title="Click to find this building on the map." class="map_it">Map Whitney Hall</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/WI.jpg" alt="" />
+			<dl>
+            <dt><h3>Wilson Hall-New College</h3> | WI</dt>
+            <dd>40  Willcocks Street, M5S 1C6</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/032A" title="Click to find this building on the map." class="map_it">Map Wilson Hall-New College</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/WN.jpg" alt="" />
+			<dl>
+            <dt><h3>Windle House</h3> | WN</dt>
+            <dd>5  Elmsley Place,  </dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/416" title="Click to find this building on the map." class="map_it">Map Windle House</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/WW.jpg" alt="" />
+			<dl>
+            <dt><h3>Woodsworth College</h3> | WW</dt>
+            <dd>119  St. George Street, M5S 1A9</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/038" title="Click to find this building on the map." class="map_it">Map Woodsworth College</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/WO.jpg" alt="" />
+			<dl>
+            <dt><h3>Woodsworth College Residence</h3> | WO</dt>
+            <dd>321  Bloor St. West, M5S 1S5</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/130" title="Click to find this building on the map." class="map_it">Map Woodsworth College Residence</a></dd>
+			</dl>
+		</li>
+		<li>
+            <img src="/_assets/_images/_buildings_pics/WY.jpg" alt="" />
+			<dl>
+            <dt><h3>Wycliffe College</h3> | WY</dt>
+            <dd>5  Hoskin Avenue, M5S 1H7</dd>
+            <dd><a href="http://map.utoronto.ca/utsg/building/675" title="Click to find this building on the map." class="map_it">Map Wycliffe College</a></dd>
+			</dl>
+		</li>
+</ul>
+<div class="page_navigation"></div></div>
+		</div>
+	</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="http://map.utoronto.ca/_assets/_js/plugins.js"></script>
+<script src="http://map.utoronto.ca/_assets/_js/jquery.quicksearch.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		// Initialize jQuery Placeholder plugin for HTML5 placeholder support
+		$('input[placeholder], textarea[placeholder]').placeholder();
+
+		$("input#building").quicksearch(
+			".buildinglist li",
+			{
+				'selector': 'dl dt'
+			}
+		);
+
+	});
+</script>
+
+    </section>
+	    <footer role="contentinfo" id="info" class="footer">
+      <div class="fixed_width footer">
+        <ul>
+          <li><a href="http://map.utoronto.ca/c/about">Learn about this project</a></li>
+          <li><a href="mailto:uoftmap@utoronto.ca">Contact the map administrator</a></li>
+          <li><a href="http://map.utoronto.ca/c/team">About the Project Team</a></li>
+          <li class="app-links">
+            Download app:
+            <a href="https://play.google.com/store/apps/details?id=ca.utoronto.mobilemap">
+                Android
+            </a>
+
+            <a href="https://itunes.apple.com/ca/app/u-of-t-map/id502878895?mt=8&uo=4" >
+                iPhone
+            </a>
+            <a href="http://itunes.apple.com/ca/app/u-of-t-map-ipad/id553843604?mt=8" >
+                iPad
+            </a>
+          </li>
+          <li class="social_media"><a href="http://www.facebook.com/universitytoronto" target="_blank" title="U of T on Facebook"><img src="http://map.utoronto.ca/_assets/_images/facebook.png" alt="U of T on Facebook"/></a> <a href="http://www.ngsis.utoronto.ca/" target="_blank" title="Next Generation Student Information Services"><img src="http://map.utoronto.ca/_assets/_images/logo_ngsis_sm.png" alt="Next Generation Student Information Services"/></a> <a href="http://twitter.com/#!/uoftmap" target="_blank" title="U of T on Twitter"><img src="http://map.utoronto.ca/_assets/_images/twitter-2.png" alt="U of T on Twitter"/></a> <a href="http://www.youtube.com/user/universitytoronto" target="_blank" title="U of T on YouTube"><img src="http://map.utoronto.ca/_assets/_images/youtube.png" alt="U of T on YouTube"/></a></li>
+          <li>&copy; University of Toronto</li>
+        </ul>
+      </div>
+    </footer>
+  	<!--[if lt IE 7 ]>
+  	<script src="http://map.utoronto.ca/_assets/_js/libs/dd_belatedpng.js"></script>
+  	<script> DD_belatedPNG.fix('img, .png_bg');</script>
+  	<![endif]-->
+  	<script>
+  		var _gaq=[['_setAccount','UA-512614-51'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+  		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+  		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  		s.parentNode.insertBefore(g,s)}(document,'script'));
+  	</script>
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24389042-1']);
+  _gaq.push(['_setDomainName', 'utoronto.ca']);
+  _gaq.push(['_setAllowHash', 'false']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
