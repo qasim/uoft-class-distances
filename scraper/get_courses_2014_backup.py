@@ -165,6 +165,29 @@ building_names = {'1  Devonshire Place, M5S 3K7': 'Munk School of Global Affairs
  '95  St. Joseph Street, M5S 2R9': 'Cardinal Flahiff Building',
  '96  St. Joseph Street,': 'Sullivan House'}
 
+db = sqlite3.connect('../courses.db')
+
+#Drop table data and create a new table in its place
+c = db.cursor()
+c.execute('''DROP TABLE data''')
+db.commit()
+c.execute('''
+CREATE TABLE data (
+   id INT NOT NULL AUTO_INCREMENT,
+   name VARCHAR(100) NOT NULL,
+   course_code VARCHAR(100) NOT NULL,
+   session_code VARCHAR(100) NOT NULL,
+   time VARCHAR(255) NOT NULL,
+   location_name VARCHAR(255) NOT NULL,
+   location VARCHAR(255) NOT NULL,
+   PRIMARY KEY ( id )
+);
+''')
+
+
+
+db.commit()
+
 locations = {'ABP100Y1 L0101': '119  St. George Street, M5S 1A9',
  'ANA300Y1 L0101': "1  King's College Circle, M5S 1A8",
  'ANA301H1 L0101': "1  King's College Circle, M5S 1A8",
@@ -6140,29 +6163,8 @@ locations3 = {'ABP': '119  St. George Street, M5S 1A9',
  'WGS': '40  Willcocks Street, M5S 1C6',
  'XBC': '33  Willcocks Street, M5S 3B3'}
 
-
-
-#db = MySQLdb.connect("us-cdbr-east-06.cleardb.net","be4ecf03653473","69bbaeb8","heroku_e29dd82120a5ebf")
-c = db.cursor()
-
-#empty db
-c.execute('''DROP TABLE data''')
-db.commit()
-c.execute('''
-CREATE TABLE data (
-   id INT NOT NULL AUTO_INCREMENT,
-   name VARCHAR(100) NOT NULL,
-   course_code VARCHAR(100) NOT NULL,
-   session_code VARCHAR(100) NOT NULL,
-   time VARCHAR(255) NOT NULL,
-   location_name VARCHAR(255) NOT NULL,
-   location VARCHAR(255) NOT NULL,
-   PRIMARY KEY ( id )
-);
-''')
-db.commit()
-
 pages = os.listdir('courses_2014')
+pages = []
 for page in pages:
   file = open('courses_2014/' + page, 'r')
   html = file.read()
@@ -6204,7 +6206,8 @@ for page in pages:
           if location != '':
             location_name = building_names[location]
             db_entry = (name, course_code, data[0], data[3], location_name, location)
-            c.execute("INSERT INTO data (name, course_code, session_code, time, location_name, location) VALUES (%s, %s, %s, %s, %s, %s)", db_entry)
+            c.execute("INSERT INTO data (name, course_code, session_code, time, location_name, location) VALUES (?, ?, ?, ?, ?, ?)", db_entry)
+            db.commit()
             #push to DB
             #print db_entry
           last_data = data[:]
@@ -6244,11 +6247,14 @@ for page in pages:
             location_name = building_names[location]
             db_entry = (name, data[0] + data[1], data[3], data[5], location_name, location)
             #print db_entry
-            c.execute("INSERT INTO data (name, course_code, session_code, time, location_name, location) VALUES (%s, %s, %s, %s, %s, %s)", db_entry)
+            c.execute("INSERT INTO data (name, course_code, session_code, time, location_name, location) VALUES (?, ?, ?, ?, ?, ?)", db_entry)
+            db.commit()
             #push to db
             #print db_entry
           last_data = data[:]
 
-db.commit()
+
+
+#Close database
 db.close()
 print 'Done'

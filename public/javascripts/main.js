@@ -113,7 +113,7 @@ window.fillPage = function(type, courseInfo) {
 $(document).ready(function() {
 
 	//Connect to our server-side
-	socket = io.connect('http://localhost:3000');
+	socket = io.connect(location.href);
 
 	socket.on('connection', function() {
 		$('.search').fadeIn('fast');
